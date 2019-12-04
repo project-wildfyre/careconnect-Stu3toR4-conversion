@@ -1,0 +1,81 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="CareConnect-ResearchStudy-1"></id>
+   <url value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ResearchStudy-1"></url>
+   <version value="1.0.0"></version>
+   <name value="CareConnect-ResearchStudy-1"></name>
+   <status value="draft"></status>
+   <date value="2019-03-01T13:34:00.74+00:00"></date>
+   <publisher value="NHS Digital"></publisher>
+   <contact>
+      <name value="Interoperability Team"></name>
+      <telecom>
+         <system value="email"></system>
+         <value value="interoperabilityteam@nhs.net"></value>
+         <use value="work"></use>
+      </telecom>
+   </contact>
+   <description value="A process where a researcher or organization plans and then executes a series of steps intended to increase the field of healthcare-related knowledge. "></description>
+   <purpose value="[NOT CURATED BY INTEROPEN see: http://www.interopen.org/careconnect-curation-methodology/] Initial development for the Digital Maternity programme"></purpose>
+   <copyright value="Copyright © 2016 HL7 UK    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at    http://www.apache.org/licenses/LICENSE-2.0    Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.    HL7® FHIR® standard Copyright © 2011+ HL7    The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at    https://www.hl7.org/fhir/license.html"></copyright>
+   <fhirVersion value="3.0.1"></fhirVersion>
+   <kind value="resource"></kind>
+   <abstract value="false"></abstract>
+   <type value="ResearchStudy"></type>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ResearchStudy"></baseDefinition>
+   <derivation value="constraint"></derivation>
+   <differential>
+      <element id="ResearchStudy.identifier.assigner">
+         <path value="ResearchStudy.identifier.assigner"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="ResearchStudy.partOf">
+         <path value="ResearchStudy.partOf"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ResearchStudy-1"></targetProfile>
+         </type>
+      </element>
+      <element id="ResearchStudy.sponsor">
+         <path value="ResearchStudy.sponsor"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="ResearchStudy.principalInvestigator">
+         <path value="ResearchStudy.principalInvestigator"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+      </element>
+      <element id="ResearchStudy.site">
+         <path value="ResearchStudy.site"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Location-1"></targetProfile>
+         </type>
+      </element>
+      <element id="ResearchStudy.note.author[x]">
+         <path value="ResearchStudy.note.author[x]"></path>
+         <type>
+            <code value="string"></code>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-RelatedPerson-1"></targetProfile>
+         </type>
+      </element>
+   </differential>
+</StructureDefinition>

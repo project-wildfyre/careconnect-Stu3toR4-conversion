@@ -1,0 +1,304 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="CareConnect-FamilyMemberHistory-1"></id>
+   <meta>
+      <lastUpdated value="2017-08-25T14:08:15.271+01:00"></lastUpdated>
+   </meta>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+      <valueCode value="pc"></valueCode>
+   </extension>
+   <url value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-FamilyMemberHistory-1"></url>
+   <version value="1.0.0"></version>
+   <name value="CareConnect-FamilyMemberHistory-1"></name>
+   <status value="draft"></status>
+   <date value="2017-07-12T15:03:45.0156449+01:00"></date>
+   <publisher value="NHS Digital"></publisher>
+   <contact>
+      <name value="Interoperability Team"></name>
+      <telecom>
+         <system value="email"></system>
+         <value value="interoperabilityteam@nhs.net"></value>
+         <use value="work"></use>
+      </telecom>
+   </contact>
+   <description value="Significant health events and conditions for a person related to the patient relevant in the context of care for the patient."></description>
+   <purpose value="[NOT CURATED BY INTEROPEN see: http://www.interopen.org/careconnect-curation-methodology/] Initial development for the Digital Maternity programme"></purpose>
+   <copyright value="Copyright © 2016 HL7 UK  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.  HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html"></copyright>
+   <fhirVersion value="3.0.1"></fhirVersion>
+   <kind value="resource"></kind>
+   <abstract value="false"></abstract>
+   <type value="FamilyMemberHistory"></type>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory"></baseDefinition>
+   <derivation value="constraint"></derivation>
+   <differential>
+      <element id="FamilyMemberHistory.extension">
+         <path value="FamilyMemberHistory.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="FamilyMemberHistory.extension:recorder">
+         <path value="FamilyMemberHistory.extension"></path>
+         <sliceName value="recorder"></sliceName>
+         <max value="1"></max>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-Recorder-1"></profile>
+         </type>
+      </element>
+      <element id="FamilyMemberHistory.extension:encounter">
+         <path value="FamilyMemberHistory.extension"></path>
+         <sliceName value="encounter"></sliceName>
+         <max value="1"></max>
+         <type>
+            <code value="Extension"></code>
+            <profile value="http://hl7.org/fhir/StructureDefinition/encounter-associatedEncounter"></profile>
+         </type>
+      </element>
+      <element id="FamilyMemberHistory.identifier.system">
+         <path value="FamilyMemberHistory.identifier.system"></path>
+         <min value="1"></min>
+      </element>
+      <element id="FamilyMemberHistory.identifier.value">
+         <path value="FamilyMemberHistory.identifier.value"></path>
+         <min value="1"></min>
+      </element>
+      <element id="FamilyMemberHistory.identifier.assigner">
+         <path value="FamilyMemberHistory.identifier.assigner"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="FamilyMemberHistory.patient">
+         <path value="FamilyMemberHistory.patient"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+      </element>
+      <element id="FamilyMemberHistory.relationship.coding">
+         <path value="FamilyMemberHistory.relationship.coding"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="system"></path>
+            </discriminator>
+            <ordered value="false"></ordered>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="FamilyMemberHistory.relationship.coding:snomedCT">
+         <path value="FamilyMemberHistory.relationship.coding"></path>
+         <sliceName value="snomedCT"></sliceName>
+         <max value="1"></max>
+      </element>
+      <element id="FamilyMemberHistory.relationship.coding:snomedCT.extension">
+         <path value="FamilyMemberHistory.relationship.coding.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="FamilyMemberHistory.relationship.coding:snomedCT.extension:snomedCTDescriptionID">
+         <path value="FamilyMemberHistory.relationship.coding.extension"></path>
+         <sliceName value="snomedCTDescriptionID"></sliceName>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid"></profile>
+         </type>
+      </element>
+      <element id="FamilyMemberHistory.relationship.coding:snomedCT.system">
+         <path value="FamilyMemberHistory.relationship.coding.system"></path>
+         <min value="1"></min>
+         <fixedUri value="http://snomed.info/sct"></fixedUri>
+      </element>
+      <element id="FamilyMemberHistory.relationship.coding:snomedCT.code">
+         <path value="FamilyMemberHistory.relationship.coding.code"></path>
+         <min value="1"></min>
+      </element>
+      <element id="FamilyMemberHistory.relationship.coding:snomedCT.display">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+            <valueBoolean value="true"></valueBoolean>
+         </extension>
+         <path value="FamilyMemberHistory.relationship.coding.display"></path>
+         <min value="1"></min>
+      </element>
+      <element id="FamilyMemberHistory.gender">
+         <path value="FamilyMemberHistory.gender"></path>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="AdministrativeGender"></valueString>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+               <valueBoolean value="true"></valueBoolean>
+            </extension>
+            <strength value="required"></strength>
+            <valueSetReference>
+               <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-AdministrativeGender-1"></reference>
+            </valueSetReference>
+         </binding>
+      </element>
+      <element id="FamilyMemberHistory.reasonReference">
+         <path value="FamilyMemberHistory.reasonReference"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-AllergyIntolerance-1"></targetProfile>
+         </type>
+      </element>
+      <element id="FamilyMemberHistory.note.author[x]">
+         <path value="FamilyMemberHistory.note.author[x]"></path>
+         <type>
+            <code value="string"></code>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-RelatedPerson-1"></targetProfile>
+         </type>
+      </element>
+      <element id="FamilyMemberHistory.condition.code.coding">
+         <path value="FamilyMemberHistory.condition.code.coding"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="system"></path>
+            </discriminator>
+            <ordered value="false"></ordered>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="FamilyMemberHistory.condition.code.coding:snomedCT">
+         <path value="FamilyMemberHistory.condition.code.coding"></path>
+         <sliceName value="snomedCT"></sliceName>
+         <max value="1"></max>
+      </element>
+      <element id="FamilyMemberHistory.condition.code.coding:snomedCT.extension">
+         <path value="FamilyMemberHistory.condition.code.coding.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="FamilyMemberHistory.condition.code.coding:snomedCT.extension:snomedCTDescriptionID">
+         <path value="FamilyMemberHistory.condition.code.coding.extension"></path>
+         <sliceName value="snomedCTDescriptionID"></sliceName>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid"></profile>
+         </type>
+      </element>
+      <element id="FamilyMemberHistory.condition.code.coding:snomedCT.system">
+         <path value="FamilyMemberHistory.condition.code.coding.system"></path>
+         <min value="1"></min>
+         <fixedUri value="http://snomed.info/sct"></fixedUri>
+      </element>
+      <element id="FamilyMemberHistory.condition.code.coding:snomedCT.code">
+         <path value="FamilyMemberHistory.condition.code.coding.code"></path>
+         <min value="1"></min>
+      </element>
+      <element id="FamilyMemberHistory.condition.code.coding:snomedCT.display">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+            <valueBoolean value="true"></valueBoolean>
+         </extension>
+         <path value="FamilyMemberHistory.condition.code.coding.display"></path>
+         <min value="1"></min>
+      </element>
+      <element id="FamilyMemberHistory.condition.outcome.coding">
+         <path value="FamilyMemberHistory.condition.outcome.coding"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="system"></path>
+            </discriminator>
+            <ordered value="false"></ordered>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="FamilyMemberHistory.condition.outcome.coding:snomedCT">
+         <path value="FamilyMemberHistory.condition.outcome.coding"></path>
+         <sliceName value="snomedCT"></sliceName>
+         <max value="1"></max>
+      </element>
+      <element id="FamilyMemberHistory.condition.outcome.coding:snomedCT.extension">
+         <path value="FamilyMemberHistory.condition.outcome.coding.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="FamilyMemberHistory.condition.outcome.coding:snomedCT.extension:snomedCTDescriptionID">
+         <path value="FamilyMemberHistory.condition.outcome.coding.extension"></path>
+         <sliceName value="snomedCTDescriptionID"></sliceName>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid"></profile>
+         </type>
+      </element>
+      <element id="FamilyMemberHistory.condition.outcome.coding:snomedCT.system">
+         <path value="FamilyMemberHistory.condition.outcome.coding.system"></path>
+         <min value="1"></min>
+         <fixedUri value="http://snomed.info/sct"></fixedUri>
+      </element>
+      <element id="FamilyMemberHistory.condition.outcome.coding:snomedCT.code">
+         <path value="FamilyMemberHistory.condition.outcome.coding.code"></path>
+         <min value="1"></min>
+      </element>
+      <element id="FamilyMemberHistory.condition.outcome.coding:snomedCT.display">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+            <valueBoolean value="true"></valueBoolean>
+         </extension>
+         <path value="FamilyMemberHistory.condition.outcome.coding.display"></path>
+         <min value="1"></min>
+      </element>
+      <element id="FamilyMemberHistory.condition.note.author[x]">
+         <path value="FamilyMemberHistory.condition.note.author[x]"></path>
+         <type>
+            <code value="string"></code>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-RelatedPerson-1"></targetProfile>
+         </type>
+      </element>
+   </differential>
+</StructureDefinition>

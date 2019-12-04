@@ -1,0 +1,84 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="CareConnect-Location-1"></id>
+   <meta>
+      <lastUpdated value="2018-02-05T14:49:28.409+00:00"></lastUpdated>
+   </meta>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+      <valueCode value="pa"></valueCode>
+   </extension>
+   <url value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Location-1"></url>
+   <version value="1.1.0"></version>
+   <name value="CareConnect-Location-1"></name>
+   <status value="draft"></status>
+   <date value="2018-11-05"></date>
+   <publisher value="HL7 UK"></publisher>
+   <contact>
+      <name value="INTEROPen"></name>
+      <telecom>
+         <system value="email"></system>
+         <value value="admin@interopen.org"></value>
+         <use value="work"></use>
+      </telecom>
+   </contact>
+   <description value="The Location resource provides information and details on the physical location and the services provided."></description>
+   <purpose value="CURATED BY INTEROPen see: http://www.interopen.org/careconnect-curation-methodology/"></purpose>
+   <copyright value="Copyright © 2016 HL7 UK  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.  HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html"></copyright>
+   <fhirVersion value="3.0.1"></fhirVersion>
+   <kind value="resource"></kind>
+   <abstract value="false"></abstract>
+   <type value="Location"></type>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Location"></baseDefinition>
+   <derivation value="constraint"></derivation>
+   <differential>
+      <element id="Location.identifier">
+         <path value="Location.identifier"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="system"></path>
+            </discriminator>
+            <ordered value="false"></ordered>
+            <rules value="openAtEnd"></rules>
+         </slicing>
+      </element>
+      <element id="Location.identifier:odsSiteCode">
+         <path value="Location.identifier"></path>
+         <sliceName value="odsSiteCode"></sliceName>
+         <short value="ODS Site code to identify the organisation at site level"></short>
+         <definition value="ODS Site code to identify the organisation at site level."></definition>
+         <max value="1"></max>
+      </element>
+      <element id="Location.identifier:odsSiteCode.system">
+         <path value="Location.identifier.system"></path>
+         <short value="ODS Code"></short>
+         <min value="1"></min>
+         <fixedUri value="https://fhir.nhs.uk/Id/ods-site-code"></fixedUri>
+      </element>
+      <element id="Location.identifier:odsSiteCode.value">
+         <path value="Location.identifier.value"></path>
+         <short value="The ODS Site code name, to reflect the code used"></short>
+         <min value="1"></min>
+      </element>
+      <element id="Location.identifier:odsSiteCode.assigner">
+         <path value="Location.identifier.assigner"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Location.managingOrganization">
+         <path value="Location.managingOrganization"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Location.partOf">
+         <path value="Location.partOf"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Location-1"></targetProfile>
+         </type>
+      </element>
+   </differential>
+</StructureDefinition>

@@ -1,0 +1,118 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="CareConnect-PractitionerRole-1"></id>
+   <meta>
+      <lastUpdated value="2018-02-19T11:07:26.859+00:00"></lastUpdated>
+   </meta>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+      <valueCode value="pa"></valueCode>
+   </extension>
+   <url value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1"></url>
+   <version value="1.1.0"></version>
+   <name value="CareConnect-PractitionerRole-1"></name>
+   <status value="draft"></status>
+   <date value="2018-11-05"></date>
+   <publisher value="HL7 UK"></publisher>
+   <contact>
+      <name value="INTEROPen"></name>
+      <telecom>
+         <system value="email"></system>
+         <value value="admin@interopen.org"></value>
+         <use value="work"></use>
+      </telecom>
+   </contact>
+   <description value="The PractitionerRole resource represents a specific set of Roles/Locations/specialties/services that a practitioner may perform at an organization for a period of time."></description>
+   <purpose value="CURATED BY INTEROPen see: http://www.interopen.org/careconnect-curation-methodology/"></purpose>
+   <copyright value="Copyright © 2016 HL7 UK  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.  HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html"></copyright>
+   <fhirVersion value="3.0.1"></fhirVersion>
+   <kind value="resource"></kind>
+   <abstract value="false"></abstract>
+   <type value="PractitionerRole"></type>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"></baseDefinition>
+   <derivation value="constraint"></derivation>
+   <differential>
+      <element id="PractitionerRole.identifier.system">
+         <path value="PractitionerRole.identifier.system"></path>
+         <min value="1"></min>
+      </element>
+      <element id="PractitionerRole.identifier.value">
+         <path value="PractitionerRole.identifier.value"></path>
+         <min value="1"></min>
+      </element>
+      <element id="PractitionerRole.identifier.assigner">
+         <path value="PractitionerRole.identifier.assigner"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="PractitionerRole.practitioner">
+         <path value="PractitionerRole.practitioner"></path>
+         <short value="Practitioner that is able to provide the defined services for the organisation"></short>
+         <definition value="Practitioner that is able to provide the defined services for the organisation."></definition>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+      </element>
+      <element id="PractitionerRole.organization">
+         <path value="PractitionerRole.organization"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="PractitionerRole.code">
+         <path value="PractitionerRole.code"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="coding.system"></path>
+            </discriminator>
+            <ordered value="false"></ordered>
+            <rules value="openAtEnd"></rules>
+         </slicing>
+      </element>
+      <element id="PractitionerRole.code:sdsJobRoleName">
+         <path value="PractitionerRole.code"></path>
+         <sliceName value="sdsJobRoleName"></sliceName>
+         <max value="1"></max>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="PractitionerRole"></valueString>
+            </extension>
+            <strength value="required"></strength>
+            <valueSetReference>
+               <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-SDSJobRoleName-1"></reference>
+            </valueSetReference>
+         </binding>
+      </element>
+      <element id="PractitionerRole.code:sdsJobRoleName.coding">
+         <path value="PractitionerRole.code.coding"></path>
+         <min value="1"></min>
+         <max value="1"></max>
+      </element>
+      <element id="PractitionerRole.code:sdsJobRoleName.coding.system">
+         <path value="PractitionerRole.code.coding.system"></path>
+         <min value="1"></min>
+         <fixedUri value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"></fixedUri>
+      </element>
+      <element id="PractitionerRole.code:sdsJobRoleName.coding.code">
+         <path value="PractitionerRole.code.coding.code"></path>
+         <min value="1"></min>
+      </element>
+      <element id="PractitionerRole.code:sdsJobRoleName.coding.display">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+            <valueBoolean value="true"></valueBoolean>
+         </extension>
+         <path value="PractitionerRole.code.coding.display"></path>
+         <min value="1"></min>
+      </element>
+      <element id="PractitionerRole.location">
+         <path value="PractitionerRole.location"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Location-1"></targetProfile>
+         </type>
+      </element>
+   </differential>
+</StructureDefinition>

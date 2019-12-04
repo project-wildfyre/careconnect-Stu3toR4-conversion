@@ -1,0 +1,196 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="CareConnect-ReferralRequest-1"></id>
+   <url value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1"></url>
+   <version value="1.1.0"></version>
+   <name value="CareConnect-ReferralRequest-1"></name>
+   <status value="draft"></status>
+   <date value="2019-08-07"></date>
+   <publisher value="NHS Digital"></publisher>
+   <contact>
+      <name value="Interoperability Team"></name>
+      <telecom>
+         <system value="email"></system>
+         <value value="interoperabilityteam@nhs.net"></value>
+         <use value="work"></use>
+      </telecom>
+   </contact>
+   <description value="Used to record and send details about a request for referral service or transfer of a patient to the care of another provider or provider organization."></description>
+   <purpose value="CURATED BY INTEROPen see: http://www.interopen.org/careconnect-curation-methodology/ on the 5th July 2019."></purpose>
+   <copyright value="Copyright © 2019 HL7 UK    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at    http://www.apache.org/licenses/LICENSE-2.0    Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.    HL7® FHIR® standard Copyright © 2011+ HL7    The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at    https://www.hl7.org/fhir/license.html"></copyright>
+   <fhirVersion value="3.0.1"></fhirVersion>
+   <kind value="resource"></kind>
+   <abstract value="false"></abstract>
+   <type value="ReferralRequest"></type>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ReferralRequest"></baseDefinition>
+   <derivation value="constraint"></derivation>
+   <differential>
+      <element id="ReferralRequest.extension">
+         <path value="ReferralRequest.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="ReferralRequest.extension:referralRequestMethod">
+         <path value="ReferralRequest.extension"></path>
+         <sliceName value="referralRequestMethod"></sliceName>
+         <max value="1"></max>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ReferralRequestMethod-1"></profile>
+         </type>
+      </element>
+      <element id="ReferralRequest.extension:sourceOfReferral">
+         <path value="ReferralRequest.extension"></path>
+         <sliceName value="sourceOfReferral"></sliceName>
+         <max value="1"></max>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-SourceOfReferral-1"></profile>
+         </type>
+      </element>
+      <element id="ReferralRequest.identifier.system">
+         <path value="ReferralRequest.identifier.system"></path>
+         <min value="1"></min>
+      </element>
+      <element id="ReferralRequest.identifier.value">
+         <path value="ReferralRequest.identifier.value"></path>
+         <min value="1"></min>
+      </element>
+      <element id="ReferralRequest.identifier.assigner">
+         <path value="ReferralRequest.identifier.assigner"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="ReferralRequest.basedOn">
+         <path value="ReferralRequest.basedOn"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-CarePlan-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1"></targetProfile>
+         </type>
+      </element>
+      <element id="ReferralRequest.replaces">
+         <path value="ReferralRequest.replaces"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1"></targetProfile>
+         </type>
+      </element>
+      <element id="ReferralRequest.groupIdentifier.assigner">
+         <path value="ReferralRequest.groupIdentifier.assigner"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="ReferralRequest.subject">
+         <path value="ReferralRequest.subject"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+      </element>
+      <element id="ReferralRequest.context">
+         <path value="ReferralRequest.context"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-EpisodeOfCare-1"></targetProfile>
+         </type>
+      </element>
+      <element id="ReferralRequest.requester.agent">
+         <path value="ReferralRequest.requester.agent"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-RelatedPerson-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+      </element>
+      <element id="ReferralRequest.requester.onBehalfOf">
+         <path value="ReferralRequest.requester.onBehalfOf"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="ReferralRequest.recipient">
+         <path value="ReferralRequest.recipient"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-HealthcareService-1"></targetProfile>
+         </type>
+      </element>
+      <element id="ReferralRequest.reasonReference">
+         <path value="ReferralRequest.reasonReference"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"></targetProfile>
+         </type>
+      </element>
+      <element id="ReferralRequest.note.author[x]">
+         <path value="ReferralRequest.note.author[x]"></path>
+         <type>
+            <code value="string"></code>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-RelatedPerson-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+      </element>
+   </differential>
+</StructureDefinition>

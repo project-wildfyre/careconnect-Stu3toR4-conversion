@@ -1,0 +1,100 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="Extension-CareConnect-RelatedProblemHeader-1"></id>
+   <meta>
+      <lastUpdated value="2018-04-16T13:31:02.095+01:00"></lastUpdated>
+   </meta>
+   <url value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedProblemHeader-1"></url>
+   <version value="1.1.0"></version>
+   <name value="Extension-CareConnect-RelatedProblemHeader-1"></name>
+   <status value="draft"></status>
+   <date value="2019-06-27"></date>
+   <publisher value="HL7 UK"></publisher>
+   <contact>
+      <name value="INTEROPen"></name>
+      <telecom>
+         <system value="email"></system>
+         <value value="admin@interopen.org"></value>
+         <use value="work"></use>
+      </telecom>
+   </contact>
+   <description value="A reference to another related problem header condition (target) whose relationship is defined by the relationship type code."></description>
+   <purpose value="CURATED BY INTEROPen see: http://www.interopen.org/careconnect-curation-methodology/ "></purpose>
+   <copyright value="Copyright © 2019 HL7 UK  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.  HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html"></copyright>
+   <fhirVersion value="3.0.1"></fhirVersion>
+   <kind value="complex-type"></kind>
+   <abstract value="false"></abstract>
+   <contextType value="resource"></contextType>
+   <context value="Condition"></context>
+   <type value="Extension"></type>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"></baseDefinition>
+   <derivation value="constraint"></derivation>
+   <differential>
+      <element id="Extension">
+         <path value="Extension"></path>
+         <short value="Related problem header condition (target)"></short>
+         <definition value="Related problem header condition (target)."></definition>
+      </element>
+      <element id="Extension.extension">
+         <path value="Extension.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="Extension.extension:type">
+         <path value="Extension.extension"></path>
+         <sliceName value="type"></sliceName>
+      </element>
+      <element id="Extension.extension:type.url">
+         <path value="Extension.extension.url"></path>
+         <fixedUri value="type"></fixedUri>
+      </element>
+      <element id="Extension.extension:type.valueCode:valueCode">
+         <path value="Extension.extension.valueCode"></path>
+         <sliceName value="valueCode"></sliceName>
+         <short value="Condition relationship type"></short>
+         <definition value="Condition relationship type."></definition>
+         <type>
+            <code value="code"></code>
+         </type>
+         <binding>
+            <strength value="required"></strength>
+            <description value="A set of codes specifying the kind of relationship that exists with a target problem header condition."></description>
+            <valueSetReference>
+               <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-ConditionRelationship-1"></reference>
+            </valueSetReference>
+         </binding>
+      </element>
+      <element id="Extension.extension:target">
+         <path value="Extension.extension"></path>
+         <sliceName value="target"></sliceName>
+         <min value="1"></min>
+         <max value="1"></max>
+      </element>
+      <element id="Extension.extension:target.url">
+         <path value="Extension.extension.url"></path>
+         <fixedUri value="target"></fixedUri>
+      </element>
+      <element id="Extension.extension:target.valueReference:valueReference">
+         <path value="Extension.extension.valueReference"></path>
+         <sliceName value="valueReference"></sliceName>
+         <short value="Target problem header condition"></short>
+         <definition value="Target problem header condition."></definition>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProblemHeader-Condition-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Extension.url">
+         <path value="Extension.url"></path>
+         <fixedUri value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedProblemHeader-1"></fixedUri>
+      </element>
+      <element id="Extension.value[x]">
+         <path value="Extension.value[x]"></path>
+         <max value="0"></max>
+      </element>
+   </differential>
+</StructureDefinition>

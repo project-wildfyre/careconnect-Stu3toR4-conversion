@@ -1,0 +1,262 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="CareConnect-MedicationStatement-1"></id>
+   <meta>
+      <lastUpdated value="2018-03-06T09:11:22.397+00:00"></lastUpdated>
+   </meta>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+      <valueCode value="phx"></valueCode>
+   </extension>
+   <url value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-1"></url>
+   <version value="1.1.0"></version>
+   <name value="CareConnect-MedicationStatement-1"></name>
+   <status value="draft"></status>
+   <date value="2018-11-05"></date>
+   <publisher value="HL7 UK"></publisher>
+   <contact>
+      <name value="INTEROPen"></name>
+      <telecom>
+         <system value="email"></system>
+         <value value="admin@interopen.org"></value>
+         <use value="work"></use>
+      </telecom>
+   </contact>
+   <description value="This MedicationStatement Resource is a record of a medication that is being consumed by a patient."></description>
+   <purpose value="CURATED BY INTEROPen see: http://www.interopen.org/careconnect-curation-methodology/"></purpose>
+   <copyright value="Copyright © 2016 HL7 UK  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.  HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html"></copyright>
+   <fhirVersion value="3.0.1"></fhirVersion>
+   <kind value="resource"></kind>
+   <abstract value="false"></abstract>
+   <type value="MedicationStatement"></type>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationStatement"></baseDefinition>
+   <derivation value="constraint"></derivation>
+   <differential>
+      <element id="MedicationStatement.extension">
+         <path value="MedicationStatement.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="MedicationStatement.extension:lastIssueDate">
+         <path value="MedicationStatement.extension"></path>
+         <sliceName value="lastIssueDate"></sliceName>
+         <max value="1"></max>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-MedicationStatementLastIssueDate-1"></profile>
+         </type>
+      </element>
+      <element id="MedicationStatement.extension:changeSummary">
+         <path value="MedicationStatement.extension"></path>
+         <sliceName value="changeSummary"></sliceName>
+         <short value="Optional Extensions Element"></short>
+         <definition value="Optional Extension Element - found in all resources."></definition>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-MedicationChangeSummary-1"></profile>
+         </type>
+      </element>
+      <element id="MedicationStatement.identifier.system">
+         <path value="MedicationStatement.identifier.system"></path>
+         <min value="1"></min>
+      </element>
+      <element id="MedicationStatement.identifier.value">
+         <path value="MedicationStatement.identifier.value"></path>
+         <min value="1"></min>
+      </element>
+      <element id="MedicationStatement.identifier.assigner">
+         <path value="MedicationStatement.identifier.assigner"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="MedicationStatement.basedOn">
+         <path value="MedicationStatement.basedOn"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/CarePlan"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/ProcedureRequest"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/ReferralRequest"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1"></targetProfile>
+         </type>
+      </element>
+      <element id="MedicationStatement.partOf">
+         <path value="MedicationStatement.partOf"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationAdministration"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Procedure-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationDispense-1"></targetProfile>
+         </type>
+      </element>
+      <element id="MedicationStatement.context">
+         <path value="MedicationStatement.context"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"></targetProfile>
+         </type>
+      </element>
+      <element id="MedicationStatement.medicationReference:medicationReference">
+         <path value="MedicationStatement.medicationReference"></path>
+         <sliceName value="medicationReference"></sliceName>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"></targetProfile>
+         </type>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="MedicationCode"></valueString>
+            </extension>
+            <strength value="example"></strength>
+            <valueSetUri value="http://hl7.org/fhir/ValueSet/medication-codes"></valueSetUri>
+         </binding>
+      </element>
+      <element id="MedicationStatement.informationSource">
+         <path value="MedicationStatement.informationSource"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+      </element>
+      <element id="MedicationStatement.subject">
+         <path value="MedicationStatement.subject"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+      </element>
+      <element id="MedicationStatement.reasonReference">
+         <path value="MedicationStatement.reasonReference"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"></targetProfile>
+         </type>
+      </element>
+      <element id="MedicationStatement.note.author[x]">
+         <path value="MedicationStatement.note.author[x]"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"></targetProfile>
+         </type>
+         <type>
+            <code value="string"></code>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+      </element>
+      <element id="MedicationStatement.dosage.route.coding">
+         <path value="MedicationStatement.dosage.route.coding"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="system"></path>
+            </discriminator>
+            <ordered value="false"></ordered>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="MedicationStatement.dosage.route.coding:snomedCT">
+         <path value="MedicationStatement.dosage.route.coding"></path>
+         <sliceName value="snomedCT"></sliceName>
+         <max value="1"></max>
+         <binding>
+            <strength value="example"></strength>
+            <description value="A code from the SNOMED Clinical Terminology UK coding system that describes the e-Prescribing route of administration."></description>
+            <valueSetReference>
+               <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-MedicationDosageRoute-1"></reference>
+            </valueSetReference>
+         </binding>
+      </element>
+      <element id="MedicationStatement.dosage.route.coding:snomedCT.extension">
+         <path value="MedicationStatement.dosage.route.coding.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="MedicationStatement.dosage.route.coding:snomedCT.extension:snomedCTDescriptionID">
+         <path value="MedicationStatement.dosage.route.coding.extension"></path>
+         <sliceName value="snomedCTDescriptionID"></sliceName>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid"></profile>
+         </type>
+      </element>
+      <element id="MedicationStatement.dosage.route.coding:snomedCT.system">
+         <path value="MedicationStatement.dosage.route.coding.system"></path>
+         <min value="1"></min>
+         <fixedUri value="http://snomed.info/sct"></fixedUri>
+      </element>
+      <element id="MedicationStatement.dosage.route.coding:snomedCT.code">
+         <path value="MedicationStatement.dosage.route.coding.code"></path>
+         <min value="1"></min>
+      </element>
+      <element id="MedicationStatement.dosage.route.coding:snomedCT.display">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+            <valueBoolean value="true"></valueBoolean>
+         </extension>
+         <path value="MedicationStatement.dosage.route.coding.display"></path>
+         <min value="1"></min>
+      </element>
+   </differential>
+</StructureDefinition>

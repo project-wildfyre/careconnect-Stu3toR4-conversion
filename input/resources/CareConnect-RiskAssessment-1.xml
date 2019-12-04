@@ -1,0 +1,75 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="CareConnect-RiskAssessment-1"></id>
+   <url value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-RiskAssessment-1"></url>
+   <version value="1.0.0"></version>
+   <name value="CareConnect-RiskAssessment-1"></name>
+   <status value="draft"></status>
+   <date value="2019-03-04T15:13:38.35+00:00"></date>
+   <publisher value="NHS Digital"></publisher>
+   <contact>
+      <name value="Interoperability Team"></name>
+      <telecom>
+         <system value="email"></system>
+         <value value="interoperabilityteam@nhs.net"></value>
+         <use value="work"></use>
+      </telecom>
+   </contact>
+   <description value="An assessment of the likely outcome(s) for a patient or other subject as well as the likelihood of each outcome."></description>
+   <purpose value="[NOT CURATED BY INTEROPEN see: http://www.interopen.org/careconnect-curation-methodology/] Initial development for the Digital Maternity programme"></purpose>
+   <copyright value="Copyright © 2016 HL7 UK    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at    http://www.apache.org/licenses/LICENSE-2.0    Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.    HL7® FHIR® standard Copyright © 2011+ HL7    The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at    https://www.hl7.org/fhir/license.html"></copyright>
+   <fhirVersion value="3.0.1"></fhirVersion>
+   <kind value="resource"></kind>
+   <abstract value="false"></abstract>
+   <type value="RiskAssessment"></type>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/RiskAssessment"></baseDefinition>
+   <derivation value="constraint"></derivation>
+   <differential>
+      <element id="RiskAssessment.identifier.assigner">
+         <path value="RiskAssessment.identifier.assigner"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="RiskAssessment.subject">
+         <path value="RiskAssessment.subject"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+      </element>
+      <element id="RiskAssessment.context">
+         <path value="RiskAssessment.context"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-EpisodeOfCare-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"></targetProfile>
+         </type>
+      </element>
+      <element id="RiskAssessment.condition">
+         <path value="RiskAssessment.condition"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"></targetProfile>
+         </type>
+      </element>
+      <element id="RiskAssessment.performer">
+         <path value="RiskAssessment.performer"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+      </element>
+   </differential>
+</StructureDefinition>

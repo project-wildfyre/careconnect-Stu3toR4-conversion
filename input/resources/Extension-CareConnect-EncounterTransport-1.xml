@@ -1,0 +1,112 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="Extension-CareConnect-EncounterTransport-1"></id>
+   <meta>
+      <lastUpdated value="2018-02-20T08:47:20.046+00:00"></lastUpdated>
+   </meta>
+   <url value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-EncounterTransport-1"></url>
+   <version value="1.1.0"></version>
+   <name value="Extension-CareConnect-EncounterTransport-1"></name>
+   <status value="draft"></status>
+   <date value="2018-11-05"></date>
+   <publisher value="HL7 UK"></publisher>
+   <contact>
+      <name value="INTEROPen"></name>
+      <telecom>
+         <system value="email"></system>
+         <value value="admin@interopen.org"></value>
+         <use value="work"></use>
+      </telecom>
+   </contact>
+   <description value="An extension to the Encounter resource to include the Transport used by the subject for an encounter."></description>
+   <purpose value="CURATED BY INTEROPen see: http://www.interopen.org/careconnect-curation-methodology/"></purpose>
+   <copyright value="Copyright © 2016 HL7 UK  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.  HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html"></copyright>
+   <fhirVersion value="3.0.1"></fhirVersion>
+   <kind value="complex-type"></kind>
+   <abstract value="false"></abstract>
+   <contextType value="resource"></contextType>
+   <context value="Encounter"></context>
+   <type value="Extension"></type>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"></baseDefinition>
+   <derivation value="constraint"></derivation>
+   <differential>
+      <element id="Extension">
+         <path value="Extension"></path>
+         <short value="Encounter transport"></short>
+         <definition value="Encounter transport."></definition>
+         <max value="1"></max>
+      </element>
+      <element id="Extension.extension">
+         <path value="Extension.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="Extension.extension:transportType">
+         <path value="Extension.extension"></path>
+         <sliceName value="transportType"></sliceName>
+         <min value="1"></min>
+         <max value="1"></max>
+      </element>
+      <element id="Extension.extension:transportType.url">
+         <path value="Extension.extension.url"></path>
+         <fixedUri value="transportType"></fixedUri>
+      </element>
+      <element id="Extension.extension:transportType.valueCodeableConcept:valueCodeableConcept">
+         <path value="Extension.extension.valueCodeableConcept"></path>
+         <sliceName value="valueCodeableConcept"></sliceName>
+         <short value="Transport Type"></short>
+         <definition value="Transport Type."></definition>
+         <type>
+            <code value="CodeableConcept"></code>
+         </type>
+      </element>
+      <element id="Extension.extension:transportPeriod">
+         <path value="Extension.extension"></path>
+         <sliceName value="transportPeriod"></sliceName>
+         <max value="1"></max>
+      </element>
+      <element id="Extension.extension:transportPeriod.url">
+         <path value="Extension.extension.url"></path>
+         <fixedUri value="transportPeriod"></fixedUri>
+      </element>
+      <element id="Extension.extension:transportPeriod.valuePeriod:valuePeriod">
+         <path value="Extension.extension.valuePeriod"></path>
+         <sliceName value="valuePeriod"></sliceName>
+         <short value="Transport Period"></short>
+         <definition value="Transport Period."></definition>
+         <type>
+            <code value="Period"></code>
+         </type>
+      </element>
+      <element id="Extension.extension:reasonForTransport">
+         <path value="Extension.extension"></path>
+         <sliceName value="reasonForTransport"></sliceName>
+         <max value="1"></max>
+      </element>
+      <element id="Extension.extension:reasonForTransport.url">
+         <path value="Extension.extension.url"></path>
+         <fixedUri value="reasonForTransport"></fixedUri>
+      </element>
+      <element id="Extension.extension:reasonForTransport.valueString:valueString">
+         <path value="Extension.extension.valueString"></path>
+         <sliceName value="valueString"></sliceName>
+         <short value="Reason for transport"></short>
+         <definition value="Reason for transport."></definition>
+         <type>
+            <code value="string"></code>
+         </type>
+      </element>
+      <element id="Extension.url">
+         <path value="Extension.url"></path>
+         <fixedUri value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-EncounterTransport-1"></fixedUri>
+      </element>
+      <element id="Extension.value[x]">
+         <path value="Extension.value[x]"></path>
+         <max value="0"></max>
+      </element>
+   </differential>
+</StructureDefinition>

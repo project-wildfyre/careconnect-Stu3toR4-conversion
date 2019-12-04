@@ -1,0 +1,196 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="CareConnect-MedicationDispense-1"></id>
+   <meta>
+      <lastUpdated value="2018-07-11T16:43:07.748+01:00"></lastUpdated>
+   </meta>
+   <url value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationDispense-1"></url>
+   <version value="1.2.0"></version>
+   <name value="CareConnect-MedicationDispense-1"></name>
+   <status value="draft"></status>
+   <date value="2019-06-14"></date>
+   <publisher value="HL7 UK"></publisher>
+   <contact>
+      <name value="INTEROPen"></name>
+      <telecom>
+         <system value="email"></system>
+         <value value="admin@interopen.org"></value>
+         <use value="work"></use>
+      </telecom>
+   </contact>
+   <description value="Indicates that a medication product is to be or has been dispensed for a named person/patient."></description>
+   <purpose value="CURATED BY INTEROPen see: http://www.interopen.org/careconnect-curation-methodology/ "></purpose>
+   <copyright value="Copyright © 2019 HL7 UK  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.  HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html"></copyright>
+   <fhirVersion value="3.0.1"></fhirVersion>
+   <kind value="resource"></kind>
+   <abstract value="false"></abstract>
+   <type value="MedicationDispense"></type>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationDispense"></baseDefinition>
+   <derivation value="constraint"></derivation>
+   <differential>
+      <element id="MedicationDispense.identifier.system">
+         <path value="MedicationDispense.identifier.system"></path>
+         <min value="1"></min>
+      </element>
+      <element id="MedicationDispense.identifier.value">
+         <path value="MedicationDispense.identifier.value"></path>
+         <min value="1"></min>
+      </element>
+      <element id="MedicationDispense.identifier.assigner">
+         <path value="MedicationDispense.identifier.assigner"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="MedicationDispense.partOf">
+         <path value="MedicationDispense.partOf"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Procedure-1"></targetProfile>
+         </type>
+      </element>
+      <element id="MedicationDispense.medicationReference:medicationReference">
+         <path value="MedicationDispense.medicationReference"></path>
+         <sliceName value="medicationReference"></sliceName>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"></targetProfile>
+         </type>
+      </element>
+      <element id="MedicationDispense.subject">
+         <path value="MedicationDispense.subject"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+      </element>
+      <element id="MedicationDispense.context">
+         <path value="MedicationDispense.context"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-EpisodeOfCare-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"></targetProfile>
+         </type>
+      </element>
+      <element id="MedicationDispense.performer.actor">
+         <path value="MedicationDispense.performer.actor"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-RelatedPerson-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+      </element>
+      <element id="MedicationDispense.performer.onBehalfOf">
+         <path value="MedicationDispense.performer.onBehalfOf"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="MedicationDispense.authorizingPrescription">
+         <path value="MedicationDispense.authorizingPrescription"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1"></targetProfile>
+         </type>
+      </element>
+      <element id="MedicationDispense.type">
+         <path value="MedicationDispense.type"></path>
+         <short value="To identify the type of medication supply."></short>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="MedicationDispenseType"></valueString>
+            </extension>
+            <strength value="preferred"></strength>
+            <description value="A ValueSet to identify the type of medication supply."></description>
+            <valueSetReference>
+               <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-MedicationSupplyType-1"></reference>
+            </valueSetReference>
+         </binding>
+      </element>
+      <element id="MedicationDispense.quantity.extension">
+         <path value="MedicationDispense.quantity.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="MedicationDispense.quantity.extension:quantityText">
+         <path value="MedicationDispense.quantity.extension"></path>
+         <sliceName value="quantityText"></sliceName>
+         <max value="1"></max>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-MedicationQuantityText-1"></profile>
+         </type>
+      </element>
+      <element id="MedicationDispense.destination">
+         <path value="MedicationDispense.destination"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Location-1"></targetProfile>
+         </type>
+      </element>
+      <element id="MedicationDispense.receiver">
+         <path value="MedicationDispense.receiver"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+      </element>
+      <element id="MedicationDispense.note.author[x]">
+         <path value="MedicationDispense.note.author[x]"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-RelatedPerson-1"></targetProfile>
+         </type>
+         <type>
+            <code value="string"></code>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+      </element>
+      <element id="MedicationDispense.substitution.responsibleParty">
+         <path value="MedicationDispense.substitution.responsibleParty"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+      </element>
+   </differential>
+</StructureDefinition>

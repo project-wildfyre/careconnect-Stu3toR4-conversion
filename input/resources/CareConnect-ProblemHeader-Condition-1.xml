@@ -1,0 +1,261 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="CareConnect-ProblemHeader-Condition-1"></id>
+   <meta>
+      <lastUpdated value="2018-05-03T16:00:16.332+01:00"></lastUpdated>
+   </meta>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+      <valueCode value="pc"></valueCode>
+   </extension>
+   <url value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProblemHeader-Condition-1"></url>
+   <version value="1.1.0"></version>
+   <name value="CareConnect-ProblemHeader-Condition-1"></name>
+   <status value="draft"></status>
+   <date value="2019-06-19"></date>
+   <publisher value="HL7 UK"></publisher>
+   <contact>
+      <name value="INTEROPen"></name>
+      <telecom>
+         <system value="email"></system>
+         <value value="admin@interopen.org"></value>
+         <use value="work"></use>
+      </telecom>
+   </contact>
+   <description value="This Condition resource records detailed information about conditions or diagnoses recognised by a clinician."></description>
+   <purpose value="CURATED BY INTEROPen see: http://www.interopen.org/careconnect-curation-methodology/ "></purpose>
+   <copyright value="Copyright © 2019 HL7 UK  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.  HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html"></copyright>
+   <fhirVersion value="3.0.1"></fhirVersion>
+   <kind value="resource"></kind>
+   <abstract value="false"></abstract>
+   <type value="Condition"></type>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Condition"></baseDefinition>
+   <derivation value="constraint"></derivation>
+   <differential>
+      <element id="Condition.extension">
+         <path value="Condition.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="Condition.extension:actualProblem">
+         <path value="Condition.extension"></path>
+         <sliceName value="actualProblem"></sliceName>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ActualProblem-1"></profile>
+         </type>
+      </element>
+      <element id="Condition.extension:relatedProblemHeader">
+         <path value="Condition.extension"></path>
+         <sliceName value="relatedProblemHeader"></sliceName>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedProblemHeader-1"></profile>
+         </type>
+      </element>
+      <element id="Condition.extension:problemSignificance">
+         <path value="Condition.extension"></path>
+         <sliceName value="problemSignificance"></sliceName>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ProblemSignificance-1"></profile>
+         </type>
+      </element>
+      <element id="Condition.extension:relatedClinicalContent">
+         <path value="Condition.extension"></path>
+         <sliceName value="relatedClinicalContent"></sliceName>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1"></profile>
+         </type>
+      </element>
+      <element id="Condition.identifier.system">
+         <path value="Condition.identifier.system"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Condition.identifier.value">
+         <path value="Condition.identifier.value"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Condition.identifier.assigner">
+         <path value="Condition.identifier.assigner"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Condition.clinicalStatus">
+         <path value="Condition.clinicalStatus"></path>
+         <short value="active | inactive"></short>
+      </element>
+      <element id="Condition.category">
+         <path value="Condition.category"></path>
+         <short value="problem-list-item | encounter-diagnosis | presenting-complaint"></short>
+         <min value="1"></min>
+         <max value="1"></max>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="ConditionCategory"></valueString>
+            </extension>
+            <strength value="extensible"></strength>
+            <valueSetReference>
+               <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-ConditionCategory-1"></reference>
+            </valueSetReference>
+         </binding>
+      </element>
+      <element id="Condition.category.coding.system">
+         <path value="Condition.category.coding.system"></path>
+         <min value="1"></min>
+         <fixedUri value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1"></fixedUri>
+      </element>
+      <element id="Condition.category.coding.code">
+         <path value="Condition.category.coding.code"></path>
+         <min value="1"></min>
+         <fixedCode value="problem-list-item"></fixedCode>
+      </element>
+      <element id="Condition.category.coding.display">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+            <valueBoolean value="true"></valueBoolean>
+         </extension>
+         <path value="Condition.category.coding.display"></path>
+         <min value="1"></min>
+         <fixedString value=" Problem List Item"></fixedString>
+      </element>
+      <element id="Condition.severity">
+         <path value="Condition.severity"></path>
+         <max value="0"></max>
+      </element>
+      <element id="Condition.code.coding">
+         <path value="Condition.code.coding"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="system"></path>
+            </discriminator>
+            <ordered value="false"></ordered>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="Condition.code.coding:snomedCT">
+         <path value="Condition.code.coding"></path>
+         <sliceName value="snomedCT"></sliceName>
+         <max value="1"></max>
+         <binding>
+            <strength value="required"></strength>
+            <description value="A code from the SNOMED Clinical Terminology UK"></description>
+            <valueSetReference>
+               <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-ConditionCode-1"></reference>
+            </valueSetReference>
+         </binding>
+      </element>
+      <element id="Condition.code.coding:snomedCT.extension">
+         <path value="Condition.code.coding.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="Condition.code.coding:snomedCT.extension:snomedCTDescriptionID">
+         <path value="Condition.code.coding.extension"></path>
+         <sliceName value="snomedCTDescriptionID"></sliceName>
+         <short value="The SNOMED CT Description ID for the display"></short>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid"></profile>
+         </type>
+      </element>
+      <element id="Condition.code.coding:snomedCT.system">
+         <path value="Condition.code.coding.system"></path>
+         <min value="1"></min>
+         <fixedUri value="http://snomed.info/sct"></fixedUri>
+      </element>
+      <element id="Condition.code.coding:snomedCT.version">
+         <path value="Condition.code.coding.version"></path>
+         <max value="0"></max>
+      </element>
+      <element id="Condition.code.coding:snomedCT.code">
+         <path value="Condition.code.coding.code"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Condition.code.coding:snomedCT.display">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+            <valueBoolean value="true"></valueBoolean>
+         </extension>
+         <path value="Condition.code.coding.display"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Condition.bodySite">
+         <path value="Condition.bodySite"></path>
+         <max value="0"></max>
+      </element>
+      <element id="Condition.subject">
+         <path value="Condition.subject"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Condition.context">
+         <path value="Condition.context"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-EpisodeOfCare-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Condition.asserter">
+         <path value="Condition.asserter"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-RelatedPerson-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Condition.stage">
+         <path value="Condition.stage"></path>
+         <max value="0"></max>
+      </element>
+      <element id="Condition.evidence">
+         <path value="Condition.evidence"></path>
+         <max value="0"></max>
+      </element>
+      <element id="Condition.note.author[x]">
+         <path value="Condition.note.author[x]"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-RelatedPerson-1"></targetProfile>
+         </type>
+         <type>
+            <code value="string"></code>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+      </element>
+   </differential>
+</StructureDefinition>

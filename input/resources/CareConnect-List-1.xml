@@ -1,0 +1,156 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="CareConnect-List-1"></id>
+   <meta>
+      <lastUpdated value="2018-05-10T14:14:34.695+01:00"></lastUpdated>
+   </meta>
+   <url value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-List-1"></url>
+   <version value="1.3.0"></version>
+   <name value="CareConnect-List-1"></name>
+   <status value="draft"></status>
+   <date value="2019-06-27"></date>
+   <publisher value="HL7 UK"></publisher>
+   <contact>
+      <name value="INTEROPen"></name>
+      <telecom>
+         <system value="email"></system>
+         <value value="admin@interopen.org"></value>
+         <use value="work"></use>
+      </telecom>
+   </contact>
+   <description value="The List resource is a flat, possibly ordered collection of records. List resources are used in many places, including allergies, medications, alerts, family history, medical history, etc. List resources can be used to support patient-specific clinical lists as well as lists that manage workflows such as tracking patients, managing teaching cases, etc."></description>
+   <purpose value="CURATED BY INTEROPen see: http://www.interopen.org/careconnect-curation-methodology/ "></purpose>
+   <copyright value="Copyright © 2019 HL7 UK  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.  HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html"></copyright>
+   <fhirVersion value="3.0.1"></fhirVersion>
+   <kind value="resource"></kind>
+   <abstract value="false"></abstract>
+   <type value="List"></type>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/List"></baseDefinition>
+   <derivation value="constraint"></derivation>
+   <differential>
+      <element id="List.extension">
+         <path value="List.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="List.extension:clinicalSetting">
+         <path value="List.extension"></path>
+         <sliceName value="clinicalSetting"></sliceName>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ClinicalSetting-1"></profile>
+         </type>
+         <mustSupport value="false"></mustSupport>
+      </element>
+      <element id="List.extension:warningCode">
+         <path value="List.extension"></path>
+         <sliceName value="warningCode"></sliceName>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ListWarningCode-1"></profile>
+         </type>
+      </element>
+      <element id="List.identifier.system">
+         <path value="List.identifier.system"></path>
+         <min value="1"></min>
+      </element>
+      <element id="List.identifier.value">
+         <path value="List.identifier.value"></path>
+         <min value="1"></min>
+      </element>
+      <element id="List.identifier.assigner">
+         <path value="List.identifier.assigner"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="List.code">
+         <path value="List.code"></path>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="ListPurpose"></valueString>
+            </extension>
+            <strength value="preferred"></strength>
+            <valueSetReference>
+               <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-ListCode-1"></reference>
+            </valueSetReference>
+         </binding>
+      </element>
+      <element id="List.subject">
+         <path value="List.subject"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Location-1"></targetProfile>
+         </type>
+      </element>
+      <element id="List.encounter">
+         <path value="List.encounter"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"></targetProfile>
+         </type>
+      </element>
+      <element id="List.source">
+         <path value="List.source"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+      </element>
+      <element id="List.note.author[x]">
+         <path value="List.note.author[x]"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"></targetProfile>
+         </type>
+         <type>
+            <code value="string"></code>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+      </element>
+      <element id="List.emptyReason">
+         <path value="List.emptyReason"></path>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="ListEmptyReason"></valueString>
+            </extension>
+            <strength value="preferred"></strength>
+            <valueSetReference>
+               <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-ListEmptyReasonCode-1"></reference>
+            </valueSetReference>
+         </binding>
+      </element>
+   </differential>
+</StructureDefinition>

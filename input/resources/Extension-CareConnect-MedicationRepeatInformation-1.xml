@@ -1,0 +1,118 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="Extension-CareConnect-MedicationRepeatInformation-1"></id>
+   <meta>
+      <lastUpdated value="2018-03-06T09:11:13.51+00:00"></lastUpdated>
+   </meta>
+   <url value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-MedicationRepeatInformation-1"></url>
+   <version value="1.2.0"></version>
+   <name value="Extension-CareConnect-MedicationRepeatInformation-1"></name>
+   <status value="draft"></status>
+   <date value="2019-11-22"></date>
+   <publisher value="HL7 UK"></publisher>
+   <contact>
+      <name value="INTEROPen"></name>
+      <telecom>
+         <system value="email"></system>
+         <value value="admin@interopen.org"></value>
+         <use value="work"></use>
+      </telecom>
+   </contact>
+   <description value="Indicates the specific repeat information of a medication item."></description>
+   <purpose value="CURATED BY INTEROPen see: http://www.interopen.org/careconnect-curation-methodology/"></purpose>
+   <copyright value="Copyright © 2019 HL7 UK  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.  HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html"></copyright>
+   <fhirVersion value="3.0.1"></fhirVersion>
+   <kind value="complex-type"></kind>
+   <abstract value="false"></abstract>
+   <contextType value="resource"></contextType>
+   <context value="MedicationRequest"></context>
+   <type value="Extension"></type>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"></baseDefinition>
+   <derivation value="constraint"></derivation>
+   <differential>
+      <element id="Extension">
+         <path value="Extension"></path>
+         <short value="Medication repeat information"></short>
+         <definition value="Medication repeat information."></definition>
+         <max value="1"></max>
+      </element>
+      <element id="Extension.extension">
+         <path value="Extension.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="Extension.extension:numberOfRepeatPrescriptionsAllowed">
+         <path value="Extension.extension"></path>
+         <sliceName value="numberOfRepeatPrescriptionsAllowed"></sliceName>
+         <short value="Number of repeat prescriptions authorised"></short>
+         <definition value="Number of repeat prescriptions authorised."></definition>
+         <max value="1"></max>
+      </element>
+      <element id="Extension.extension:numberOfRepeatPrescriptionsAllowed.url">
+         <path value="Extension.extension.url"></path>
+         <fixedUri value="numberOfRepeatPrescriptionsAllowed"></fixedUri>
+      </element>
+      <element id="Extension.extension:numberOfRepeatPrescriptionsAllowed.valueUnsignedInt:valueUnsignedInt">
+         <path value="Extension.extension.valueUnsignedInt"></path>
+         <sliceName value="valueUnsignedInt"></sliceName>
+         <short value="Number of issues authorised"></short>
+         <definition value="Number of issues authorised."></definition>
+         <min value="1"></min>
+         <type>
+            <code value="unsignedInt"></code>
+         </type>
+      </element>
+      <element id="Extension.extension:numberOfRepeatPrescriptionsIssued">
+         <path value="Extension.extension"></path>
+         <sliceName value="numberOfRepeatPrescriptionsIssued"></sliceName>
+         <short value="Number of repeat prescriptions issued"></short>
+         <definition value="Number of repeat prescriptions issued."></definition>
+         <max value="1"></max>
+      </element>
+      <element id="Extension.extension:numberOfRepeatPrescriptionsIssued.url">
+         <path value="Extension.extension.url"></path>
+         <fixedUri value="numberOfRepeatPrescriptionsIssued"></fixedUri>
+      </element>
+      <element id="Extension.extension:numberOfRepeatPrescriptionsIssued.valueUnsignedInt:valueUnsignedInt">
+         <path value="Extension.extension.valueUnsignedInt"></path>
+         <sliceName value="valueUnsignedInt"></sliceName>
+         <short value="Number of issues issued"></short>
+         <definition value="Number of issues issued."></definition>
+         <type>
+            <code value="unsignedInt"></code>
+         </type>
+      </element>
+      <element id="Extension.extension:authorisationExpiryDate">
+         <path value="Extension.extension"></path>
+         <sliceName value="authorisationExpiryDate"></sliceName>
+         <short value="Repeat prescription review date"></short>
+         <definition value="Repeat prescription review date."></definition>
+         <max value="1"></max>
+      </element>
+      <element id="Extension.extension:authorisationExpiryDate.url">
+         <path value="Extension.extension.url"></path>
+         <fixedUri value="authorisationExpiryDate"></fixedUri>
+      </element>
+      <element id="Extension.extension:authorisationExpiryDate.valueDateTime:valueDateTime">
+         <path value="Extension.extension.valueDateTime"></path>
+         <sliceName value="valueDateTime"></sliceName>
+         <short value="Repeat review date"></short>
+         <definition value="Repeat review date."></definition>
+         <type>
+            <code value="dateTime"></code>
+         </type>
+      </element>
+      <element id="Extension.url">
+         <path value="Extension.url"></path>
+         <fixedUri value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-MedicationRepeatInformation-1"></fixedUri>
+      </element>
+      <element id="Extension.value[x]">
+         <path value="Extension.value[x]"></path>
+         <max value="0"></max>
+      </element>
+   </differential>
+</StructureDefinition>

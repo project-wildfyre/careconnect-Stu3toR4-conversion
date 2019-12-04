@@ -1,0 +1,109 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="Extension-CareConnect-DeathNotificationStatus-1"></id>
+   <meta>
+      <lastUpdated value="2018-02-20T15:00:37.531+00:00"></lastUpdated>
+   </meta>
+   <url value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DeathNotificationStatus-1"></url>
+   <version value="1.1.0"></version>
+   <name value="Extension-CareConnect-DeathNotificationStatus-1"></name>
+   <status value="draft"></status>
+   <date value="2018-11-05"></date>
+   <publisher value="HL7 UK"></publisher>
+   <contact>
+      <name value="INTEROPen"></name>
+      <telecom>
+         <system value="email"></system>
+         <value value="admin@interopen.org"></value>
+         <use value="work"></use>
+      </telecom>
+   </contact>
+   <description value="This extension is constrained to represent a patient’s death notification (as held on Personal Demographics Service (PDS))."></description>
+   <purpose value="CURATED BY INTEROPen see: http://www.interopen.org/careconnect-curation-methodology/"></purpose>
+   <copyright value="Copyright © 2016 HL7 UK  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.  HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html"></copyright>
+   <fhirVersion value="3.0.1"></fhirVersion>
+   <kind value="complex-type"></kind>
+   <abstract value="false"></abstract>
+   <contextType value="resource"></contextType>
+   <context value="Patient"></context>
+   <type value="Extension"></type>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"></baseDefinition>
+   <derivation value="constraint"></derivation>
+   <differential>
+      <element id="Extension">
+         <path value="Extension"></path>
+         <short value="Representation of a patient’s death notification status (as held on Personal Demographics Service (PDS))"></short>
+         <definition value="This extension is constrained to represent a patient’s death notification (as held on Personal Demographics Service (PDS))."></definition>
+      </element>
+      <element id="Extension.extension">
+         <path value="Extension.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="Extension.extension:deathNotificationStatus">
+         <path value="Extension.extension"></path>
+         <sliceName value="deathNotificationStatus"></sliceName>
+         <short value="To identify the type of death notice as held on Personal Demographics Service (PDS)"></short>
+         <definition value="To identify the type of death notice as held on Personal Demographics Service (PDS)."></definition>
+         <min value="1"></min>
+         <max value="1"></max>
+      </element>
+      <element id="Extension.extension:deathNotificationStatus.url">
+         <path value="Extension.extension.url"></path>
+         <fixedUri value="deathNotificationStatus"></fixedUri>
+      </element>
+      <element id="Extension.extension:deathNotificationStatus.valueCodeableConcept:valueCodeableConcept">
+         <path value="Extension.extension.valueCodeableConcept"></path>
+         <sliceName value="valueCodeableConcept"></sliceName>
+         <short value="To identify the type of death notice as held on Personal Demographics Service (PDS)"></short>
+         <definition value="To identify the type of death notice as held on Personal Demographics Service (PDS)."></definition>
+         <min value="1"></min>
+         <type>
+            <code value="CodeableConcept"></code>
+         </type>
+         <binding>
+            <strength value="required"></strength>
+            <description value="To identify the type of death notice as held on Personal Demographics Service (PDS)."></description>
+            <valueSetReference>
+               <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-DeathNotificationStatus-1"></reference>
+            </valueSetReference>
+         </binding>
+      </element>
+      <element id="Extension.extension:deathNotificationStatus.valueCodeableConcept:valueCodeableConcept.coding.system">
+         <path value="Extension.extension.valueCodeableConcept.coding.system"></path>
+         <fixedUri value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-DeathNotificationStatus-1"></fixedUri>
+      </element>
+      <element id="Extension.extension:systemEffectiveDate">
+         <path value="Extension.extension"></path>
+         <sliceName value="systemEffectiveDate"></sliceName>
+         <short value="System effective date for the death notification status"></short>
+         <definition value="System effective date for the death notification status."></definition>
+         <max value="1"></max>
+      </element>
+      <element id="Extension.extension:systemEffectiveDate.url">
+         <path value="Extension.extension.url"></path>
+         <fixedUri value="systemEffectiveDate"></fixedUri>
+      </element>
+      <element id="Extension.extension:systemEffectiveDate.valueDateTime:valueDateTime">
+         <path value="Extension.extension.valueDateTime"></path>
+         <sliceName value="valueDateTime"></sliceName>
+         <short value="System effective date"></short>
+         <definition value="System effective date for the death notification status"></definition>
+         <type>
+            <code value="dateTime"></code>
+         </type>
+      </element>
+      <element id="Extension.url">
+         <path value="Extension.url"></path>
+         <fixedUri value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DeathNotificationStatus-1"></fixedUri>
+      </element>
+      <element id="Extension.value[x]">
+         <path value="Extension.value[x]"></path>
+         <max value="0"></max>
+      </element>
+   </differential>
+</StructureDefinition>

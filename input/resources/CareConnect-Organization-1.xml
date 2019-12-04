@@ -1,0 +1,130 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="CareConnect-Organization-1"></id>
+   <meta>
+      <lastUpdated value="2018-02-05T14:49:01.808+00:00"></lastUpdated>
+   </meta>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+      <valueCode value="pa"></valueCode>
+   </extension>
+   <url value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></url>
+   <version value="1.1.0"></version>
+   <name value="CareConnect-Organization-1"></name>
+   <status value="draft"></status>
+   <date value="2018-11-05"></date>
+   <publisher value="HL7 UK"></publisher>
+   <contact>
+      <name value="INTEROPen"></name>
+      <telecom>
+         <system value="email"></system>
+         <value value="admin@interopen.org"></value>
+         <use value="work"></use>
+      </telecom>
+   </contact>
+   <description value="The Organization resource represents the organisation that employs the healthcare professional."></description>
+   <purpose value="CURATED BY INTEROPen see: http://www.interopen.org/careconnect-curation-methodology/"></purpose>
+   <copyright value="Copyright © 2016 HL7 UK  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.  HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html"></copyright>
+   <fhirVersion value="3.0.1"></fhirVersion>
+   <kind value="resource"></kind>
+   <abstract value="false"></abstract>
+   <type value="Organization"></type>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization"></baseDefinition>
+   <derivation value="constraint"></derivation>
+   <differential>
+      <element id="Organization.extension">
+         <path value="Organization.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="Organization.extension:mainLocation">
+         <path value="Organization.extension"></path>
+         <sliceName value="mainLocation"></sliceName>
+         <max value="1"></max>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-MainLocation-1"></profile>
+         </type>
+      </element>
+      <element id="Organization.extension:organization-period">
+         <path value="Organization.extension"></path>
+         <sliceName value="organization-period"></sliceName>
+         <max value="1"></max>
+         <type>
+            <code value="Extension"></code>
+            <profile value="http://hl7.org/fhir/StructureDefinition/organization-period"></profile>
+         </type>
+      </element>
+      <element id="Organization.identifier">
+         <path value="Organization.identifier"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="system"></path>
+            </discriminator>
+            <ordered value="false"></ordered>
+            <rules value="openAtEnd"></rules>
+         </slicing>
+      </element>
+      <element id="Organization.identifier:odsOrganisationCode">
+         <path value="Organization.identifier"></path>
+         <sliceName value="odsOrganisationCode"></sliceName>
+         <short value="Organisation Data Service code"></short>
+         <definition value="Identifier code supplier by the Organisation Data Service"></definition>
+         <max value="1"></max>
+      </element>
+      <element id="Organization.identifier:odsOrganisationCode.system">
+         <path value="Organization.identifier.system"></path>
+         <min value="1"></min>
+         <fixedUri value="https://fhir.nhs.uk/Id/ods-organization-code"></fixedUri>
+      </element>
+      <element id="Organization.identifier:odsOrganisationCode.value">
+         <path value="Organization.identifier.value"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Organization.identifier:odsOrganisationCode.assigner">
+         <path value="Organization.identifier.assigner"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Organization.identifier:odsSiteCode">
+         <path value="Organization.identifier"></path>
+         <sliceName value="odsSiteCode"></sliceName>
+         <short value="ODS Site code to identify the organisation at site level"></short>
+         <definition value="ODS Site code to identify the organisation at site level"></definition>
+         <max value="1"></max>
+      </element>
+      <element id="Organization.identifier:odsSiteCode.system">
+         <path value="Organization.identifier.system"></path>
+         <min value="1"></min>
+         <fixedUri value="https://fhir.nhs.uk/Id/ods-site-code"></fixedUri>
+      </element>
+      <element id="Organization.identifier:odsSiteCode.value">
+         <path value="Organization.identifier.value"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Organization.identifier:odsSiteCode.assigner">
+         <path value="Organization.identifier.assigner"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Organization.partOf">
+         <path value="Organization.partOf"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Organization.contact.name.family">
+         <path value="Organization.contact.name.family"></path>
+         <min value="1"></min>
+      </element>
+   </differential>
+</StructureDefinition>

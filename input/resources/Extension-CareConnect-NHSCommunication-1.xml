@@ -1,0 +1,177 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="Extension-CareConnect-NHSCommunication-1"></id>
+   <meta>
+      <lastUpdated value="2018-02-19T12:01:59.831+00:00"></lastUpdated>
+   </meta>
+   <url value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSCommunication-1"></url>
+   <version value="1.1.0"></version>
+   <name value="Extension-CareConnect-NHSCommunication-1"></name>
+   <status value="draft"></status>
+   <date value="2018-11-05"></date>
+   <publisher value="HL7 UK"></publisher>
+   <contact>
+      <name value="INTEROPen"></name>
+      <telecom>
+         <system value="email"></system>
+         <value value="admin@interopen.org"></value>
+         <use value="work"></use>
+      </telecom>
+   </contact>
+   <description value="This extension is constrained to support the communication preferences for a resource in the NHS."></description>
+   <purpose value="CURATED BY INTEROPen see: http://www.interopen.org/careconnect-curation-methodology/"></purpose>
+   <copyright value="Copyright © 2016 HL7 UK  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.  HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html"></copyright>
+   <fhirVersion value="3.0.0"></fhirVersion>
+   <kind value="complex-type"></kind>
+   <abstract value="false"></abstract>
+   <contextType value="resource"></contextType>
+   <context value="Patient"></context>
+   <context value="Practitioner"></context>
+   <type value="Extension"></type>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"></baseDefinition>
+   <derivation value="constraint"></derivation>
+   <differential>
+      <element id="Extension">
+         <path value="Extension"></path>
+         <short value="NHS communication preferences for a resource"></short>
+         <definition value="Communication preferences including a list of Languages which may be used for communication"></definition>
+      </element>
+      <element id="Extension.extension">
+         <path value="Extension.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="Extension.extension:language">
+         <path value="Extension.extension"></path>
+         <sliceName value="language"></sliceName>
+         <short value="Languages which may be used for communication"></short>
+         <definition value="Languages which may be used for communication."></definition>
+         <min value="1"></min>
+         <max value="1"></max>
+      </element>
+      <element id="Extension.extension:language.url">
+         <path value="Extension.extension.url"></path>
+         <fixedUri value="language"></fixedUri>
+      </element>
+      <element id="Extension.extension:language.valueCodeableConcept:valueCodeableConcept">
+         <path value="Extension.extension.valueCodeableConcept"></path>
+         <sliceName value="valueCodeableConcept"></sliceName>
+         <short value="Languages which may be used for communication"></short>
+         <definition value="Languages which may be used for communication."></definition>
+         <min value="1"></min>
+         <type>
+            <code value="CodeableConcept"></code>
+         </type>
+         <binding>
+            <strength value="required"></strength>
+            <description value="Human Language"></description>
+            <valueSetReference>
+               <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-HumanLanguage-1"></reference>
+            </valueSetReference>
+         </binding>
+      </element>
+      <element id="Extension.extension:preferred">
+         <path value="Extension.extension"></path>
+         <sliceName value="preferred"></sliceName>
+         <short value="Language preference indicator"></short>
+         <max value="1"></max>
+      </element>
+      <element id="Extension.extension:preferred.url">
+         <path value="Extension.extension.url"></path>
+         <fixedUri value="preferred"></fixedUri>
+      </element>
+      <element id="Extension.extension:preferred.valueBoolean">
+         <path value="Extension.extension.valueBoolean"></path>
+         <short value="Indicates whether or not this language is preferred (over other languages up a certain level)"></short>
+         <definition value="Indicates whether or not this language is preferred (over other languages up a certain level)"></definition>
+         <min value="1"></min>
+         <type>
+            <code value="boolean"></code>
+         </type>
+      </element>
+      <element id="Extension.extension:modeOfCommunication">
+         <path value="Extension.extension"></path>
+         <sliceName value="modeOfCommunication"></sliceName>
+         <short value="Mode of communication for the selected language"></short>
+      </element>
+      <element id="Extension.extension:modeOfCommunication.url">
+         <path value="Extension.extension.url"></path>
+         <fixedUri value="modeOfCommunication"></fixedUri>
+      </element>
+      <element id="Extension.extension:modeOfCommunication.valueCodeableConcept:valueCodeableConcept">
+         <path value="Extension.extension.valueCodeableConcept"></path>
+         <sliceName value="valueCodeableConcept"></sliceName>
+         <short value="A valueset to describe the mode the patient can communicate in, representing the method of expression of the language."></short>
+         <definition value="A valueset to describe the mode the patient can communicate in, representing the method of expression of the language.."></definition>
+         <min value="1"></min>
+         <type>
+            <code value="CodeableConcept"></code>
+         </type>
+         <binding>
+            <strength value="required"></strength>
+            <description value="Language Ability Mode"></description>
+            <valueSetReference>
+               <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-LanguageAbilityMode-1"></reference>
+            </valueSetReference>
+         </binding>
+      </element>
+      <element id="Extension.extension:communicationProficiency">
+         <path value="Extension.extension"></path>
+         <sliceName value="communicationProficiency"></sliceName>
+         <short value="The level of proficiency in communicating a language"></short>
+         <max value="1"></max>
+      </element>
+      <element id="Extension.extension:communicationProficiency.url">
+         <path value="Extension.extension.url"></path>
+         <fixedUri value="communicationProficiency"></fixedUri>
+      </element>
+      <element id="Extension.extension:communicationProficiency.valueCodeableConcept:valueCodeableConcept">
+         <path value="Extension.extension.valueCodeableConcept"></path>
+         <sliceName value="valueCodeableConcept"></sliceName>
+         <short value="A valueset to describe the level of proficiency in communicating a language"></short>
+         <definition value="A valueset to describe the level of proficiency in communicating a language."></definition>
+         <min value="1"></min>
+         <type>
+            <code value="CodeableConcept"></code>
+         </type>
+         <binding>
+            <strength value="required"></strength>
+            <description value="Language Ability Proficiency"></description>
+            <valueSetReference>
+               <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-LanguageAbilityProficiency-1"></reference>
+            </valueSetReference>
+         </binding>
+      </element>
+      <element id="Extension.extension:interpreterRequired">
+         <path value="Extension.extension"></path>
+         <sliceName value="interpreterRequired"></sliceName>
+         <short value="Interpreter preference indicator"></short>
+         <max value="1"></max>
+      </element>
+      <element id="Extension.extension:interpreterRequired.url">
+         <path value="Extension.extension.url"></path>
+         <fixedUri value="interpreterRequired"></fixedUri>
+      </element>
+      <element id="Extension.extension:interpreterRequired.valueBoolean">
+         <path value="Extension.extension.valueBoolean"></path>
+         <short value="Indicates whether an interpreter is required for communication purposes"></short>
+         <definition value="Indicates whether an interpreter is required for communication purposes- True / False?"></definition>
+         <min value="1"></min>
+         <type>
+            <code value="boolean"></code>
+         </type>
+      </element>
+      <element id="Extension.url">
+         <path value="Extension.url"></path>
+         <fixedUri value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSCommunication-1"></fixedUri>
+      </element>
+      <element id="Extension.value[x]">
+         <path value="Extension.value[x]"></path>
+         <max value="0"></max>
+      </element>
+   </differential>
+</StructureDefinition>

@@ -1,0 +1,58 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="Extension-CareConnect-EmergencyCareDischargeStatus-1"></id>
+   <meta>
+      <lastUpdated value="2018-02-19T16:27:11.459+00:00"></lastUpdated>
+   </meta>
+   <url value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-EmergencyCareDischargeStatus-1"></url>
+   <version value="1.1.0"></version>
+   <name value="Extension-CareConnect-EmergencyCareDischargeStatus-1"></name>
+   <status value="draft"></status>
+   <date value="2018-11-05"></date>
+   <publisher value="HL7 UK"></publisher>
+   <contact>
+      <name value="INTEROPen"></name>
+      <telecom>
+         <system value="email"></system>
+         <value value="admin@interopen.org"></value>
+         <use value="work"></use>
+      </telecom>
+   </contact>
+   <description value="An extension to the Encounter resource which is used indicate the status of the Patient on discharge from an Emergency Care Department."></description>
+   <purpose value="CURATED BY INTEROPen see: http://www.interopen.org/careconnect-curation-methodology/"></purpose>
+   <copyright value="Copyright © 2016 HL7 UK  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.  HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html"></copyright>
+   <fhirVersion value="3.0.1"></fhirVersion>
+   <kind value="complex-type"></kind>
+   <abstract value="false"></abstract>
+   <contextType value="resource"></contextType>
+   <context value="Encounter"></context>
+   <type value="Extension"></type>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"></baseDefinition>
+   <derivation value="constraint"></derivation>
+   <differential>
+      <element id="Extension">
+         <path value="Extension"></path>
+         <short value="An extension to the Encounter resource which is used indicate the status of the Patient on discharge from an Emergency Care Department."></short>
+         <max value="1"></max>
+      </element>
+      <element id="Extension.url">
+         <path value="Extension.url"></path>
+         <fixedUri value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-EmergencyCareDischargeStatus-1"></fixedUri>
+      </element>
+      <element id="Extension.valueCodeableConcept:valueCodeableConcept">
+         <path value="Extension.valueCodeableConcept"></path>
+         <sliceName value="valueCodeableConcept"></sliceName>
+         <short value="The status of the Patient on discharge from an Emergency Care Department."></short>
+         <min value="1"></min>
+         <type>
+            <code value="CodeableConcept"></code>
+         </type>
+         <binding>
+            <strength value="required"></strength>
+            <description value="The status of the Patient on discharge from an Emergency Care Department."></description>
+            <valueSetReference>
+               <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-EmergencyCareDischargeStatus-1"></reference>
+            </valueSetReference>
+         </binding>
+      </element>
+   </differential>
+</StructureDefinition>

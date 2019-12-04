@@ -1,0 +1,394 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="CareConnect-Encounter-1"></id>
+   <meta>
+      <lastUpdated value="2018-02-20T08:24:06.177+00:00"></lastUpdated>
+   </meta>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+      <valueCode value="pa"></valueCode>
+   </extension>
+   <url value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"></url>
+   <version value="1.1.0"></version>
+   <name value="CareConnect-Encounter-1"></name>
+   <status value="draft"></status>
+   <date value="2018-11-05"></date>
+   <publisher value="HL7 UK"></publisher>
+   <contact>
+      <name value="INTEROPen"></name>
+      <telecom>
+         <system value="email"></system>
+         <value value="admin@interopen.org"></value>
+         <use value="work"></use>
+      </telecom>
+   </contact>
+   <description value="The encounter resource represents an encounter between a care professional and the patient (or patient's record)."></description>
+   <purpose value="CURATED BY INTEROPen see: http://www.interopen.org/careconnect-curation-methodology/ "></purpose>
+   <copyright value="Copyright © 2016 HL7 UK  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.  HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html"></copyright>
+   <fhirVersion value="3.0.1"></fhirVersion>
+   <kind value="resource"></kind>
+   <abstract value="false"></abstract>
+   <type value="Encounter"></type>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Encounter"></baseDefinition>
+   <derivation value="constraint"></derivation>
+   <differential>
+      <element id="Encounter.extension">
+         <path value="Encounter.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="Encounter.extension:encounterTransport">
+         <path value="Encounter.extension"></path>
+         <sliceName value="encounterTransport"></sliceName>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-EncounterTransport-1"></profile>
+         </type>
+      </element>
+      <element id="Encounter.extension:outcomeOfAttendance">
+         <path value="Encounter.extension"></path>
+         <sliceName value="outcomeOfAttendance"></sliceName>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-OutcomeOfAttendance-1"></profile>
+         </type>
+      </element>
+      <element id="Encounter.extension:emergencyCareDischargeStatus">
+         <path value="Encounter.extension"></path>
+         <sliceName value="emergencyCareDischargeStatus"></sliceName>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-EmergencyCareDischargeStatus-1"></profile>
+         </type>
+      </element>
+      <element id="Encounter.identifier.system">
+         <path value="Encounter.identifier.system"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Encounter.identifier.value">
+         <path value="Encounter.identifier.value"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Encounter.identifier.assigner">
+         <path value="Encounter.identifier.assigner"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Encounter.class">
+         <path value="Encounter.class"></path>
+         <short value="Classification of the encounter"></short>
+         <definition value="Classification of the encounter."></definition>
+      </element>
+      <element id="Encounter.classHistory.class">
+         <path value="Encounter.classHistory.class"></path>
+         <short value="Classification of the encounter"></short>
+         <definition value="Classification of the encounter."></definition>
+      </element>
+      <element id="Encounter.type.coding">
+         <path value="Encounter.type.coding"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="system"></path>
+            </discriminator>
+            <ordered value="false"></ordered>
+            <rules value="open"></rules>
+         </slicing>
+         <max value="1"></max>
+      </element>
+      <element id="Encounter.type.coding:snomedCT">
+         <path value="Encounter.type.coding"></path>
+         <sliceName value="snomedCT"></sliceName>
+         <binding>
+            <strength value="extensible"></strength>
+            <description value="A code from the SNOMED Clinical Terminology UK coding system that describes an encounter between a care professional and the patient (or patient's record)."></description>
+            <valueSetReference>
+               <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-EncounterType-1"></reference>
+            </valueSetReference>
+         </binding>
+      </element>
+      <element id="Encounter.type.coding:snomedCT.extension">
+         <path value="Encounter.type.coding.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="Encounter.type.coding:snomedCT.extension:snomedCTDescriptionID">
+         <path value="Encounter.type.coding.extension"></path>
+         <sliceName value="snomedCTDescriptionID"></sliceName>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid"></profile>
+         </type>
+      </element>
+      <element id="Encounter.type.coding:snomedCT.system">
+         <path value="Encounter.type.coding.system"></path>
+         <min value="1"></min>
+         <fixedUri value="http://snomed.info/sct"></fixedUri>
+      </element>
+      <element id="Encounter.type.coding:snomedCT.code">
+         <path value="Encounter.type.coding.code"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Encounter.type.coding:snomedCT.display">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+            <valueBoolean value="true"></valueBoolean>
+         </extension>
+         <path value="Encounter.type.coding.display"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Encounter.subject">
+         <path value="Encounter.subject"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Encounter.participant.individual">
+         <path value="Encounter.participant.individual"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Encounter.reason.coding">
+         <path value="Encounter.reason.coding"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="system"></path>
+            </discriminator>
+            <ordered value="false"></ordered>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="Encounter.reason.coding:snomedCT">
+         <path value="Encounter.reason.coding"></path>
+         <sliceName value="snomedCT"></sliceName>
+         <max value="1"></max>
+      </element>
+      <element id="Encounter.reason.coding:snomedCT.extension">
+         <path value="Encounter.reason.coding.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="Encounter.reason.coding:snomedCT.extension:snomedCTDescriptionID">
+         <path value="Encounter.reason.coding.extension"></path>
+         <sliceName value="snomedCTDescriptionID"></sliceName>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid"></profile>
+         </type>
+      </element>
+      <element id="Encounter.reason.coding:snomedCT.system">
+         <path value="Encounter.reason.coding.system"></path>
+         <min value="1"></min>
+         <fixedUri value="http://snomed.info/sct"></fixedUri>
+      </element>
+      <element id="Encounter.reason.coding:snomedCT.code">
+         <path value="Encounter.reason.coding.code"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Encounter.reason.coding:snomedCT.display">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+            <valueBoolean value="true"></valueBoolean>
+         </extension>
+         <path value="Encounter.reason.coding.display"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Encounter.diagnosis.condition">
+         <path value="Encounter.diagnosis.condition"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Procedure-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Encounter.hospitalization.extension">
+         <path value="Encounter.hospitalization.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="Encounter.hospitalization.extension:admissionMethod">
+         <path value="Encounter.hospitalization.extension"></path>
+         <sliceName value="admissionMethod"></sliceName>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-AdmissionMethod-1"></profile>
+         </type>
+      </element>
+      <element id="Encounter.hospitalization.extension:dischargeMethod">
+         <path value="Encounter.hospitalization.extension"></path>
+         <sliceName value="dischargeMethod"></sliceName>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DischargeMethod-1"></profile>
+         </type>
+      </element>
+      <element id="Encounter.hospitalization.preAdmissionIdentifier.system">
+         <path value="Encounter.hospitalization.preAdmissionIdentifier.system"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Encounter.hospitalization.preAdmissionIdentifier.value">
+         <path value="Encounter.hospitalization.preAdmissionIdentifier.value"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Encounter.hospitalization.preAdmissionIdentifier.assigner">
+         <path value="Encounter.hospitalization.preAdmissionIdentifier.assigner"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Encounter.hospitalization.origin">
+         <path value="Encounter.hospitalization.origin"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Location-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Encounter.hospitalization.admitSource">
+         <path value="Encounter.hospitalization.admitSource"></path>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="AdmitSource"></valueString>
+            </extension>
+            <strength value="preferred"></strength>
+            <description value="The source of admission to a Hospital Provider Spell or a Nursing Episode when the Patient is in a Hospital Site or a Care Home."></description>
+            <valueSetReference>
+               <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-SourceOfAdmission-1"></reference>
+            </valueSetReference>
+         </binding>
+      </element>
+      <element id="Encounter.hospitalization.reAdmission.coding">
+         <path value="Encounter.hospitalization.reAdmission.coding"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="system"></path>
+            </discriminator>
+            <ordered value="false"></ordered>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="Encounter.hospitalization.reAdmission.coding:snomedCT">
+         <path value="Encounter.hospitalization.reAdmission.coding"></path>
+         <sliceName value="snomedCT"></sliceName>
+         <max value="1"></max>
+      </element>
+      <element id="Encounter.hospitalization.reAdmission.coding:snomedCT.extension">
+         <path value="Encounter.hospitalization.reAdmission.coding.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="Encounter.hospitalization.reAdmission.coding:snomedCT.extension:snomedCTDescriptionID">
+         <path value="Encounter.hospitalization.reAdmission.coding.extension"></path>
+         <sliceName value="snomedCTDescriptionID"></sliceName>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid"></profile>
+         </type>
+      </element>
+      <element id="Encounter.hospitalization.reAdmission.coding:snomedCT.system">
+         <path value="Encounter.hospitalization.reAdmission.coding.system"></path>
+         <min value="1"></min>
+         <fixedUri value="http://snomed.info/sct"></fixedUri>
+      </element>
+      <element id="Encounter.hospitalization.reAdmission.coding:snomedCT.code">
+         <path value="Encounter.hospitalization.reAdmission.coding.code"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Encounter.hospitalization.reAdmission.coding:snomedCT.display">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+            <valueBoolean value="true"></valueBoolean>
+         </extension>
+         <path value="Encounter.hospitalization.reAdmission.coding.display"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Encounter.hospitalization.dietPreference">
+         <path value="Encounter.hospitalization.dietPreference"></path>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="PatientDiet"></valueString>
+            </extension>
+            <strength value="extensible"></strength>
+         </binding>
+      </element>
+      <element id="Encounter.hospitalization.destination">
+         <path value="Encounter.hospitalization.destination"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Location-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Encounter.hospitalization.dischargeDisposition">
+         <path value="Encounter.hospitalization.dischargeDisposition"></path>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="DischargeDisp"></valueString>
+            </extension>
+            <strength value="example"></strength>
+            <description value="The destination of a Patient on completion of a Hospital Provider Spell, or a note that the Patient died or was a still birth."></description>
+            <valueSetReference>
+               <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-DischargeDestination-1"></reference>
+            </valueSetReference>
+         </binding>
+      </element>
+      <element id="Encounter.location.location">
+         <path value="Encounter.location.location"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Location-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Encounter.serviceProvider">
+         <path value="Encounter.serviceProvider"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Encounter.partOf">
+         <path value="Encounter.partOf"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"></targetProfile>
+         </type>
+      </element>
+   </differential>
+</StructureDefinition>

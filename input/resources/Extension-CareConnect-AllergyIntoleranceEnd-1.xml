@@ -1,0 +1,205 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="Extension-CareConnect-AllergyIntoleranceEnd-1"></id>
+   <meta>
+      <lastUpdated value="2018-02-28T10:50:43.98+00:00"></lastUpdated>
+   </meta>
+   <url value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-AllergyIntoleranceEnd-1"></url>
+   <version value="1.1.0"></version>
+   <name value="Extension-CareConnect-AllergyIntoleranceEnd-1"></name>
+   <status value="draft"></status>
+   <date value="2018-11-05"></date>
+   <publisher value="HL7 UK"></publisher>
+   <contact>
+      <name value="INTEROPen"></name>
+      <telecom>
+         <system value="email"></system>
+         <value value="admin@interopen.org"></value>
+         <use value="work"></use>
+      </telecom>
+   </contact>
+   <description value="Supports the date and reason that the allergy was no longer valid."></description>
+   <purpose value="CURATED BY INTEROPen see: http://www.interopen.org/careconnect-curation-methodology/"></purpose>
+   <copyright value="Copyright © 2016 HL7 UK  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.  HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html"></copyright>
+   <fhirVersion value="3.0.1"></fhirVersion>
+   <kind value="complex-type"></kind>
+   <abstract value="false"></abstract>
+   <contextType value="resource"></contextType>
+   <context value="AllergyIntolerance"></context>
+   <type value="Extension"></type>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"></baseDefinition>
+   <derivation value="constraint"></derivation>
+   <differential>
+      <element id="Extension">
+         <path value="Extension"></path>
+         <short value="Supports the date and reason that the allergy was no longer valid"></short>
+         <definition value="Supports the date and reason that the allergy was no longer valid."></definition>
+      </element>
+      <element id="Extension.extension">
+         <path value="Extension.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="Extension.extension:endDate">
+         <path value="Extension.extension"></path>
+         <sliceName value="endDate"></sliceName>
+         <short value="The date the allergy or intolerance was recorded as no longer valid."></short>
+         <max value="1"></max>
+      </element>
+      <element id="Extension.extension:endDate.url">
+         <path value="Extension.extension.url"></path>
+         <fixedUri value="endDate"></fixedUri>
+      </element>
+      <element id="Extension.extension:endDate.valueDateTime:valueDateTime">
+         <path value="Extension.extension.valueDateTime"></path>
+         <sliceName value="valueDateTime"></sliceName>
+         <short value="The date the allergy was recorded as no longer valid"></short>
+         <definition value="The date the allergy was recorded as no longer valid."></definition>
+         <type>
+            <code value="dateTime"></code>
+         </type>
+      </element>
+      <element id="Extension.extension:reasonEnded">
+         <path value="Extension.extension"></path>
+         <sliceName value="reasonEnded"></sliceName>
+         <short value="The reason why the allergy or intolerance has been resolved."></short>
+         <max value="1"></max>
+      </element>
+      <element id="Extension.extension:reasonEnded.url">
+         <path value="Extension.extension.url"></path>
+         <fixedUri value="reasonEnded"></fixedUri>
+      </element>
+      <element id="Extension.extension:reasonEnded.valueString:valueString">
+         <path value="Extension.extension.valueString"></path>
+         <sliceName value="valueString"></sliceName>
+         <short value="The reason why the allergy or intolerance has been resolved"></short>
+         <definition value="The reason why the allergy or intolerance has been resolved."></definition>
+         <type>
+            <code value="string"></code>
+         </type>
+      </element>
+      <element id="Extension.url">
+         <path value="Extension.url"></path>
+         <fixedUri value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-AllergyIntoleranceEnd-1"></fixedUri>
+      </element>
+      <element id="Extension.value[x]">
+         <path value="Extension.value[x]"></path>
+         <max value="0"></max>
+         <type>
+            <code value="base64Binary"></code>
+         </type>
+         <type>
+            <code value="boolean"></code>
+         </type>
+         <type>
+            <code value="code"></code>
+         </type>
+         <type>
+            <code value="date"></code>
+         </type>
+         <type>
+            <code value="dateTime"></code>
+         </type>
+         <type>
+            <code value="decimal"></code>
+         </type>
+         <type>
+            <code value="id"></code>
+         </type>
+         <type>
+            <code value="instant"></code>
+         </type>
+         <type>
+            <code value="integer"></code>
+         </type>
+         <type>
+            <code value="markdown"></code>
+         </type>
+         <type>
+            <code value="oid"></code>
+         </type>
+         <type>
+            <code value="positiveInt"></code>
+         </type>
+         <type>
+            <code value="string"></code>
+         </type>
+         <type>
+            <code value="time"></code>
+         </type>
+         <type>
+            <code value="unsignedInt"></code>
+         </type>
+         <type>
+            <code value="uri"></code>
+         </type>
+         <type>
+            <code value="Address"></code>
+         </type>
+         <type>
+            <code value="Age"></code>
+         </type>
+         <type>
+            <code value="Annotation"></code>
+         </type>
+         <type>
+            <code value="Attachment"></code>
+         </type>
+         <type>
+            <code value="CodeableConcept"></code>
+         </type>
+         <type>
+            <code value="Coding"></code>
+         </type>
+         <type>
+            <code value="ContactPoint"></code>
+         </type>
+         <type>
+            <code value="Count"></code>
+         </type>
+         <type>
+            <code value="Distance"></code>
+         </type>
+         <type>
+            <code value="Duration"></code>
+         </type>
+         <type>
+            <code value="HumanName"></code>
+         </type>
+         <type>
+            <code value="Identifier"></code>
+         </type>
+         <type>
+            <code value="Money"></code>
+         </type>
+         <type>
+            <code value="Period"></code>
+         </type>
+         <type>
+            <code value="Quantity"></code>
+         </type>
+         <type>
+            <code value="Range"></code>
+         </type>
+         <type>
+            <code value="Ratio"></code>
+         </type>
+         <type>
+            <code value="Reference"></code>
+         </type>
+         <type>
+            <code value="SampledData"></code>
+         </type>
+         <type>
+            <code value="Signature"></code>
+         </type>
+         <type>
+            <code value="Timing"></code>
+         </type>
+      </element>
+   </differential>
+</StructureDefinition>

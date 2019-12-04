@@ -1,0 +1,373 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="CareConnect-Procedure-1"></id>
+   <meta>
+      <lastUpdated value="2018-05-04T13:02:22.74+01:00"></lastUpdated>
+   </meta>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+      <valueCode value="pc"></valueCode>
+   </extension>
+   <url value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Procedure-1"></url>
+   <version value="1.1.0"></version>
+   <name value="CareConnect-Procedure-1"></name>
+   <status value="draft"></status>
+   <date value="2018-11-05"></date>
+   <publisher value="HL7 UK"></publisher>
+   <contact>
+      <name value="INTEROPen"></name>
+      <telecom>
+         <system value="email"></system>
+         <value value="admin@interopen.org"></value>
+         <use value="work"></use>
+      </telecom>
+   </contact>
+   <description value="An action that is or was performed on a patient."></description>
+   <purpose value="CURATED BY INTEROPen see: http://www.interopen.org/careconnect-curation-methodology/ "></purpose>
+   <copyright value="Copyright © 2016 HL7 UK  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.  HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html"></copyright>
+   <fhirVersion value="3.0.1"></fhirVersion>
+   <kind value="resource"></kind>
+   <abstract value="false"></abstract>
+   <type value="Procedure"></type>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Procedure"></baseDefinition>
+   <derivation value="constraint"></derivation>
+   <differential>
+      <element id="Procedure.extension">
+         <path value="Procedure.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="Procedure.extension:anaestheticIssues">
+         <path value="Procedure.extension"></path>
+         <sliceName value="anaestheticIssues"></sliceName>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-AnaestheticIssues-1"></profile>
+         </type>
+      </element>
+      <element id="Procedure.identifier.system">
+         <path value="Procedure.identifier.system"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Procedure.identifier.value">
+         <path value="Procedure.identifier.value"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Procedure.identifier.assigner">
+         <path value="Procedure.identifier.assigner"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Procedure.partOf">
+         <path value="Procedure.partOf"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationAdministration"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Procedure-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Procedure.code">
+         <path value="Procedure.code"></path>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="ProcedureCode"></valueString>
+            </extension>
+            <strength value="preferred"></strength>
+            <description value="A code to identify a specific procedure."></description>
+         </binding>
+      </element>
+      <element id="Procedure.code.coding">
+         <path value="Procedure.code.coding"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="system"></path>
+            </discriminator>
+            <ordered value="false"></ordered>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="Procedure.code.coding:snomedCT">
+         <path value="Procedure.code.coding"></path>
+         <sliceName value="snomedCT"></sliceName>
+         <max value="1"></max>
+         <binding>
+            <strength value="extensible"></strength>
+            <description value="A code from the SNOMED Clinical Terminology UK."></description>
+            <valueSetReference>
+               <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-ProcedureCode-1"></reference>
+            </valueSetReference>
+         </binding>
+      </element>
+      <element id="Procedure.code.coding:snomedCT.extension">
+         <path value="Procedure.code.coding.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="Procedure.code.coding:snomedCT.extension:snomedCTDescriptionID">
+         <path value="Procedure.code.coding.extension"></path>
+         <sliceName value="snomedCTDescriptionID"></sliceName>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid"></profile>
+         </type>
+      </element>
+      <element id="Procedure.code.coding:snomedCT.system">
+         <path value="Procedure.code.coding.system"></path>
+         <min value="1"></min>
+         <fixedUri value="http://snomed.info/sct"></fixedUri>
+      </element>
+      <element id="Procedure.code.coding:snomedCT.code">
+         <path value="Procedure.code.coding.code"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Procedure.code.coding:snomedCT.display">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+            <valueBoolean value="true"></valueBoolean>
+         </extension>
+         <path value="Procedure.code.coding.display"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Procedure.subject">
+         <path value="Procedure.subject"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Procedure.context">
+         <path value="Procedure.context"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Procedure.performer.actor">
+         <path value="Procedure.performer.actor"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Procedure.performer.onBehalfOf">
+         <path value="Procedure.performer.onBehalfOf"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Procedure.location">
+         <path value="Procedure.location"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Location-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Procedure.reasonReference">
+         <path value="Procedure.reasonReference"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Procedure.bodySite.coding">
+         <path value="Procedure.bodySite.coding"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="system"></path>
+            </discriminator>
+            <ordered value="false"></ordered>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="Procedure.bodySite.coding:snomedCT">
+         <path value="Procedure.bodySite.coding"></path>
+         <sliceName value="snomedCT"></sliceName>
+         <max value="1"></max>
+         <binding>
+            <strength value="extensible"></strength>
+            <description value="A code from the SNOMED Clinical Terminology UK."></description>
+            <valueSetReference>
+               <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-BodySite-1"></reference>
+            </valueSetReference>
+         </binding>
+      </element>
+      <element id="Procedure.bodySite.coding:snomedCT.extension">
+         <path value="Procedure.bodySite.coding.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="Procedure.bodySite.coding:snomedCT.extension:snomedCTDescriptionID">
+         <path value="Procedure.bodySite.coding.extension"></path>
+         <sliceName value="snomedCTDescriptionID"></sliceName>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid"></profile>
+         </type>
+      </element>
+      <element id="Procedure.bodySite.coding:snomedCT.system">
+         <path value="Procedure.bodySite.coding.system"></path>
+         <min value="1"></min>
+         <fixedUri value="http://snomed.info/sct"></fixedUri>
+      </element>
+      <element id="Procedure.bodySite.coding:snomedCT.code">
+         <path value="Procedure.bodySite.coding.code"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Procedure.bodySite.coding:snomedCT.display">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+            <valueBoolean value="true"></valueBoolean>
+         </extension>
+         <path value="Procedure.bodySite.coding.display"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Procedure.complication.coding">
+         <path value="Procedure.complication.coding"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="system"></path>
+            </discriminator>
+            <ordered value="false"></ordered>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="Procedure.complication.coding:snomedCT">
+         <path value="Procedure.complication.coding"></path>
+         <sliceName value="snomedCT"></sliceName>
+         <max value="1"></max>
+         <binding>
+            <strength value="required"></strength>
+            <description value="A code from the SNOMED Clinical Terminology UK."></description>
+            <valueSetReference>
+               <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-ConditionCode-1"></reference>
+            </valueSetReference>
+         </binding>
+      </element>
+      <element id="Procedure.complication.coding:snomedCT.extension">
+         <path value="Procedure.complication.coding.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="Procedure.complication.coding:snomedCT.extension:snomedCTDescriptionID">
+         <path value="Procedure.complication.coding.extension"></path>
+         <sliceName value="snomedCTDescriptionID"></sliceName>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid"></profile>
+         </type>
+      </element>
+      <element id="Procedure.complication.coding:snomedCT.system">
+         <path value="Procedure.complication.coding.system"></path>
+         <min value="1"></min>
+         <fixedUri value="http://snomed.info/sct"></fixedUri>
+      </element>
+      <element id="Procedure.complication.coding:snomedCT.code">
+         <path value="Procedure.complication.coding.code"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Procedure.complication.coding:snomedCT.display">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+            <valueBoolean value="true"></valueBoolean>
+         </extension>
+         <path value="Procedure.complication.coding.display"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Procedure.complicationDetail">
+         <path value="Procedure.complicationDetail"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Procedure.note.author[x]">
+         <path value="Procedure.note.author[x]"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"></targetProfile>
+         </type>
+         <type>
+            <code value="string"></code>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Procedure.usedReference">
+         <path value="Procedure.usedReference"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Substance"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"></targetProfile>
+         </type>
+      </element>
+   </differential>
+</StructureDefinition>

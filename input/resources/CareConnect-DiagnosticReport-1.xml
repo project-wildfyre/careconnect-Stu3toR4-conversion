@@ -1,0 +1,294 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="CareConnect-DiagnosticReport-1"></id>
+   <url value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1"></url>
+   <version value="1.1.0"></version>
+   <name value="CareConnect-DiagnosticReport-1"></name>
+   <status value="draft"></status>
+   <date value="2019-06-18"></date>
+   <publisher value="HL7 UK"></publisher>
+   <contact>
+      <name value="INTEROPen"></name>
+      <telecom>
+         <system value="email"></system>
+         <value value="admin@interopen.org"></value>
+         <use value="work"></use>
+      </telecom>
+   </contact>
+   <description value="A test report for National Pathology that contains data on the pathology tests performed on patients specimens populated by the performing organisation. "></description>
+   <purpose value="CURATED BY INTEROPen see: http://www.interopen.org/careconnect-curation-methodology/"></purpose>
+   <copyright value="Copyright © 2019 HL7 UK   Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at   http://www.apache.org/licenses/LICENSE-2.0   Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.   HL7® FHIR® standard Copyright © 2011+ HL7   The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at   https://www.hl7.org/fhir/license.html"></copyright>
+   <fhirVersion value="3.0.1"></fhirVersion>
+   <kind value="resource"></kind>
+   <abstract value="false"></abstract>
+   <type value="DiagnosticReport"></type>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"></baseDefinition>
+   <derivation value="constraint"></derivation>
+   <differential>
+      <element id="DiagnosticReport.identifier.system">
+         <path value="DiagnosticReport.identifier.system"></path>
+         <min value="1"></min>
+      </element>
+      <element id="DiagnosticReport.identifier.value">
+         <path value="DiagnosticReport.identifier.value"></path>
+         <min value="1"></min>
+      </element>
+      <element id="DiagnosticReport.identifier.assigner">
+         <path value="DiagnosticReport.identifier.assigner"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="DiagnosticReport.basedOn">
+         <path value="DiagnosticReport.basedOn"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-CarePlan-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1"></targetProfile>
+         </type>
+      </element>
+      <element id="DiagnosticReport.category">
+         <path value="DiagnosticReport.category"></path>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="DiagnosticServiceSection"></valueString>
+            </extension>
+            <strength value="preferred"></strength>
+         </binding>
+      </element>
+      <element id="DiagnosticReport.category.coding">
+         <path value="DiagnosticReport.category.coding"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="system"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="DiagnosticReport.category.coding:snomedCT">
+         <path value="DiagnosticReport.category.coding"></path>
+         <sliceName value="snomedCT"></sliceName>
+      </element>
+      <element id="DiagnosticReport.category.coding:snomedCT.extension">
+         <path value="DiagnosticReport.category.coding.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="DiagnosticReport.category.coding:snomedCT.extension:snomedCTDescriptionID">
+         <path value="DiagnosticReport.category.coding.extension"></path>
+         <sliceName value="snomedCTDescriptionID"></sliceName>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid"></profile>
+         </type>
+      </element>
+      <element id="DiagnosticReport.category.coding:snomedCT.system">
+         <path value="DiagnosticReport.category.coding.system"></path>
+         <min value="1"></min>
+         <fixedUri value="http://snomed.info/sct"></fixedUri>
+      </element>
+      <element id="DiagnosticReport.category.coding:snomedCT.code">
+         <path value="DiagnosticReport.category.coding.code"></path>
+         <min value="1"></min>
+      </element>
+      <element id="DiagnosticReport.category.coding:snomedCT.display">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+            <valueBoolean value="true"></valueBoolean>
+         </extension>
+         <path value="DiagnosticReport.category.coding.display"></path>
+         <min value="1"></min>
+      </element>
+      <element id="DiagnosticReport.code.coding">
+         <path value="DiagnosticReport.code.coding"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="system"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="DiagnosticReport.code.coding:snomedCT">
+         <path value="DiagnosticReport.code.coding"></path>
+         <sliceName value="snomedCT"></sliceName>
+         <binding>
+            <strength value="extensible"></strength>
+            <description value="A code from the SNOMED Clinical Terminology UK"></description>
+            <valueSetReference>
+               <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-ReportCodeSnCT-1"></reference>
+            </valueSetReference>
+         </binding>
+      </element>
+      <element id="DiagnosticReport.code.coding:snomedCT.extension">
+         <path value="DiagnosticReport.code.coding.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="DiagnosticReport.code.coding:snomedCT.extension:snomedCTDescriptionID">
+         <path value="DiagnosticReport.code.coding.extension"></path>
+         <sliceName value="snomedCTDescriptionID"></sliceName>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid"></profile>
+         </type>
+      </element>
+      <element id="DiagnosticReport.code.coding:snomedCT.system">
+         <path value="DiagnosticReport.code.coding.system"></path>
+         <min value="1"></min>
+         <fixedUri value="http://snomed.info/sct"></fixedUri>
+      </element>
+      <element id="DiagnosticReport.code.coding:snomedCT.code">
+         <path value="DiagnosticReport.code.coding.code"></path>
+         <min value="1"></min>
+      </element>
+      <element id="DiagnosticReport.code.coding:snomedCT.display">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+            <valueBoolean value="true"></valueBoolean>
+         </extension>
+         <path value="DiagnosticReport.code.coding.display"></path>
+         <min value="1"></min>
+      </element>
+      <element id="DiagnosticReport.subject">
+         <path value="DiagnosticReport.subject"></path>
+         <min value="1"></min>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Location-1"></targetProfile>
+         </type>
+      </element>
+      <element id="DiagnosticReport.context">
+         <path value="DiagnosticReport.context"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"></targetProfile>
+         </type>
+      </element>
+      <element id="DiagnosticReport.performer.actor">
+         <path value="DiagnosticReport.performer.actor"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+      </element>
+      <element id="DiagnosticReport.specimen">
+         <path value="DiagnosticReport.specimen"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Specimen-1"></targetProfile>
+         </type>
+      </element>
+      <element id="DiagnosticReport.result">
+         <path value="DiagnosticReport.result"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"></targetProfile>
+         </type>
+      </element>
+      <element id="DiagnosticReport.codedDiagnosis">
+         <path value="DiagnosticReport.codedDiagnosis"></path>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="AdjunctDiagnosis"></valueString>
+            </extension>
+            <strength value="preferred"></strength>
+            <description value="A SNOMED Coded finding for the test report."></description>
+            <valueSetReference>
+               <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-FindingCode-1"></reference>
+            </valueSetReference>
+         </binding>
+      </element>
+      <element id="DiagnosticReport.codedDiagnosis.coding">
+         <path value="DiagnosticReport.codedDiagnosis.coding"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="system"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="DiagnosticReport.codedDiagnosis.coding:snomedCT">
+         <path value="DiagnosticReport.codedDiagnosis.coding"></path>
+         <sliceName value="snomedCT"></sliceName>
+         <binding>
+            <strength value="extensible"></strength>
+            <description value="A code from the SNOMED Clinical Terminology UK"></description>
+            <valueSetReference>
+               <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-FindingCode-1"></reference>
+            </valueSetReference>
+         </binding>
+      </element>
+      <element id="DiagnosticReport.codedDiagnosis.coding:snomedCT.extension">
+         <path value="DiagnosticReport.codedDiagnosis.coding.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="DiagnosticReport.codedDiagnosis.coding:snomedCT.extension:snomedCTDescriptionID">
+         <path value="DiagnosticReport.codedDiagnosis.coding.extension"></path>
+         <sliceName value="snomedCTDescriptionID"></sliceName>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid"></profile>
+         </type>
+      </element>
+      <element id="DiagnosticReport.codedDiagnosis.coding:snomedCT.system">
+         <path value="DiagnosticReport.codedDiagnosis.coding.system"></path>
+         <min value="1"></min>
+         <fixedUri value="http://snomed.info/sct"></fixedUri>
+      </element>
+      <element id="DiagnosticReport.codedDiagnosis.coding:snomedCT.code">
+         <path value="DiagnosticReport.codedDiagnosis.coding.code"></path>
+         <min value="1"></min>
+      </element>
+      <element id="DiagnosticReport.codedDiagnosis.coding:snomedCT.display">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+            <valueBoolean value="true"></valueBoolean>
+         </extension>
+         <path value="DiagnosticReport.codedDiagnosis.coding.display"></path>
+         <min value="1"></min>
+      </element>
+   </differential>
+</StructureDefinition>

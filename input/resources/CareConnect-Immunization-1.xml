@@ -1,0 +1,373 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="CareConnect-Immunization-1"></id>
+   <meta>
+      <lastUpdated value="2018-05-04T09:27:39.779+01:00"></lastUpdated>
+   </meta>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+      <valueCode value="pher"></valueCode>
+   </extension>
+   <url value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Immunization-1"></url>
+   <version value="1.4.0"></version>
+   <name value="CareConnect-Immunization-1"></name>
+   <status value="draft"></status>
+   <date value="2019-11-22"></date>
+   <publisher value="HL7 UK"></publisher>
+   <contact>
+      <name value="INTEROPen"></name>
+      <telecom>
+         <system value="email"></system>
+         <value value="admin@interopen.org"></value>
+         <use value="work"></use>
+      </telecom>
+   </contact>
+   <description value="This Immunization Resource describes the event of a patient being administered a vaccination or a record of a vaccination as reported by a patient, a clinician or another party, and may include vaccine reaction information and what vaccination protocol was followed."></description>
+   <purpose value="CURATED BY INTEROPen see: http://www.interopen.org/careconnect-curation-methodology/ "></purpose>
+   <copyright value="Copyright © 2019 HL7 UK  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.  HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html"></copyright>
+   <fhirVersion value="3.0.1"></fhirVersion>
+   <kind value="resource"></kind>
+   <abstract value="false"></abstract>
+   <type value="Immunization"></type>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Immunization"></baseDefinition>
+   <derivation value="constraint"></derivation>
+   <differential>
+      <element id="Immunization.extension">
+         <path value="Immunization.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="Immunization.extension:parentPresent">
+         <path value="Immunization.extension"></path>
+         <sliceName value="parentPresent"></sliceName>
+         <max value="1"></max>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ParentPresent-1"></profile>
+         </type>
+      </element>
+      <element id="Immunization.extension:recordedDate">
+         <path value="Immunization.extension"></path>
+         <sliceName value="recordedDate"></sliceName>
+         <short value="The date that the Vaccination was recorded"></short>
+         <max value="1"></max>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1"></profile>
+         </type>
+      </element>
+      <element id="Immunization.extension:vaccinationProcedure">
+         <path value="Immunization.extension"></path>
+         <sliceName value="vaccinationProcedure"></sliceName>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1"></profile>
+         </type>
+      </element>
+      <element id="Immunization.identifier.system">
+         <path value="Immunization.identifier.system"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Immunization.identifier.value">
+         <path value="Immunization.identifier.value"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Immunization.identifier.assigner">
+         <path value="Immunization.identifier.assigner"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Immunization.status">
+         <path value="Immunization.status"></path>
+         <short value="completed"></short>
+      </element>
+      <element id="Immunization.vaccineCode">
+         <path value="Immunization.vaccineCode"></path>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="VaccineCode"></valueString>
+            </extension>
+            <strength value="extensible"></strength>
+            <valueSetReference>
+               <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-VaccineCode-1"></reference>
+            </valueSetReference>
+         </binding>
+      </element>
+      <element id="Immunization.patient">
+         <path value="Immunization.patient"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Immunization.encounter">
+         <path value="Immunization.encounter"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Immunization.primarySource">
+         <path value="Immunization.primarySource"></path>
+         <defaultValueBoolean value="true"></defaultValueBoolean>
+      </element>
+      <element id="Immunization.location">
+         <path value="Immunization.location"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Location-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Immunization.manufacturer">
+         <path value="Immunization.manufacturer"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Immunization.site.coding">
+         <path value="Immunization.site.coding"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="system"></path>
+            </discriminator>
+            <ordered value="false"></ordered>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="Immunization.site.coding:snomedCT">
+         <path value="Immunization.site.coding"></path>
+         <sliceName value="snomedCT"></sliceName>
+         <max value="1"></max>
+      </element>
+      <element id="Immunization.site.coding:snomedCT.extension">
+         <path value="Immunization.site.coding.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="Immunization.site.coding:snomedCT.extension:snomedCTDescriptionID">
+         <path value="Immunization.site.coding.extension"></path>
+         <sliceName value="snomedCTDescriptionID"></sliceName>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid"></profile>
+         </type>
+      </element>
+      <element id="Immunization.site.coding:snomedCT.system">
+         <path value="Immunization.site.coding.system"></path>
+         <min value="1"></min>
+         <fixedUri value="http://snomed.info/sct"></fixedUri>
+      </element>
+      <element id="Immunization.site.coding:snomedCT.code">
+         <path value="Immunization.site.coding.code"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Immunization.site.coding:snomedCT.display">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+            <valueBoolean value="true"></valueBoolean>
+         </extension>
+         <path value="Immunization.site.coding.display"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Immunization.route.coding">
+         <path value="Immunization.route.coding"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="system"></path>
+            </discriminator>
+            <ordered value="false"></ordered>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="Immunization.route.coding:snomedCT">
+         <path value="Immunization.route.coding"></path>
+         <sliceName value="snomedCT"></sliceName>
+         <max value="1"></max>
+         <binding>
+            <strength value="example"></strength>
+            <description value="A code from the SNOMED Clinical Terminology UK coding system that describes the e-Prescribing route of administration."></description>
+            <valueSetReference>
+               <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-MedicationDosageRoute-1"></reference>
+            </valueSetReference>
+         </binding>
+      </element>
+      <element id="Immunization.route.coding:snomedCT.extension">
+         <path value="Immunization.route.coding.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="Immunization.route.coding:snomedCT.extension:snomedCTDescriptionID">
+         <path value="Immunization.route.coding.extension"></path>
+         <sliceName value="snomedCTDescriptionID"></sliceName>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid"></profile>
+         </type>
+      </element>
+      <element id="Immunization.route.coding:snomedCT.system">
+         <path value="Immunization.route.coding.system"></path>
+         <min value="1"></min>
+         <fixedUri value="http://snomed.info/sct"></fixedUri>
+      </element>
+      <element id="Immunization.route.coding:snomedCT.code">
+         <path value="Immunization.route.coding.code"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Immunization.route.coding:snomedCT.display">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+            <valueBoolean value="true"></valueBoolean>
+         </extension>
+         <path value="Immunization.route.coding.display"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Immunization.practitioner.actor">
+         <path value="Immunization.practitioner.actor"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Immunization.note.author[x]">
+         <path value="Immunization.note.author[x]"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"></targetProfile>
+         </type>
+         <type>
+            <code value="string"></code>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Immunization.explanation.reason">
+         <path value="Immunization.explanation.reason"></path>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="ImmunizationReason"></valueString>
+            </extension>
+            <strength value="example"></strength>
+            <valueSetReference>
+               <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-ImmunizationExplanationReason-2"></reference>
+            </valueSetReference>
+         </binding>
+      </element>
+      <element id="Immunization.explanation.reasonNotGiven">
+         <path value="Immunization.explanation.reasonNotGiven"></path>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="NoImmunizationReason"></valueString>
+            </extension>
+            <strength value="extensible"></strength>
+            <valueSetReference>
+               <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-ReasonImmunizationNotAdministered-1"></reference>
+            </valueSetReference>
+         </binding>
+      </element>
+      <element id="Immunization.reaction.detail">
+         <path value="Immunization.reaction.detail"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Immunization.vaccinationProtocol.doseSequence">
+         <path value="Immunization.vaccinationProtocol.doseSequence"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Immunization.vaccinationProtocol.authority">
+         <path value="Immunization.vaccinationProtocol.authority"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Immunization.vaccinationProtocol.targetDisease.coding">
+         <path value="Immunization.vaccinationProtocol.targetDisease.coding"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="system"></path>
+            </discriminator>
+            <ordered value="false"></ordered>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="Immunization.vaccinationProtocol.targetDisease.coding:snomedCT">
+         <path value="Immunization.vaccinationProtocol.targetDisease.coding"></path>
+         <sliceName value="snomedCT"></sliceName>
+         <max value="1"></max>
+      </element>
+      <element id="Immunization.vaccinationProtocol.targetDisease.coding:snomedCT.extension">
+         <path value="Immunization.vaccinationProtocol.targetDisease.coding.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="Immunization.vaccinationProtocol.targetDisease.coding:snomedCT.extension:snomedCTDescriptionID">
+         <path value="Immunization.vaccinationProtocol.targetDisease.coding.extension"></path>
+         <sliceName value="snomedCTDescriptionID"></sliceName>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid"></profile>
+         </type>
+      </element>
+      <element id="Immunization.vaccinationProtocol.targetDisease.coding:snomedCT.system">
+         <path value="Immunization.vaccinationProtocol.targetDisease.coding.system"></path>
+         <min value="1"></min>
+         <fixedUri value="http://snomed.info/sct"></fixedUri>
+      </element>
+      <element id="Immunization.vaccinationProtocol.targetDisease.coding:snomedCT.code">
+         <path value="Immunization.vaccinationProtocol.targetDisease.coding.code"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Immunization.vaccinationProtocol.targetDisease.coding:snomedCT.display">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+            <valueBoolean value="true"></valueBoolean>
+         </extension>
+         <path value="Immunization.vaccinationProtocol.targetDisease.coding.display"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Immunization.vaccinationProtocol.doseStatus.coding.system">
+         <path value="Immunization.vaccinationProtocol.doseStatus.coding.system"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Immunization.vaccinationProtocol.doseStatus.coding.code">
+         <path value="Immunization.vaccinationProtocol.doseStatus.coding.code"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Immunization.vaccinationProtocol.doseStatus.coding.display">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+            <valueBoolean value="true"></valueBoolean>
+         </extension>
+         <path value="Immunization.vaccinationProtocol.doseStatus.coding.display"></path>
+         <min value="1"></min>
+      </element>
+   </differential>
+</StructureDefinition>

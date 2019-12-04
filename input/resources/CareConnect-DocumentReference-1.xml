@@ -1,0 +1,196 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="CareConnect-DocumentReference-1"></id>
+   <url value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DocumentReference-1"></url>
+   <version value="1.1.0"></version>
+   <name value="CareConnect-DocumentReference-1"></name>
+   <status value="draft"></status>
+   <date value="2019-08-07"></date>
+   <publisher value="HL7 UK"></publisher>
+   <contact>
+      <name value="INTEROPen"></name>
+      <telecom>
+         <system value="email"></system>
+         <value value="admin@interopen.org"></value>
+         <use value="work"></use>
+      </telecom>
+   </contact>
+   <description value="The DocumentReference resource is used to describe a document that is made available to a healthcare system."></description>
+   <purpose value="CURATED BY INTEROPen see: http://www.interopen.org/careconnect-curation-methodology/ on the 5th July 2019."></purpose>
+   <copyright value="Copyright © 2019 HL7 UK  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.  HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html"></copyright>
+   <fhirVersion value="3.0.1"></fhirVersion>
+   <kind value="resource"></kind>
+   <abstract value="false"></abstract>
+   <type value="DocumentReference"></type>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DocumentReference"></baseDefinition>
+   <derivation value="constraint"></derivation>
+   <differential>
+      <element id="DocumentReference.masterIdentifier.system">
+         <path value="DocumentReference.masterIdentifier.system"></path>
+         <min value="1"></min>
+      </element>
+      <element id="DocumentReference.masterIdentifier.value">
+         <path value="DocumentReference.masterIdentifier.value"></path>
+         <min value="1"></min>
+      </element>
+      <element id="DocumentReference.masterIdentifier.assigner">
+         <path value="DocumentReference.masterIdentifier.assigner"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="DocumentReference.identifier.system">
+         <path value="DocumentReference.identifier.system"></path>
+         <min value="1"></min>
+      </element>
+      <element id="DocumentReference.identifier.value">
+         <path value="DocumentReference.identifier.value"></path>
+         <min value="1"></min>
+      </element>
+      <element id="DocumentReference.identifier.assigner">
+         <path value="DocumentReference.identifier.assigner"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="DocumentReference.type">
+         <path value="DocumentReference.type"></path>
+         <short value="Type of document "></short>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="DocumentC80Type"></valueString>
+            </extension>
+            <strength value="preferred"></strength>
+            <description value="SNOMED CT UK document type"></description>
+            <valueSetReference>
+               <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-DocumentType-1"></reference>
+            </valueSetReference>
+         </binding>
+      </element>
+      <element id="DocumentReference.type.coding.system">
+         <path value="DocumentReference.type.coding.system"></path>
+         <min value="1"></min>
+      </element>
+      <element id="DocumentReference.type.coding.version">
+         <path value="DocumentReference.type.coding.version"></path>
+         <max value="0"></max>
+      </element>
+      <element id="DocumentReference.type.coding.code">
+         <path value="DocumentReference.type.coding.code"></path>
+         <min value="1"></min>
+      </element>
+      <element id="DocumentReference.type.coding.display">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+            <valueBoolean value="true"></valueBoolean>
+         </extension>
+         <path value="DocumentReference.type.coding.display"></path>
+         <min value="1"></min>
+      </element>
+      <element id="DocumentReference.subject">
+         <path value="DocumentReference.subject"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+      </element>
+      <element id="DocumentReference.created">
+         <path value="DocumentReference.created"></path>
+         <definition value="When the document was created. Creation/Edit datetime of the document - event date"></definition>
+      </element>
+      <element id="DocumentReference.author">
+         <path value="DocumentReference.author"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-RelatedPerson-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="DocumentReference.authenticator">
+         <path value="DocumentReference.authenticator"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="DocumentReference.custodian">
+         <path value="DocumentReference.custodian"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="DocumentReference.relatesTo.target">
+         <path value="DocumentReference.relatesTo.target"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DocumentReference-1"></targetProfile>
+         </type>
+      </element>
+      <element id="DocumentReference.context.encounter">
+         <path value="DocumentReference.context.encounter"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"></targetProfile>
+         </type>
+      </element>
+      <element id="DocumentReference.context.practiceSetting">
+         <path value="DocumentReference.context.practiceSetting"></path>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="DocumentC80PracticeSetting"></valueString>
+            </extension>
+            <strength value="preferred"></strength>
+            <description value="Care setting type of the document"></description>
+            <valueSetReference>
+               <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-CareSettingType-1"></reference>
+            </valueSetReference>
+         </binding>
+      </element>
+      <element id="DocumentReference.context.sourcePatientInfo">
+         <path value="DocumentReference.context.sourcePatientInfo"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+      </element>
+      <element id="DocumentReference.context.related.identifier.assigner">
+         <path value="DocumentReference.context.related.identifier.assigner"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+   </differential>
+</StructureDefinition>

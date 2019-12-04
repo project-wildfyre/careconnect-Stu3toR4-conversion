@@ -1,0 +1,153 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="CareConnect-Composition-1"></id>
+   <meta>
+      <lastUpdated value="2018-05-04T09:54:22.262+01:00"></lastUpdated>
+   </meta>
+   <url value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Composition-1"></url>
+   <version value="1.2.0"></version>
+   <name value="CareConnect-Composition-1"></name>
+   <status value="draft"></status>
+   <date value="2018-11-05"></date>
+   <publisher value="HL7 UK"></publisher>
+   <contact>
+      <name value="INTEROPen"></name>
+      <telecom>
+         <system value="email"></system>
+         <value value="admin@interopen.org"></value>
+         <use value="work"></use>
+      </telecom>
+   </contact>
+   <description value="A set of healthcare-related information that is assembled together into a single logical document that provides a single coherent statement of meaning, establishes its own context and that has clinical attestation with regard to who is making the statement."></description>
+   <purpose value="CURATED BY INTEROPen see: http://www.interopen.org/careconnect-curation-methodology/ "></purpose>
+   <copyright value="Copyright © 2016 HL7 UK  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.  HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html"></copyright>
+   <fhirVersion value="3.0.1"></fhirVersion>
+   <kind value="resource"></kind>
+   <abstract value="false"></abstract>
+   <type value="Composition"></type>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition"></baseDefinition>
+   <derivation value="constraint"></derivation>
+   <differential>
+      <element id="Composition.extension">
+         <path value="Composition.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="Composition.extension:careSettingTypeExtension">
+         <path value="Composition.extension"></path>
+         <sliceName value="careSettingTypeExtension"></sliceName>
+         <max value="1"></max>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-CareSettingType-1"></profile>
+         </type>
+      </element>
+      <element id="Composition.identifier.system">
+         <path value="Composition.identifier.system"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Composition.identifier.value">
+         <path value="Composition.identifier.value"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Composition.identifier.assigner">
+         <path value="Composition.identifier.assigner"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Composition.type">
+         <path value="Composition.type"></path>
+         <short value="Kind of composition (SNOMED CT)"></short>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="DocumentType"></valueString>
+            </extension>
+            <strength value="preferred"></strength>
+            <description value="SNOMED CT Document Type"></description>
+            <valueSetReference>
+               <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-DocumentType-1"></reference>
+            </valueSetReference>
+         </binding>
+      </element>
+      <element id="Composition.encounter">
+         <path value="Composition.encounter"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Composition.author">
+         <path value="Composition.author"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Composition.attester.party">
+         <path value="Composition.attester.party"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Composition.custodian">
+         <path value="Composition.custodian"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Composition.relatesTo">
+         <path value="Composition.relatesTo"></path>
+         <max value="1"></max>
+      </element>
+      <element id="Composition.relatesTo.target[x]">
+         <path value="Composition.relatesTo.target[x]"></path>
+         <type>
+            <code value="Identifier"></code>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Composition-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Composition.section.code">
+         <path value="Composition.section.code"></path>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="CompositionSectionType"></valueString>
+            </extension>
+            <strength value="preferred"></strength>
+            <valueSetReference>
+               <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-CompositionSectionCode-1"></reference>
+            </valueSetReference>
+         </binding>
+      </element>
+   </differential>
+</StructureDefinition>

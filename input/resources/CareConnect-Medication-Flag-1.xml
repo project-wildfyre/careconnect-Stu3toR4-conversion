@@ -1,0 +1,196 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="CareConnect-Medication-Flag-1"></id>
+   <meta>
+      <lastUpdated value="2017-09-13T09:38:34.624+01:00"></lastUpdated>
+   </meta>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+      <valueCode value="pc"></valueCode>
+   </extension>
+   <url value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-Flag-1"></url>
+   <version value="1.0.0"></version>
+   <name value="CareConnect-Medication-Flag-1"></name>
+   <status value="draft"></status>
+   <date value="2019-06-13"></date>
+   <publisher value="HL7 UK"></publisher>
+   <contact>
+      <name value="INTEROPen"></name>
+      <telecom>
+         <system value="email"></system>
+         <value value="admin@interopen.org"></value>
+         <use value="work"></use>
+      </telecom>
+   </contact>
+   <description value="This Flag Resource carries prospective warnings of potential issues related to the patient's medications."></description>
+   <purpose value="CURATED BY INTEROPen see: http://www.interopen.org/careconnect-curation-methodology/"></purpose>
+   <copyright value="Copyright © 2019 HL7 UK  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.  HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html"></copyright>
+   <fhirVersion value="3.0.1"></fhirVersion>
+   <kind value="resource"></kind>
+   <abstract value="false"></abstract>
+   <type value="Flag"></type>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Flag"></baseDefinition>
+   <derivation value="constraint"></derivation>
+   <differential>
+      <element id="Flag.extension">
+         <path value="Flag.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+      </element>
+      <element id="Flag.extension:medication">
+         <path value="Flag.extension"></path>
+         <sliceName value="medication"></sliceName>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-MedicationFlagAssociation-1"></profile>
+         </type>
+      </element>
+      <element id="Flag.identifier.system">
+         <path value="Flag.identifier.system"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Flag.identifier.value">
+         <path value="Flag.identifier.value"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Flag.identifier.assigner">
+         <path value="Flag.identifier.assigner"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Flag.category">
+         <path value="Flag.category"></path>
+         <min value="1"></min>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="FlagCategory"></valueString>
+            </extension>
+            <strength value="required"></strength>
+         </binding>
+      </element>
+      <element id="Flag.category.coding">
+         <path value="Flag.category.coding"></path>
+         <min value="1"></min>
+         <max value="1"></max>
+      </element>
+      <element id="Flag.category.coding.system">
+         <path value="Flag.category.coding.system"></path>
+         <min value="1"></min>
+         <fixedUri value="http://hl7.org/fhir/flag-category"></fixedUri>
+      </element>
+      <element id="Flag.category.coding.version">
+         <path value="Flag.category.coding.version"></path>
+         <max value="0"></max>
+      </element>
+      <element id="Flag.category.coding.code">
+         <path value="Flag.category.coding.code"></path>
+         <min value="1"></min>
+         <fixedCode value="drug"></fixedCode>
+      </element>
+      <element id="Flag.category.coding.display">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+            <valueBoolean value="true"></valueBoolean>
+         </extension>
+         <path value="Flag.category.coding.display"></path>
+         <min value="1"></min>
+         <fixedString value="Drug"></fixedString>
+      </element>
+      <element id="Flag.category.coding.userSelected">
+         <path value="Flag.category.coding.userSelected"></path>
+         <max value="0"></max>
+      </element>
+      <element id="Flag.code">
+         <path value="Flag.code"></path>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="FlagCode"></valueString>
+            </extension>
+            <strength value="extensible"></strength>
+            <valueSetReference>
+               <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-MedicationFlag-1"></reference>
+            </valueSetReference>
+         </binding>
+      </element>
+      <element id="Flag.code.coding">
+         <path value="Flag.code.coding"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Flag.code.coding.system">
+         <path value="Flag.code.coding.system"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Flag.code.coding.version">
+         <path value="Flag.code.coding.version"></path>
+         <max value="0"></max>
+      </element>
+      <element id="Flag.code.coding.code">
+         <path value="Flag.code.coding.code"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Flag.code.coding.display">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+            <valueBoolean value="true"></valueBoolean>
+         </extension>
+         <path value="Flag.code.coding.display"></path>
+         <min value="1"></min>
+      </element>
+      <element id="Flag.code.coding.userSelected">
+         <path value="Flag.code.coding.userSelected"></path>
+         <max value="0"></max>
+      </element>
+      <element id="Flag.subject">
+         <path value="Flag.subject"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Location-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Flag.encounter">
+         <path value="Flag.encounter"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"></targetProfile>
+         </type>
+      </element>
+      <element id="Flag.author">
+         <path value="Flag.author"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+      </element>
+   </differential>
+</StructureDefinition>
