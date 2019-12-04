@@ -26,10 +26,6 @@
    <!-- This is whatever FHIR version the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
    <fhirVersion value="3.0.2"></fhirVersion>
    <definition>
-      <grouping id="cc">
-         <name value="HL7 UK"></name>
-         <description value="Core UK FHIR Resources"></description>
-      </grouping>
       <grouping id="uk-base">
          <name value="HL7 UK Base Profiles"></name>
          <description value="UK Base FHIR Profiles"></description>
@@ -65,14 +61,6 @@
       <grouping id="uk-ns">
          <name value="Naming Systems"></name>
          <description value="Represents a 'System' used within Identifier and Coding data types."></description>
-      </grouping>
-      <grouping id="uk-base">
-         <name value="HL7 UK Base"></name>
-         <description value="UK Base FHIR Profiles"></description>
-      </grouping>
-      <grouping id="uk-level3">
-         <name value="HL7 UK Level 3"></name>
-         <description value="UK Level 3 FHIR Profiles"></description>
       </grouping>
       <grouping id="uk-cm">
          <name value="HL7 UK ConceptMap"></name>
@@ -137,7 +125,7 @@
             <reference value="StructureDefinition/CareConnect-ACVPU-Observation-1"></reference>
          </reference>
          <name value="ACVPU-Observation-1"></name>
-         <groupingId value="uk-news2"></groupingId>
+         <groupingId value="uk-level3"></groupingId>
       </resource>
       <resource>
          <reference>
@@ -148,10 +136,10 @@
       </resource>
       <resource>
          <reference>
-            <reference value="ConceptMap/CareConnect-AdministrativeGender-1"></reference>
+            <reference value="ValueSet/CareConnect-AdministrativeGender-1"></reference>
          </reference>
          <name value="AdministrativeGender-1"></name>
-         <groupingId value="uk-base"></groupingId>
+         <groupingId value="uk-vs"></groupingId>
       </resource>
       <resource>
          <reference>
@@ -204,17 +192,17 @@
       </resource>
       <resource>
          <reference>
-            <reference value="ConceptMap/CareConnect-AllergySeverity-1"></reference>
+            <reference value="StructureDefinition/Extension-CareConnect-AllergySeverity-1"></reference>
          </reference>
          <name value="AllergySeverity-1"></name>
-         <groupingId value="uk-base"></groupingId>
+         <groupingId value="uk-ext"></groupingId>
       </resource>
       <resource>
          <reference>
-            <reference value="ConceptMap/CareConnect-AllergyVerificationStatus-1"></reference>
+            <reference value="ValueSet/CareConnect-AllergyVerificationStatus-1"></reference>
          </reference>
          <name value="AllergyVerificationStatus-1"></name>
-         <groupingId value="uk-base"></groupingId>
+         <groupingId value="uk-vs"></groupingId>
       </resource>
       <resource>
          <reference>
@@ -235,7 +223,7 @@
             <reference value="StructureDefinition/CareConnect-BloodPressure-Observation-1"></reference>
          </reference>
          <name value="BloodPressure-Observation-1"></name>
-         <groupingId value="uk-news2"></groupingId>
+         <groupingId value="uk-level3"></groupingId>
       </resource>
       <resource>
          <reference>
@@ -337,10 +325,10 @@
       </resource>
       <resource>
          <reference>
-            <reference value="ConceptMap/CareConnect-ConditionEpisodicity-1"></reference>
+            <reference value="ValueSet/CareConnect-ConditionEpisodicity-1"></reference>
          </reference>
          <name value="ConditionEpisodicity-1"></name>
-         <groupingId value="uk-base"></groupingId>
+         <groupingId value="uk-vs"></groupingId>
       </resource>
       <resource>
          <reference>
@@ -487,7 +475,7 @@
             <reference value="StructureDefinition/CareConnect-HeartRate-Observation-1"></reference>
          </reference>
          <name value="HeartRate-Observation-1"></name>
-         <groupingId value="uk-news2"></groupingId>
+         <groupingId value="uk-level3"></groupingId>
       </resource>
       <resource>
          <reference>
@@ -529,7 +517,7 @@
             <reference value="StructureDefinition/CareConnect-InspiredOxygen-Observation-1"></reference>
          </reference>
          <name value="InspiredOxygen-Observation-1"></name>
-         <groupingId value="uk-news2"></groupingId>
+         <groupingId value="uk-level3"></groupingId>
       </resource>
       <resource>
          <reference>
@@ -603,10 +591,10 @@
       </resource>
       <resource>
          <reference>
-            <reference value="ConceptMap/CareConnect-MaritalStatus-1"></reference>
+            <reference value="ValueSet/CareConnect-MaritalStatus-1"></reference>
          </reference>
          <name value="MaritalStatus-1"></name>
-         <groupingId value="uk-base"></groupingId>
+         <groupingId value="uk-vs"></groupingId>
       </resource>
       <resource>
          <reference>
@@ -809,7 +797,7 @@
             <reference value="StructureDefinition/CareConnect-OxygenSaturation-Observation-1"></reference>
          </reference>
          <name value="OxygenSaturation-Observation-1"></name>
-         <groupingId value="uk-news2"></groupingId>
+         <groupingId value="uk-level3"></groupingId>
       </resource>
       <resource>
          <reference>
@@ -1019,7 +1007,7 @@
             <reference value="StructureDefinition/CareConnect-RespiratoryRate-Observation-1"></reference>
          </reference>
          <name value="RespiratoryRate-Observation-1"></name>
-         <groupingId value="uk-news2"></groupingId>
+         <groupingId value="uk-level3"></groupingId>
       </resource>
       <resource>
          <reference>
@@ -1047,7 +1035,7 @@
             <reference value="ValueSet/CareConnect-SaturatedOxygenSp02Scale-1"></reference>
          </reference>
          <name value="SaturatedOxygenSp02Scale-1"></name>
-         <groupingId value="uk-news2"></groupingId>
+         <groupingId value="uk-vs"></groupingId>
       </resource>
       <resource>
          <reference>
@@ -1096,7 +1084,7 @@
             <reference value="StructureDefinition/CareConnect-Subscore-Observation-1"></reference>
          </reference>
          <name value="Subscore-Observation-1"></name>
-         <groupingId value="uk-news2"></groupingId>
+         <groupingId value="uk-level3"></groupingId>
       </resource>
       <resource>
          <reference>
@@ -1131,7 +1119,7 @@
             <reference value="StructureDefinition/CareConnect-VitalSigns-Observation-1"></reference>
          </reference>
          <name value="VitalSigns-Observation-1"></name>
-         <groupingId value="uk-news2"></groupingId>
+         <groupingId value="uk-level3"></groupingId>
       </resource>
       <resource>
          <reference>
@@ -1512,7 +1500,42 @@
             <reference value="ConceptMap/CareConnect-PersonNameType-1"></reference>
          </reference>
          <name value="PersonNameType-1"></name>
-         <groupingId value="uk-base"></groupingId>
+         <groupingId value="uk-cm"></groupingId>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ConceptMap/CareConnect-AdministrativeGender-1"></reference>
+         </reference>
+         <name value="cm-AdministrativeGender-1"></name>
+         <groupingId value="uk-cm"></groupingId>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ConceptMap/CareConnect-AllergySeverity-1"></reference>
+         </reference>
+         <name value="cm-AllergySeverity-1"></name>
+         <groupingId value="uk-cm"></groupingId>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ConceptMap/CareConnect-AllergyVerificationStatus-1"></reference>
+         </reference>
+         <name value="cm-AllergyVerificationStatus-1"></name>
+         <groupingId value="uk-cm"></groupingId>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ConceptMap/CareConnect-ConditionEpisodicity-1"></reference>
+         </reference>
+         <name value="cm-ConditionEpisodicity-1"></name>
+         <groupingId value="uk-cm"></groupingId>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ConceptMap/CareConnect-MaritalStatus-1"></reference>
+         </reference>
+         <name value="cm-MaritalStatus-1"></name>
+         <groupingId value="uk-cm"></groupingId>
       </resource>
       <!-- END OF EXAMPLES
 

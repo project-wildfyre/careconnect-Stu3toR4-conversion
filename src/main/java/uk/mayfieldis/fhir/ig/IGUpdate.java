@@ -108,8 +108,10 @@ public class IGUpdate implements CommandLineRunner {
                         filename = resource.getResourceType().name() + "/" + filename;
                     }
 
-                    if (filename !=null && isUpdate(resource, path + filename + ".xml")) {
-                        Files.writeString(Paths.get(path + filename + ".xml"), content);
+                    if (filename !=null) {
+                        if (isUpdate(resource, path + filename + ".xml")) {
+                            Files.writeString(Paths.get(path + filename + ".xml"), content);
+                        }
                         checkInIG(resource, key, groupId);
                     }
                 }
@@ -169,7 +171,7 @@ public class IGUpdate implements CommandLineRunner {
     private void checkGrouping(String groupId, String group, String groupDesc) {
         ImplementationGuide.ImplementationGuideDefinitionGroupingComponent groupFound = null;
         for (ImplementationGuide.ImplementationGuideDefinitionGroupingComponent groupsearch : ig.getDefinition().getGrouping()) {
-            if (groupsearch.getName().equals(group)) {
+            if (groupsearch.getId().equals(groupId)) {
                 groupFound = groupsearch;
                 break;
             }

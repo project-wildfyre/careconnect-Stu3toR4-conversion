@@ -249,6 +249,12 @@ public class ProcessReferenceServer {
             if (resource instanceof ValueSet) {
                 newUrl = "vs-"+newUrl;
             }
+            if (resource instanceof ConceptMap) {
+                newUrl = "cm-"+newUrl;
+            }
+            if (resource instanceof NamingSystem) {
+                newUrl = "ns-"+newUrl;
+            }
         }
 
         this.resources.put(newUrl,resource);
