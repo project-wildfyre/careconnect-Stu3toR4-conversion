@@ -4,8 +4,10 @@ import ca.uhn.fhir.context.FhirContext;
 import ca.uhn.fhir.rest.api.EncodingEnum;
 
 import ca.uhn.fhir.rest.client.api.IGenericClient;
+import org.fhir.ucum.Value;
 import org.hl7.fhir.convertors.VersionConvertor_30_40;
 import org.hl7.fhir.dstu3.model.*;
+import org.hl7.fhir.instance.model.api.IBaseResource;
 import org.hl7.fhir.r4.model.ImplementationGuide;
 import org.hl7.fhir.r4.model.Reference;
 import org.slf4j.Logger;
@@ -84,7 +86,7 @@ public class IGUpdate implements CommandLineRunner {
         checkGrouping(groupPrefix+"ext","HL7 UK Base Extensions","UK Base FHIR Extensions");
         checkGrouping(groupPrefix+"vs","HL7 UK ValueSets","UK FHIR ValueSets");
         checkGrouping(groupPrefix+"cs","HL7 UK CodeSystems","UK FHIR CodesSystems");
-
+        checkGrouping(groupPrefix+"cm","HL7 UK ConceptMap","UK FHIR ConceptMaps");
         ProcessReferenceServer processReferenceServer = new ProcessReferenceServer("https://fhir.hl7.org.uk/STU3/");
         processReferenceServer.populateMap();
 
@@ -102,11 +104,11 @@ public class IGUpdate implements CommandLineRunner {
             try {
                 if (convertsToR5(resource)  && validatesOK(resource)) {
                     String filename = resource.getIdElement().getIdPart();
-                    if (resource instanceof ValueSet || resource instanceof CodeSystem) {
+                    if (!(resource instanceof StructureDefinition)) {
                         filename = resource.getResourceType().name() + "/" + filename;
                     }
 
-                    if (filename !=null) {
+                    if (filename !=null && isUpdate(resource, path + filename + ".xml")) {
                         Files.writeString(Paths.get(path + filename + ".xml"), content);
                         checkInIG(resource, key, groupId);
                     }
@@ -117,6 +119,52 @@ public class IGUpdate implements CommandLineRunner {
         }
     }
 
+    private Boolean isUpdate(Resource resource, String path) {
+        try {
+            String existingResource = Files.readString(Paths.get(path));
+            IBaseResource
+                    currentResource = ctxSTU3.newXmlParser().parseResource(existingResource);
+            if (currentResource instanceof ValueSet) {
+
+                ValueSet cvs = (ValueSet) currentResource;
+                if (((ValueSet) resource).getVersion().compareTo(cvs.getVersion()) < 0) {
+                    return true;
+                }
+            } else if (currentResource instanceof CodeSystem) {
+
+                CodeSystem ccs = (CodeSystem) currentResource;
+                if (((CodeSystem) resource).getVersion().compareTo(ccs.getVersion()) < 0) {
+                    return true;
+                }
+            } else if (currentResource instanceof ConceptMap) {
+
+                ConceptMap ccs = (ConceptMap) currentResource;
+                if (((ConceptMap) resource).getVersion().compareTo(ccs.getVersion()) < 0) {
+                    return true;
+                }
+            }
+            else if (currentResource instanceof NamingSystem) {
+
+                NamingSystem ccs = (NamingSystem) currentResource;
+                if (((NamingSystem) resource).getVersion().compareTo(ccs.getVersion()) < 0) {
+                    return true;
+                }
+            }  else if (currentResource instanceof StructureDefinition) {
+
+                StructureDefinition ccs = (StructureDefinition) currentResource;
+                if (((StructureDefinition) resource).getVersion().compareTo(ccs.getVersion()) < 0) {
+                    return true;
+                }
+            }
+            else {
+                return false;
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+            return true;
+        }
+        return false;
+    }
 
     private void checkGrouping(String groupId, String group, String groupDesc) {
         ImplementationGuide.ImplementationGuideDefinitionGroupingComponent groupFound = null;
@@ -152,7 +200,11 @@ public class IGUpdate implements CommandLineRunner {
                 new Reference()
                         .setReference(resource.getResourceType().name()+"/"+resource.getIdElement().getIdPart()));
         if (resource instanceof ValueSet) {
-            resourceComponent.setGroupingId(groupPrefix+"vs");
+            resourceComponent.setGroupingId(groupPrefix + "vs");
+        } else if (resource instanceof ConceptMap) {
+                resourceComponent.setGroupingId(groupPrefix+"cm");
+        } else if (resource instanceof NamingSystem) {
+            resourceComponent.setGroupingId(groupPrefix+"ns");
         } else if (resource instanceof CodeSystem) {
             resourceComponent.setGroupingId(groupPrefix+"cs");
         } else if (resource.getIdElement().getIdPart().startsWith("Extension")) {

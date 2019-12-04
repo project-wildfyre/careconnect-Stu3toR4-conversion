@@ -1,7 +1,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
    <id value="uk-base"></id>
    <url value="https://fhir.hl7.org.uk/STU3/ImplementationGuide/Care-Connect-STU3"></url>
-   <version value="3.0.0"/>
+   <version value="3.0.0"></version>
    <name value="HL7 UK Implementation Guide"></name>
    <title value="HL7 UK Base"></title>
    <status value="draft"></status>
@@ -66,6 +66,18 @@
          <name value="Naming Systems"></name>
          <description value="Represents a 'System' used within Identifier and Coding data types."></description>
       </grouping>
+      <grouping id="uk-base">
+         <name value="HL7 UK Base"></name>
+         <description value="UK Base FHIR Profiles"></description>
+      </grouping>
+      <grouping id="uk-level3">
+         <name value="HL7 UK Level 3"></name>
+         <description value="UK Level 3 FHIR Profiles"></description>
+      </grouping>
+      <grouping id="uk-cm">
+         <name value="HL7 UK ConceptMap"></name>
+         <description value="UK FHIR ConceptMaps"></description>
+      </grouping>
       <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
       inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
       <resource>
@@ -101,7 +113,7 @@
          </reference>
          <name value="Organization example"></name>
          <description value="Level 3 Example"></description>
-         <exampleBoolean value="true"/>
+         <exampleBoolean value="true"></exampleBoolean>
          <groupingId value="uk-examples"></groupingId>
       </resource>
       <resource>
@@ -136,10 +148,10 @@
       </resource>
       <resource>
          <reference>
-            <reference value="ValueSet/CareConnect-AdministrativeGender-1"></reference>
+            <reference value="ConceptMap/CareConnect-AdministrativeGender-1"></reference>
          </reference>
          <name value="AdministrativeGender-1"></name>
-         <groupingId value="uk-vs"></groupingId>
+         <groupingId value="uk-base"></groupingId>
       </resource>
       <resource>
          <reference>
@@ -192,17 +204,17 @@
       </resource>
       <resource>
          <reference>
-            <reference value="StructureDefinition/Extension-CareConnect-AllergySeverity-1"></reference>
+            <reference value="ConceptMap/CareConnect-AllergySeverity-1"></reference>
          </reference>
          <name value="AllergySeverity-1"></name>
-         <groupingId value="uk-ext"></groupingId>
+         <groupingId value="uk-base"></groupingId>
       </resource>
       <resource>
          <reference>
-            <reference value="ValueSet/CareConnect-AllergyVerificationStatus-1"></reference>
+            <reference value="ConceptMap/CareConnect-AllergyVerificationStatus-1"></reference>
          </reference>
          <name value="AllergyVerificationStatus-1"></name>
-         <groupingId value="uk-vs"></groupingId>
+         <groupingId value="uk-base"></groupingId>
       </resource>
       <resource>
          <reference>
@@ -325,10 +337,10 @@
       </resource>
       <resource>
          <reference>
-            <reference value="ValueSet/CareConnect-ConditionEpisodicity-1"></reference>
+            <reference value="ConceptMap/CareConnect-ConditionEpisodicity-1"></reference>
          </reference>
          <name value="ConditionEpisodicity-1"></name>
-         <groupingId value="uk-vs"></groupingId>
+         <groupingId value="uk-base"></groupingId>
       </resource>
       <resource>
          <reference>
@@ -591,10 +603,10 @@
       </resource>
       <resource>
          <reference>
-            <reference value="ValueSet/CareConnect-MaritalStatus-1"></reference>
+            <reference value="ConceptMap/CareConnect-MaritalStatus-1"></reference>
          </reference>
          <name value="MaritalStatus-1"></name>
-         <groupingId value="uk-vs"></groupingId>
+         <groupingId value="uk-base"></groupingId>
       </resource>
       <resource>
          <reference>
@@ -1494,6 +1506,13 @@
          </reference>
          <name value="uk-gmc-number"></name>
          <groupingId value="uk-ns"></groupingId>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ConceptMap/CareConnect-PersonNameType-1"></reference>
+         </reference>
+         <name value="PersonNameType-1"></name>
+         <groupingId value="uk-base"></groupingId>
       </resource>
       <!-- END OF EXAMPLES
 

@@ -34,6 +34,7 @@ public class ProcessReferenceServer {
         getStructureDefinitions();
         getValueSets();
         getCodeSystems();
+        getConceptMaps();
     }
 
     public Map<String, Resource> getResources() {
@@ -144,6 +145,82 @@ public class ProcessReferenceServer {
                     if (entry.getResource() instanceof ValueSet) {
                         ValueSet vs = (ValueSet) entry.getResource();
                         this.addMapEntry(vs.getUrl(),vs);
+                    }
+                }
+                if (bundle.getLink(Bundle.LINK_NEXT) != null) {
+                    // load next page
+                    log.info(bundle.getLink(Bundle.LINK_NEXT).getUrl());
+                    try {
+                        bundle = client.loadPage().next(bundle).execute();
+                        more = true;
+                    } catch (Exception ex) {
+                        log.error(ex.getMessage());
+                        more= false;
+                    }
+                }
+            } while (more);
+        }
+    }
+
+    public void getConceptMaps() {
+
+        Bundle bundle = null;
+        try {
+            bundle = client.search()
+                    .forResource(ConceptMap.class)
+                    .returnBundle(Bundle.class)
+                    .execute();
+        } catch (Exception ex1) {
+            log.error(ex1.getMessage());
+        }
+
+        if (bundle != null && bundle.hasEntry()) {
+            Boolean more;
+            do {
+                more=false;
+                for (Bundle.BundleEntryComponent entry : bundle.getEntry()) {
+                    log.info(entry.getFullUrl());
+                    if (entry.getResource() instanceof ConceptMap) {
+                        ConceptMap cm = (ConceptMap) entry.getResource();
+                        this.addMapEntry(cm.getUrl(),cm);
+                    }
+                }
+                if (bundle.getLink(Bundle.LINK_NEXT) != null) {
+                    // load next page
+                    log.info(bundle.getLink(Bundle.LINK_NEXT).getUrl());
+                    try {
+                        bundle = client.loadPage().next(bundle).execute();
+                        more = true;
+                    } catch (Exception ex) {
+                        log.error(ex.getMessage());
+                        more= false;
+                    }
+                }
+            } while (more);
+        }
+    }
+
+    public void getNamingSystems() {
+
+        Bundle bundle = null;
+        try {
+            bundle = client.search()
+                    .forResource(NamingSystem.class)
+                    .returnBundle(Bundle.class)
+                    .execute();
+        } catch (Exception ex1) {
+            log.error(ex1.getMessage());
+        }
+
+        if (bundle != null && bundle.hasEntry()) {
+            Boolean more;
+            do {
+                more=false;
+                for (Bundle.BundleEntryComponent entry : bundle.getEntry()) {
+                    log.info(entry.getFullUrl());
+                    if (entry.getResource() instanceof NamingSystem) {
+                        NamingSystem ns = (NamingSystem) entry.getResource();
+                        this.addMapEntry(ns.getUrl(),ns);
                     }
                 }
                 if (bundle.getLink(Bundle.LINK_NEXT) != null) {
