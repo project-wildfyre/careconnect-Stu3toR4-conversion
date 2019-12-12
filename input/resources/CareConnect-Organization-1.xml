@@ -3,32 +3,2068 @@
    <meta>
       <lastUpdated value="2018-02-05T14:49:01.808+00:00"></lastUpdated>
    </meta>
+   <text>
+      <status value="generated"></status>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;">
+            <tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;">
+               <th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/formats.html#table" title="The logical name of the element">Name</a>
+               </th>
+               <th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/formats.html#table" title="Information about the use of the element">Flags</a>
+               </th>
+               <th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a>
+               </th>
+               <th style="width: 100px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/formats.html#table" title="Reference to the type of the element">Type</a>
+               </th>
+               <th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/formats.html#table" title="Additional information about the element">Description &amp; Constraints</a>
+                  <span style="float: right">
+                     <a href="http://hl7.org/fhir/STU3/formats.html#table" title="Legend for this format">
+                        <img src="http://hl7.org/fhir/STU3/help16.png" alt="doco" style="background-color: inherit"></img>
+                     </a>
+                  </span>
+               </th>
+            </tr>
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;">
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#Organization" title="null">Organization</a>
+                  <a name="Organization"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7;">
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck12.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_extension_simple.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Simple Extension" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#Organization.extension" title="null">extension</a>
+                  <a name="Organization.extension"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="opacity: 0.4">0</span>
+                  <span style="opacity: 0.5">..</span>
+                  <span style="opacity: 0.4">*</span>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a style="opacity: 0.4" href="http://hl7.org/fhir/STU3/extensibility.html#Extension">Extension</a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="font-weight:bold">Slice: </span>Unordered, Open by value:url
+               </td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;">
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck14.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#Organization.extension:mainLocation" title="Extension URL = https://hl7.org.uk/fhir/StructureDefinition/Extension-CareConnect-MainLocation-1">Extension-CareConnect-MainLocation-1</a>
+                  <a name="Organization.extension"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="opacity: 0.4">0</span>..
+                  <span style="opacity: 0.4">1</span>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/references.html">Reference</a>()
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Main location
+                  <br></br>
+                  <span style="font-weight:bold">URL: </span>
+                  <a href="http://hl7.org/fhir/STU3/extension-Extension-CareConnect-MainLocation-1.html">https://hl7.org.uk/fhir/StructureDefinition/Extension-CareConnect-MainLocation-1</a>
+               </td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7;">
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck14.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_slice_item.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#Organization.extension:organization-period" title="Extension URL = http://hl7.org/fhir/StructureDefinition/organization-period">organization-period</a>
+                  <a name="Organization.extension"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="opacity: 0.4">0</span>..
+                  <span style="opacity: 0.4">1</span>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/datatypes.html#Period">Period</a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Extension
+                  <br></br>
+                  <span style="font-weight:bold">URL: </span>
+                  <a href="http://hl7.org/fhir/STU3/extension-organization-period.html">http://hl7.org/fhir/StructureDefinition/organization-period</a>
+               </td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;">
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_slice.png" alt="." style="background-color: white; background-color: inherit" title="Slice Definition" class="hierarchy"></img> 
+                  <a style="font-style: italic" href="{{[id]}}-definitions.html#Organization.identifier" title="null">identifier</a>
+                  <a name="Organization.identifier"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="font-style: italic"></span>
+                  <span style="opacity: 0.4; font-style: italic">0</span>
+                  <span style="opacity: 0.5; font-style: italic">..</span>
+                  <span style="opacity: 0.4; font-style: italic">*</span>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a style="font-style: italic" href="http://hl7.org/fhir/STU3/profiling.html#slicing">(Slice Definition)</a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="font-weight:bold; font-style: italic">Slice: </span>
+                  <span style="font-style: italic">Unordered, Open At End by value:system</span>
+               </td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7;">
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck135.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin_slicer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_slice_item.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#Organization.identifier:odsOrganisationCode" title="Slice odsOrganisationCode: Identifier code supplier by the Organisation Data Service">identifier:odsOrganisationCode</a>
+                  <a name="Organization.identifier"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="opacity: 0.4">0</span>..
+                  <span style="opacity: 0.4">1</span>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a style="opacity: 0.4" href="http://hl7.org/fhir/STU3/datatypes.html#Identifier">Identifier</a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Organisation Data Service code</td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;">
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1350.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vline_slicer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin_slice.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#Organization.identifier:odsOrganisationCode.system" title="null">system</a>
+                  <a name="Organization.identifier.system"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a style="opacity: 0.4" href="http://hl7.org/fhir/STU3/datatypes.html#uri">uri</a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="font-weight:bold">Fixed Value: </span>
+                  <span style="color: darkgreen">https://fhir.nhs.uk/Id/ods-organization-code</span>
+               </td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7;">
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1350.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vline_slicer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin_slice.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#Organization.identifier:odsOrganisationCode.value" title="null">value</a>
+                  <a name="Organization.identifier.value"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a style="opacity: 0.4" href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;">
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1340.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vline_slicer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin_end_slice.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#Organization.identifier:odsOrganisationCode.assigner" title="null">assigner</a>
+                  <a name="Organization.identifier.assigner"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="opacity: 0.4">0</span>
+                  <span style="opacity: 0.5">..</span>
+                  <span style="opacity: 0.4">1</span>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(
+                  <a href="CareConnect-Organization-1.html">CareConnect-Organization-1</a>)
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7;">
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck125.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin_end_slicer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_slice_item.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#Organization.identifier:odsSiteCode" title="Slice odsSiteCode: ODS Site code to identify the organisation at site level">identifier:odsSiteCode</a>
+                  <a name="Organization.identifier"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="opacity: 0.4">0</span>..
+                  <span style="opacity: 0.4">1</span>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a style="opacity: 0.4" href="http://hl7.org/fhir/STU3/datatypes.html#Identifier">Identifier</a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ODS Site code to identify the organisation at site level</td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;">
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1250.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin_slice.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#Organization.identifier:odsSiteCode.system" title="null">system</a>
+                  <a name="Organization.identifier.system"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a style="opacity: 0.4" href="http://hl7.org/fhir/STU3/datatypes.html#uri">uri</a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="font-weight:bold">Fixed Value: </span>
+                  <span style="color: darkgreen">https://fhir.nhs.uk/Id/ods-site-code</span>
+               </td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7;">
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1250.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin_slice.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#Organization.identifier:odsSiteCode.value" title="null">value</a>
+                  <a name="Organization.identifier.value"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a style="opacity: 0.4" href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;">
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1240.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin_end_slice.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#Organization.identifier:odsSiteCode.assigner" title="null">assigner</a>
+                  <a name="Organization.identifier.assigner"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="opacity: 0.4">0</span>
+                  <span style="opacity: 0.5">..</span>
+                  <span style="opacity: 0.4">1</span>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(
+                  <a href="CareConnect-Organization-1.html">CareConnect-Organization-1</a>)
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7;">
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#Organization.partOf" title="null">partOf</a>
+                  <a name="Organization.partOf"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="opacity: 0.4">0</span>
+                  <span style="opacity: 0.5">..</span>
+                  <span style="opacity: 0.4">1</span>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(
+                  <a href="CareConnect-Organization-1.html">CareConnect-Organization-1</a>)
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;">
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#Organization.contact" title="null">contact</a>
+                  <a name="Organization.contact"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7;">
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck001.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#Organization.contact.name" title="null">name</a>
+                  <a name="Organization.contact.name"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;">
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0000.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#Organization.contact.name.family" title="null">family</a>
+                  <a name="Organization.contact.name.family"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a style="opacity: 0.4" href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr>
+               <td colspan="5" class="hierarchy">
+                  <br></br>
+                  <a href="http://hl7.org/fhir/STU3/formats.html#table" title="Legend for this format">
+                     <img src="http://hl7.org/fhir/STU3/help16.png" alt="doco" style="background-color: inherit"></img> Documentation for this format
+                  </a>
+               </td>
+            </tr>
+         </table>
+      </div>
+   </text>
    <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
       <valueCode value="pa"></valueCode>
    </extension>
-   <url value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></url>
-   <version value="1.1.0"></version>
+   <url value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Organization-1"></url>
+   <version value="3.0.0"></version>
    <name value="CareConnect-Organization-1"></name>
    <status value="draft"></status>
-   <date value="2018-11-05"></date>
-   <publisher value="HL7 UK"></publisher>
+   <date value="2018-11-05T00:00:00+00:00"></date>
+   <publisher value="INTEROpen"></publisher>
    <contact>
-      <name value="INTEROPen"></name>
       <telecom>
-         <system value="email"></system>
-         <value value="admin@interopen.org"></value>
-         <use value="work"></use>
+         <system value="other"></system>
+         <value value="https://interopen.ryver.com/"></value>
       </telecom>
    </contact>
    <description value="The Organization resource represents the organisation that employs the healthcare professional."></description>
+   <jurisdiction>
+      <coding>
+         <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"></system>
+         <code value="826"></code>
+      </coding>
+   </jurisdiction>
    <purpose value="CURATED BY INTEROPen see: http://www.interopen.org/careconnect-curation-methodology/"></purpose>
    <copyright value="Copyright © 2016 HL7 UK  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.  HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html"></copyright>
-   <fhirVersion value="3.0.1"></fhirVersion>
+   <fhirVersion value="3.0.2"></fhirVersion>
+   <mapping>
+      <identity value="v2"></identity>
+      <uri value="http://hl7.org/v2"></uri>
+      <name value="HL7 v2 Mapping"></name>
+   </mapping>
+   <mapping>
+      <identity value="rim"></identity>
+      <uri value="http://hl7.org/v3"></uri>
+      <name value="RIM Mapping"></name>
+   </mapping>
+   <mapping>
+      <identity value="servd"></identity>
+      <uri value="http://www.omg.org/spec/ServD/1.0/"></uri>
+      <name value="ServD"></name>
+   </mapping>
+   <mapping>
+      <identity value="w5"></identity>
+      <uri value="http://hl7.org/fhir/w5"></uri>
+      <name value="W5 Mapping"></name>
+   </mapping>
    <kind value="resource"></kind>
    <abstract value="false"></abstract>
    <type value="Organization"></type>
    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization"></baseDefinition>
    <derivation value="constraint"></derivation>
+   <snapshot>
+      <element id="Organization">
+         <path value="Organization"></path>
+         <short value="A grouping of people or organizations with a common purpose"></short>
+         <definition value="A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, etc."></definition>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="Organization"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <constraint>
+            <key value="dom-2"></key>
+            <severity value="error"></severity>
+            <human value="If the resource is contained in another resource, it SHALL NOT contain nested Resources"></human>
+            <expression value="contained.contained.empty()"></expression>
+            <xpath value="not(parent::f:contained and f:contained)"></xpath>
+            <source value="DomainResource"></source>
+         </constraint>
+         <constraint>
+            <key value="dom-1"></key>
+            <severity value="error"></severity>
+            <human value="If the resource is contained in another resource, it SHALL NOT contain any narrative"></human>
+            <expression value="contained.text.empty()"></expression>
+            <xpath value="not(parent::f:contained and f:text)"></xpath>
+            <source value="DomainResource"></source>
+         </constraint>
+         <constraint>
+            <key value="dom-4"></key>
+            <severity value="error"></severity>
+            <human value="If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated"></human>
+            <expression value="contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()"></expression>
+            <xpath value="not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))"></xpath>
+            <source value="DomainResource"></source>
+         </constraint>
+         <constraint>
+            <key value="dom-3"></key>
+            <severity value="error"></severity>
+            <human value="If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource"></human>
+            <expression value="contained.where(('#'+id in %resource.descendants().reference).not()).empty()"></expression>
+            <xpath value="not(exists(for $id in f:contained/*/@id return $id[not(ancestor::f:contained/parent::*/descendant::f:reference/@value=concat('#', $id))]))"></xpath>
+            <source value="DomainResource"></source>
+         </constraint>
+         <constraint>
+            <key value="org-1"></key>
+            <severity value="error"></severity>
+            <human value="The organization SHALL at least have a name or an id, and possibly more than one"></human>
+            <expression value="(identifier.count() + name.count()) &gt; 0"></expression>
+            <xpath value="count(f:identifier | f:name) &gt; 0"></xpath>
+         </constraint>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="Entity. Role, or Act"></map>
+         </mapping>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="(also see master files messages)"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="Organization(classCode=ORG, determinerCode=INST)"></map>
+         </mapping>
+         <mapping>
+            <identity value="servd"></identity>
+            <map value="Organization"></map>
+         </mapping>
+         <mapping>
+            <identity value="w5"></identity>
+            <map value="administrative.group"></map>
+         </mapping>
+      </element>
+      <element id="Organization.id">
+         <path value="Organization.id"></path>
+         <short value="Logical id of this artifact"></short>
+         <definition value="The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes."></definition>
+         <comment value="The only time that a resource does not have an id is when it is being submitted to the server using a create operation."></comment>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Resource.id"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="id"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+      </element>
+      <element id="Organization.meta">
+         <path value="Organization.meta"></path>
+         <short value="Metadata about the resource"></short>
+         <definition value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Resource.meta"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Meta"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+      </element>
+      <element id="Organization.implicitRules">
+         <path value="Organization.implicitRules"></path>
+         <short value="A set of rules under which this content was created"></short>
+         <definition value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content."></definition>
+         <comment value="Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. 
+
+This element is labelled as a modifier because the implicit rules may provide additional knowledge about the resource that modifies it's meaning or interpretation."></comment>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Resource.implicitRules"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="uri"></code>
+         </type>
+         <isModifier value="true"></isModifier>
+         <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"></isModifierReason>
+         <isSummary value="true"></isSummary>
+      </element>
+      <element id="Organization.language">
+         <path value="Organization.language"></path>
+         <short value="Language of the resource content"></short>
+         <definition value="The base language in which the resource is written."></definition>
+         <comment value="Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource  Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute)."></comment>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Resource.language"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="code"></code>
+         </type>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
+               <valueCanonical value="http://hl7.org/fhir/ValueSet/all-languages"></valueCanonical>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="Language"></valueString>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+               <valueBoolean value="true"></valueBoolean>
+            </extension>
+            <strength value="extensible"></strength>
+            <description value="A human language."></description>
+            <valueSet value="http://hl7.org/fhir/ValueSet/languages"></valueSet>
+         </binding>
+      </element>
+      <element id="Organization.text">
+         <path value="Organization.text"></path>
+         <short value="Text summary of the resource, for human interpretation"></short>
+         <definition value="A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety."></definition>
+         <comment value="Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative. In some cases, a resource may only have text with little or no additional discrete data (as long as all minOccurs=1 elements are satisfied).  This may be necessary for data from legacy systems where information is captured as a &quot;text blob&quot; or where text is additionally entered raw or narrated and encoded in formation is added later."></comment>
+         <alias value="narrative"></alias>
+         <alias value="html"></alias>
+         <alias value="xhtml"></alias>
+         <alias value="display"></alias>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="DomainResource.text"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Narrative"></code>
+         </type>
+         <condition value="dom-1"></condition>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="Act.text?"></map>
+         </mapping>
+      </element>
+      <element id="Organization.contained">
+         <path value="Organization.contained"></path>
+         <short value="Contained, inline Resources"></short>
+         <definition value="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope."></definition>
+         <comment value="This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again."></comment>
+         <alias value="inline resources"></alias>
+         <alias value="anonymous resources"></alias>
+         <alias value="contained resources"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="DomainResource.contained"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Resource"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="N/A"></map>
+         </mapping>
+      </element>
+      <element id="Organization.extension">
+         <path value="Organization.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <rules value="open"></rules>
+         </slicing>
+         <short value="Extension"></short>
+         <definition value="An Extension"></definition>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="DomainResource.extension"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Extension"></code>
+         </type>
+      </element>
+      <element id="Organization.extension:mainLocation">
+         <path value="Organization.extension"></path>
+         <sliceName value="mainLocation"></sliceName>
+         <short value="Main location"></short>
+         <definition value="The main location of the organization."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="DomainResource.extension"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://hl7.org.uk/fhir/StructureDefinition/Extension-CareConnect-MainLocation-1"></profile>
+         </type>
+         <condition value="ele-1"></condition>
+         <constraint>
+            <key value="ele-1"></key>
+            <severity value="error"></severity>
+            <human value="All FHIR elements must have a @value or children"></human>
+            <expression value="hasValue() | (children().count() &gt; id.count())"></expression>
+            <xpath value="@value|f:*|h:div"></xpath>
+            <source value="Element"></source>
+         </constraint>
+         <constraint>
+            <key value="ext-1"></key>
+            <severity value="error"></severity>
+            <human value="Must have either extensions or value[x], not both"></human>
+            <expression value="extension.exists() != value.exists()"></expression>
+            <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"></xpath>
+            <source value="http://hl7.org/fhir/StructureDefinition/Extension"></source>
+         </constraint>
+      </element>
+      <element id="Organization.extension:organization-period">
+         <path value="Organization.extension"></path>
+         <sliceName value="organization-period"></sliceName>
+         <short value="Extension"></short>
+         <definition value="The date range that this organization should be considered available."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="DomainResource.extension"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Extension"></code>
+            <profile value="http://hl7.org/fhir/StructureDefinition/organization-period"></profile>
+         </type>
+         <condition value="ele-1"></condition>
+         <constraint>
+            <key value="ele-1"></key>
+            <severity value="error"></severity>
+            <human value="All FHIR elements must have a @value or children"></human>
+            <expression value="hasValue() | (children().count() &gt; id.count())"></expression>
+            <xpath value="@value|f:*|h:div"></xpath>
+            <source value="Element"></source>
+         </constraint>
+         <constraint>
+            <key value="ext-1"></key>
+            <severity value="error"></severity>
+            <human value="Must have either extensions or value[x], not both"></human>
+            <expression value="extension.exists() != value.exists()"></expression>
+            <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"></xpath>
+            <source value="Extension"></source>
+         </constraint>
+      </element>
+      <element id="Organization.modifierExtension">
+         <path value="Organization.modifierExtension"></path>
+         <short value="Extensions that cannot be ignored"></short>
+         <definition value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."></definition>
+         <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+         <alias value="extensions"></alias>
+         <alias value="user content"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="DomainResource.modifierExtension"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Extension"></code>
+         </type>
+         <isModifier value="true"></isModifier>
+         <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"></isModifierReason>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="N/A"></map>
+         </mapping>
+      </element>
+      <element id="Organization.identifier">
+         <path value="Organization.identifier"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="system"></path>
+            </discriminator>
+            <ordered value="false"></ordered>
+            <rules value="openAtEnd"></rules>
+         </slicing>
+         <short value="Identifies this organization  across multiple systems"></short>
+         <definition value="Identifier for the organization that is used to identify the organization across multiple disparate systems."></definition>
+         <requirements value="Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization."></requirements>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="Organization.identifier"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Identifier"></code>
+         </type>
+         <condition value="org-1"></condition>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="XON.10 / XON.3"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".scopes[Role](classCode=IDENT)"></map>
+         </mapping>
+         <mapping>
+            <identity value="servd"></identity>
+            <map value="./Identifiers"></map>
+         </mapping>
+         <mapping>
+            <identity value="w5"></identity>
+            <map value="id"></map>
+         </mapping>
+      </element>
+      <element id="Organization.identifier:odsOrganisationCode">
+         <path value="Organization.identifier"></path>
+         <sliceName value="odsOrganisationCode"></sliceName>
+         <short value="Organisation Data Service code"></short>
+         <definition value="Identifier code supplier by the Organisation Data Service"></definition>
+         <requirements value="Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization."></requirements>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Organization.identifier"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Identifier"></code>
+         </type>
+         <condition value="org-1"></condition>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="XON.10 / XON.3"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".scopes[Role](classCode=IDENT)"></map>
+         </mapping>
+         <mapping>
+            <identity value="servd"></identity>
+            <map value="./Identifiers"></map>
+         </mapping>
+         <mapping>
+            <identity value="w5"></identity>
+            <map value="id"></map>
+         </mapping>
+      </element>
+      <element id="Organization.identifier:odsOrganisationCode.id">
+         <path value="Organization.identifier.id"></path>
+         <representation value="xmlAttr"></representation>
+         <short value="xml:id (or equivalent in JSON)"></short>
+         <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Element.id"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="n/a"></map>
+         </mapping>
+      </element>
+      <element id="Organization.identifier:odsOrganisationCode.extension">
+         <path value="Organization.identifier.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <description value="Extensions are always sliced by (at least) url"></description>
+            <rules value="open"></rules>
+         </slicing>
+         <short value="Additional Content defined by implementations"></short>
+         <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."></definition>
+         <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+         <alias value="extensions"></alias>
+         <alias value="user content"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="Element.extension"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Extension"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="n/a"></map>
+         </mapping>
+      </element>
+      <element id="Organization.identifier:odsOrganisationCode.use">
+         <path value="Organization.identifier.use"></path>
+         <short value="usual | official | temp | secondary (If known)"></short>
+         <definition value="The purpose of this identifier."></definition>
+         <comment value="This is labeled as &quot;Is Modifier&quot; because applications should not mistake a temporary id for a permanent one. Applications can assume that an identifier is permanent unless it explicitly says that it is temporary."></comment>
+         <requirements value="Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers."></requirements>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Identifier.use"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="code"></code>
+         </type>
+         <isModifier value="true"></isModifier>
+         <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"></isModifierReason>
+         <isSummary value="true"></isSummary>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="IdentifierUse"></valueString>
+            </extension>
+            <strength value="required"></strength>
+            <description value="Identifies the purpose for this identifier, if known ."></description>
+            <valueSet value="http://hl7.org/fhir/ValueSet/identifier-use"></valueSet>
+         </binding>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="N/A"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="Role.code or implied by context"></map>
+         </mapping>
+      </element>
+      <element id="Organization.identifier:odsOrganisationCode.type">
+         <path value="Organization.identifier.type"></path>
+         <short value="Description of identifier"></short>
+         <definition value="A coded type for the identifier that can be used to determine which identifier to use for a specific purpose."></definition>
+         <comment value="This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage. 
+
+Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type."></comment>
+         <requirements value="Allows users to make use of identifiers when the identifier system is not known."></requirements>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Identifier.type"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="CodeableConcept"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="IdentifierType"></valueString>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+               <valueBoolean value="true"></valueBoolean>
+            </extension>
+            <strength value="extensible"></strength>
+            <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose."></description>
+            <valueSet value="http://hl7.org/fhir/ValueSet/identifier-type"></valueSet>
+         </binding>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="CX.5"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="Role.code or implied by context"></map>
+         </mapping>
+      </element>
+      <element id="Organization.identifier:odsOrganisationCode.system">
+         <path value="Organization.identifier.system"></path>
+         <short value="The namespace for the identifier value"></short>
+         <definition value="Establishes the namespace for the value - that is, a URL that describes a set values that are unique."></definition>
+         <requirements value="There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers."></requirements>
+         <min value="1"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Identifier.system"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="uri"></code>
+         </type>
+         <fixedUri value="https://fhir.nhs.uk/Id/ods-organization-code"></fixedUri>
+         <example>
+            <label value="General"></label>
+            <valueUri value="http://www.acme.com/identifiers/patient"></valueUri>
+         </example>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="CX.4 / EI-2-4"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="II.root or Role.id.root"></map>
+         </mapping>
+         <mapping>
+            <identity value="servd"></identity>
+            <map value="./IdentifierType"></map>
+         </mapping>
+      </element>
+      <element id="Organization.identifier:odsOrganisationCode.value">
+         <path value="Organization.identifier.value"></path>
+         <short value="The value that is unique"></short>
+         <definition value="The portion of the identifier typically relevant to the user and which is unique within the context of the system."></definition>
+         <comment value="If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](http://hl7.org/fhir/STU3/extension-rendered-value.html)."></comment>
+         <min value="1"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Identifier.value"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <example>
+            <label value="General"></label>
+            <valueString value="123456"></valueString>
+         </example>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="CX.1 / EI.1"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="II.extension or II.root if system indicates OID or GUID (Or Role.id.extension or root)"></map>
+         </mapping>
+         <mapping>
+            <identity value="servd"></identity>
+            <map value="./Value"></map>
+         </mapping>
+      </element>
+      <element id="Organization.identifier:odsOrganisationCode.period">
+         <path value="Organization.identifier.period"></path>
+         <short value="Time period when id is/was valid for use"></short>
+         <definition value="Time period during which identifier is/was valid for use."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Identifier.period"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Period"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="CX.7 + CX.8"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="Role.effectiveTime or implied by context"></map>
+         </mapping>
+         <mapping>
+            <identity value="servd"></identity>
+            <map value="./StartDate and ./EndDate"></map>
+         </mapping>
+      </element>
+      <element id="Organization.identifier:odsOrganisationCode.assigner">
+         <path value="Organization.identifier.assigner"></path>
+         <short value="Organization that issued id (may be just text)"></short>
+         <definition value="Organization that issued/manages the identifier."></definition>
+         <comment value="The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization."></comment>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Identifier.assigner"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="CX.4 / (CX.4,CX.9,CX.10)"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper"></map>
+         </mapping>
+         <mapping>
+            <identity value="servd"></identity>
+            <map value="./IdentifierIssuingAuthority"></map>
+         </mapping>
+      </element>
+      <element id="Organization.identifier:odsSiteCode">
+         <path value="Organization.identifier"></path>
+         <sliceName value="odsSiteCode"></sliceName>
+         <short value="ODS Site code to identify the organisation at site level"></short>
+         <definition value="ODS Site code to identify the organisation at site level"></definition>
+         <requirements value="Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization."></requirements>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Organization.identifier"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Identifier"></code>
+         </type>
+         <condition value="org-1"></condition>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="XON.10 / XON.3"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".scopes[Role](classCode=IDENT)"></map>
+         </mapping>
+         <mapping>
+            <identity value="servd"></identity>
+            <map value="./Identifiers"></map>
+         </mapping>
+         <mapping>
+            <identity value="w5"></identity>
+            <map value="id"></map>
+         </mapping>
+      </element>
+      <element id="Organization.identifier:odsSiteCode.id">
+         <path value="Organization.identifier.id"></path>
+         <representation value="xmlAttr"></representation>
+         <short value="xml:id (or equivalent in JSON)"></short>
+         <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Element.id"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="n/a"></map>
+         </mapping>
+      </element>
+      <element id="Organization.identifier:odsSiteCode.extension">
+         <path value="Organization.identifier.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <description value="Extensions are always sliced by (at least) url"></description>
+            <rules value="open"></rules>
+         </slicing>
+         <short value="Additional Content defined by implementations"></short>
+         <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."></definition>
+         <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+         <alias value="extensions"></alias>
+         <alias value="user content"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="Element.extension"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Extension"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="n/a"></map>
+         </mapping>
+      </element>
+      <element id="Organization.identifier:odsSiteCode.use">
+         <path value="Organization.identifier.use"></path>
+         <short value="usual | official | temp | secondary (If known)"></short>
+         <definition value="The purpose of this identifier."></definition>
+         <comment value="This is labeled as &quot;Is Modifier&quot; because applications should not mistake a temporary id for a permanent one. Applications can assume that an identifier is permanent unless it explicitly says that it is temporary."></comment>
+         <requirements value="Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers."></requirements>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Identifier.use"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="code"></code>
+         </type>
+         <isModifier value="true"></isModifier>
+         <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"></isModifierReason>
+         <isSummary value="true"></isSummary>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="IdentifierUse"></valueString>
+            </extension>
+            <strength value="required"></strength>
+            <description value="Identifies the purpose for this identifier, if known ."></description>
+            <valueSet value="http://hl7.org/fhir/ValueSet/identifier-use"></valueSet>
+         </binding>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="N/A"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="Role.code or implied by context"></map>
+         </mapping>
+      </element>
+      <element id="Organization.identifier:odsSiteCode.type">
+         <path value="Organization.identifier.type"></path>
+         <short value="Description of identifier"></short>
+         <definition value="A coded type for the identifier that can be used to determine which identifier to use for a specific purpose."></definition>
+         <comment value="This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage. 
+
+Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type."></comment>
+         <requirements value="Allows users to make use of identifiers when the identifier system is not known."></requirements>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Identifier.type"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="CodeableConcept"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="IdentifierType"></valueString>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+               <valueBoolean value="true"></valueBoolean>
+            </extension>
+            <strength value="extensible"></strength>
+            <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose."></description>
+            <valueSet value="http://hl7.org/fhir/ValueSet/identifier-type"></valueSet>
+         </binding>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="CX.5"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="Role.code or implied by context"></map>
+         </mapping>
+      </element>
+      <element id="Organization.identifier:odsSiteCode.system">
+         <path value="Organization.identifier.system"></path>
+         <short value="The namespace for the identifier value"></short>
+         <definition value="Establishes the namespace for the value - that is, a URL that describes a set values that are unique."></definition>
+         <requirements value="There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers."></requirements>
+         <min value="1"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Identifier.system"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="uri"></code>
+         </type>
+         <fixedUri value="https://fhir.nhs.uk/Id/ods-site-code"></fixedUri>
+         <example>
+            <label value="General"></label>
+            <valueUri value="http://www.acme.com/identifiers/patient"></valueUri>
+         </example>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="CX.4 / EI-2-4"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="II.root or Role.id.root"></map>
+         </mapping>
+         <mapping>
+            <identity value="servd"></identity>
+            <map value="./IdentifierType"></map>
+         </mapping>
+      </element>
+      <element id="Organization.identifier:odsSiteCode.value">
+         <path value="Organization.identifier.value"></path>
+         <short value="The value that is unique"></short>
+         <definition value="The portion of the identifier typically relevant to the user and which is unique within the context of the system."></definition>
+         <comment value="If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](http://hl7.org/fhir/STU3/extension-rendered-value.html)."></comment>
+         <min value="1"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Identifier.value"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <example>
+            <label value="General"></label>
+            <valueString value="123456"></valueString>
+         </example>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="CX.1 / EI.1"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="II.extension or II.root if system indicates OID or GUID (Or Role.id.extension or root)"></map>
+         </mapping>
+         <mapping>
+            <identity value="servd"></identity>
+            <map value="./Value"></map>
+         </mapping>
+      </element>
+      <element id="Organization.identifier:odsSiteCode.period">
+         <path value="Organization.identifier.period"></path>
+         <short value="Time period when id is/was valid for use"></short>
+         <definition value="Time period during which identifier is/was valid for use."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Identifier.period"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Period"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="CX.7 + CX.8"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="Role.effectiveTime or implied by context"></map>
+         </mapping>
+         <mapping>
+            <identity value="servd"></identity>
+            <map value="./StartDate and ./EndDate"></map>
+         </mapping>
+      </element>
+      <element id="Organization.identifier:odsSiteCode.assigner">
+         <path value="Organization.identifier.assigner"></path>
+         <short value="Organization that issued id (may be just text)"></short>
+         <definition value="Organization that issued/manages the identifier."></definition>
+         <comment value="The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization."></comment>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Identifier.assigner"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="CX.4 / (CX.4,CX.9,CX.10)"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper"></map>
+         </mapping>
+         <mapping>
+            <identity value="servd"></identity>
+            <map value="./IdentifierIssuingAuthority"></map>
+         </mapping>
+      </element>
+      <element id="Organization.active">
+         <path value="Organization.active"></path>
+         <short value="Whether the organization's record is still in active use"></short>
+         <definition value="Whether the organization's record is still in active use."></definition>
+         <comment value="Default is true.
+
+This active flag is not intended to be used to mark an organizations as temporarily closed or under construction. Instead the Location(s) within the Organization should have the suspended status. If further details of the reason for the suspension are required, then an extension on this element should be used.
+
+This element is labeled as a modifier because it may be used to mark that the resource was created in error."></comment>
+         <requirements value="Need a flag to indicate a record is no longer to be used and should generally be hidden for the user in the UI."></requirements>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Organization.active"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="boolean"></code>
+         </type>
+         <defaultValueBoolean value="true"></defaultValueBoolean>
+         <isModifier value="true"></isModifier>
+         <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"></isModifierReason>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="No equivalent in HL7 v2"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".status"></map>
+         </mapping>
+         <mapping>
+            <identity value="servd"></identity>
+            <map value="./Status (however this concept in ServD more covers why the organization is active or not, could be delisted, deregistered, not operational yet) this could alternatively be derived from ./StartDate and ./EndDate and given a context date."></map>
+         </mapping>
+         <mapping>
+            <identity value="w5"></identity>
+            <map value="status"></map>
+         </mapping>
+      </element>
+      <element id="Organization.type">
+         <path value="Organization.type"></path>
+         <short value="Kind of organization"></short>
+         <definition value="The kind(s) of organization that this is."></definition>
+         <comment value="Organizations can be corporations, wards, sections, clinical teams, government departments, etc. Note that code is generally a classifier of the type of organization; in many applications, codes are used to identity a particular organization (say, ward) as opposed to another of the same type - these are identifiers, not codes
+
+When considering if multiple types are appropriate, you should evaluate if child organizations would be a more appropriate use of the concept, as different types likely are in different sub-areas of the organization. This is most likely to be used where type values have orthogonal values, such as a religious, academic and medical center.
+
+We expect that some jurisdictions will profile this optionality to be a single cardinality."></comment>
+         <requirements value="Need to be able to track the kind of organization that this is - different organization types have different uses."></requirements>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="Organization.type"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="CodeableConcept"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="OrganizationType"></valueString>
+            </extension>
+            <strength value="example"></strength>
+            <description value="Used to categorize the organization"></description>
+            <valueSet value="http://hl7.org/fhir/ValueSet/organization-type"></valueSet>
+         </binding>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="No equivalent in v2"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".code"></map>
+         </mapping>
+         <mapping>
+            <identity value="servd"></identity>
+            <map value="n/a"></map>
+         </mapping>
+         <mapping>
+            <identity value="w5"></identity>
+            <map value="class"></map>
+         </mapping>
+      </element>
+      <element id="Organization.name">
+         <path value="Organization.name"></path>
+         <short value="Name used for the organization"></short>
+         <definition value="A name associated with the organization."></definition>
+         <comment value="If the name of an organization changes, consider putting the old name in the alias column so that it can still be located through searches."></comment>
+         <requirements value="Need to use the name as the label of the organization."></requirements>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Organization.name"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <condition value="org-1"></condition>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="XON.1"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".name"></map>
+         </mapping>
+         <mapping>
+            <identity value="servd"></identity>
+            <map value=".PreferredName/Name"></map>
+         </mapping>
+      </element>
+      <element id="Organization.alias">
+         <path value="Organization.alias"></path>
+         <short value="A list of alternate names that the organization is known as, or was known as in the past"></short>
+         <definition value="A list of alternate names that the organization is known as, or was known as in the past."></definition>
+         <comment value="There are no dates associated with the alias/historic names, as this is not intended to track when names were used, but to assist in searching so that older names can still result in identifying the organization."></comment>
+         <requirements value="Over time locations and organizations go through many changes and can be known by different names.
+
+For searching knowing previous names that the organization was known by can be very useful."></requirements>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="Organization.alias"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".name"></map>
+         </mapping>
+      </element>
+      <element id="Organization.telecom">
+         <path value="Organization.telecom"></path>
+         <short value="A contact detail for the organization"></short>
+         <definition value="A contact detail for the organization."></definition>
+         <comment value="The use code home is not to be used. Note that these contacts are not the contact details of people who are employed by or represent the organization, but official contacts for the organization itself."></comment>
+         <requirements value="Human contact for the organization."></requirements>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="Organization.telecom"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="ContactPoint"></code>
+         </type>
+         <condition value="org-3"></condition>
+         <constraint>
+            <key value="org-3"></key>
+            <severity value="error"></severity>
+            <human value="The telecom of an organization can never be of use 'home'"></human>
+            <expression value="where(use = 'home').empty()"></expression>
+            <xpath value="count(f:use[@value='home']) = 0"></xpath>
+         </constraint>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="ORC-22?"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".telecom"></map>
+         </mapping>
+         <mapping>
+            <identity value="servd"></identity>
+            <map value="./ContactPoints"></map>
+         </mapping>
+      </element>
+      <element id="Organization.address">
+         <path value="Organization.address"></path>
+         <short value="An address for the organization"></short>
+         <definition value="An address for the organization."></definition>
+         <comment value="Organization may have multiple addresses with different uses or applicable periods. The use code home is not to be used."></comment>
+         <requirements value="May need to keep track of the organization's addresses for contacting, billing or reporting requirements."></requirements>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="Organization.address"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Address"></code>
+         </type>
+         <condition value="org-2"></condition>
+         <constraint>
+            <key value="org-2"></key>
+            <severity value="error"></severity>
+            <human value="An address of an organization can never be of use 'home'"></human>
+            <expression value="where(use = 'home').empty()"></expression>
+            <xpath value="count(f:use[@value='home']) = 0"></xpath>
+         </constraint>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="ORC-23?"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".address"></map>
+         </mapping>
+         <mapping>
+            <identity value="servd"></identity>
+            <map value="./PrimaryAddress and ./OtherAddresses"></map>
+         </mapping>
+      </element>
+      <element id="Organization.partOf">
+         <path value="Organization.partOf"></path>
+         <short value="The organization of which this organization forms a part"></short>
+         <definition value="The organization of which this organization forms a part."></definition>
+         <requirements value="Need to be able to track the hierarchy of organizations within an organization."></requirements>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Organization.partOf"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="No equivalent in HL7 v2"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".playedBy[classCode=Part].scoper"></map>
+         </mapping>
+         <mapping>
+            <identity value="servd"></identity>
+            <map value="n/a"></map>
+         </mapping>
+      </element>
+      <element id="Organization.contact">
+         <path value="Organization.contact"></path>
+         <short value="Contact for the organization for a certain purpose"></short>
+         <definition value="Contact for the organization for a certain purpose."></definition>
+         <comment value="Where multiple contacts for the same purpose are provided there is a standard extension that can be used to determine which one is the preferred contact to use."></comment>
+         <requirements value="Need to keep track of assigned contact points within bigger organization."></requirements>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="Organization.contact"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="BackboneElement"></code>
+         </type>
+         <constraint>
+            <key value="ele-1"></key>
+            <severity value="error"></severity>
+            <human value="All FHIR elements must have a @value or children"></human>
+            <expression value="hasValue() | (children().count() &gt; id.count())"></expression>
+            <xpath value="@value|f:*|h:div"></xpath>
+            <source value="Element"></source>
+         </constraint>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".contactParty"></map>
+         </mapping>
+      </element>
+      <element id="Organization.contact.id">
+         <path value="Organization.contact.id"></path>
+         <representation value="xmlAttr"></representation>
+         <short value="xml:id (or equivalent in JSON)"></short>
+         <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Element.id"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="n/a"></map>
+         </mapping>
+      </element>
+      <element id="Organization.contact.extension">
+         <path value="Organization.contact.extension"></path>
+         <short value="Additional Content defined by implementations"></short>
+         <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."></definition>
+         <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+         <alias value="extensions"></alias>
+         <alias value="user content"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="Element.extension"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Extension"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="n/a"></map>
+         </mapping>
+      </element>
+      <element id="Organization.contact.modifierExtension">
+         <path value="Organization.contact.modifierExtension"></path>
+         <short value="Extensions that cannot be ignored"></short>
+         <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."></definition>
+         <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+         <alias value="extensions"></alias>
+         <alias value="user content"></alias>
+         <alias value="modifiers"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="BackboneElement.modifierExtension"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Extension"></code>
+         </type>
+         <isModifier value="true"></isModifier>
+         <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"></isModifierReason>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="N/A"></map>
+         </mapping>
+      </element>
+      <element id="Organization.contact.purpose">
+         <path value="Organization.contact.purpose"></path>
+         <short value="The type of contact"></short>
+         <definition value="Indicates a purpose for which the contact can be reached."></definition>
+         <requirements value="Need to distinguish between multiple contact persons."></requirements>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Organization.contact.purpose"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="CodeableConcept"></code>
+         </type>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="ContactPartyType"></valueString>
+            </extension>
+            <strength value="extensible"></strength>
+            <description value="The purpose for which you would contact a contact party"></description>
+            <valueSet value="http://hl7.org/fhir/ValueSet/contactentity-type"></valueSet>
+         </binding>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="./type"></map>
+         </mapping>
+      </element>
+      <element id="Organization.contact.name">
+         <path value="Organization.contact.name"></path>
+         <short value="A name associated with the contact"></short>
+         <definition value="A name associated with the contact."></definition>
+         <requirements value="Need to be able to track the person by name."></requirements>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Organization.contact.name"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="HumanName"></code>
+         </type>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="PID-5, PID-9"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="./name"></map>
+         </mapping>
+      </element>
+      <element id="Organization.contact.name.id">
+         <path value="Organization.contact.name.id"></path>
+         <representation value="xmlAttr"></representation>
+         <short value="xml:id (or equivalent in JSON)"></short>
+         <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Element.id"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="n/a"></map>
+         </mapping>
+      </element>
+      <element id="Organization.contact.name.extension">
+         <path value="Organization.contact.name.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <description value="Extensions are always sliced by (at least) url"></description>
+            <rules value="open"></rules>
+         </slicing>
+         <short value="Additional Content defined by implementations"></short>
+         <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."></definition>
+         <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+         <alias value="extensions"></alias>
+         <alias value="user content"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="Element.extension"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Extension"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="n/a"></map>
+         </mapping>
+      </element>
+      <element id="Organization.contact.name.use">
+         <path value="Organization.contact.name.use"></path>
+         <short value="usual | official | temp | nickname | anonymous | old | maiden"></short>
+         <definition value="Identifies the purpose for this name."></definition>
+         <comment value="This is labeled as &quot;Is Modifier&quot; because applications should not mistake a temporary or old name etc.for a current/permanent one. Applications can assume that a name is current unless it explicitly says that it is temporary or old."></comment>
+         <requirements value="Allows the appropriate name for a particular context of use to be selected from among a set of names."></requirements>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="HumanName.use"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="code"></code>
+         </type>
+         <isModifier value="true"></isModifier>
+         <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"></isModifierReason>
+         <isSummary value="true"></isSummary>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="NameUse"></valueString>
+            </extension>
+            <strength value="required"></strength>
+            <description value="The use of a human name"></description>
+            <valueSet value="http://hl7.org/fhir/ValueSet/name-use"></valueSet>
+         </binding>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="XPN.7, but often indicated by which field contains the name"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="unique(./use)"></map>
+         </mapping>
+         <mapping>
+            <identity value="servd"></identity>
+            <map value="./NamePurpose"></map>
+         </mapping>
+      </element>
+      <element id="Organization.contact.name.text">
+         <path value="Organization.contact.name.text"></path>
+         <short value="Text representation of the full name"></short>
+         <definition value="A full text representation of the name."></definition>
+         <comment value="Can provide both a text representation and structured parts."></comment>
+         <requirements value="A renderable, unencoded form."></requirements>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="HumanName.text"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="implied by XPN.11"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="./formatted"></map>
+         </mapping>
+      </element>
+      <element id="Organization.contact.name.family">
+         <path value="Organization.contact.name.family"></path>
+         <short value="Family name (often called 'Surname')"></short>
+         <definition value="The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father."></definition>
+         <comment value="Family Name may be decomposed into specific parts using extensions (de, nl, es related cultures)."></comment>
+         <alias value="surname"></alias>
+         <min value="1"></min>
+         <max value="1"></max>
+         <base>
+            <path value="HumanName.family"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="XPN.1/FN.1"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="./part[partType = FAM]"></map>
+         </mapping>
+         <mapping>
+            <identity value="servd"></identity>
+            <map value="./FamilyName"></map>
+         </mapping>
+      </element>
+      <element id="Organization.contact.name.given">
+         <path value="Organization.contact.name.given"></path>
+         <short value="Given names (not always 'first'). Includes middle names"></short>
+         <definition value="Given name."></definition>
+         <comment value="If only initials are recorded, they may be used in place of the full name.  Not called &quot;first name&quot; since given names do not always come first."></comment>
+         <alias value="first name"></alias>
+         <alias value="middle name"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="HumanName.given"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <orderMeaning value="Given Names appear in the correct order for presenting the name"></orderMeaning>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="XPN.2 + XPN.3"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="./part[partType = GIV]"></map>
+         </mapping>
+         <mapping>
+            <identity value="servd"></identity>
+            <map value="./GivenNames"></map>
+         </mapping>
+      </element>
+      <element id="Organization.contact.name.prefix">
+         <path value="Organization.contact.name.prefix"></path>
+         <short value="Parts that come before the name"></short>
+         <definition value="Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name."></definition>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="HumanName.prefix"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <orderMeaning value="Prefixes appear in the correct order for presenting the name"></orderMeaning>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="XPN.5"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="./part[partType = PFX]"></map>
+         </mapping>
+         <mapping>
+            <identity value="servd"></identity>
+            <map value="./TitleCode"></map>
+         </mapping>
+      </element>
+      <element id="Organization.contact.name.suffix">
+         <path value="Organization.contact.name.suffix"></path>
+         <short value="Parts that come after the name"></short>
+         <definition value="Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the end of the name."></definition>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="HumanName.suffix"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <orderMeaning value="Suffixes appear in the correct order for presenting the name"></orderMeaning>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="XPN/4"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="./part[partType = SFX]"></map>
+         </mapping>
+      </element>
+      <element id="Organization.contact.name.period">
+         <path value="Organization.contact.name.period"></path>
+         <short value="Time period when name was/is in use"></short>
+         <definition value="Indicates the period of time when this name was valid for the named person."></definition>
+         <requirements value="Allows names to be placed in historical context."></requirements>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="HumanName.period"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Period"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="XPN.13 + XPN.14"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="./usablePeriod[type=&quot;IVL&lt;TS&gt;&quot;]"></map>
+         </mapping>
+         <mapping>
+            <identity value="servd"></identity>
+            <map value="./StartDate and ./EndDate"></map>
+         </mapping>
+      </element>
+      <element id="Organization.contact.telecom">
+         <path value="Organization.contact.telecom"></path>
+         <short value="Contact details (telephone, email, etc.)  for a contact"></short>
+         <definition value="A contact detail (e.g. a telephone number or an email address) by which the party may be contacted."></definition>
+         <requirements value="People have (primary) ways to contact them in some way such as phone, email."></requirements>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="Organization.contact.telecom"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="ContactPoint"></code>
+         </type>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="PID-13, PID-14"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="./telecom"></map>
+         </mapping>
+      </element>
+      <element id="Organization.contact.address">
+         <path value="Organization.contact.address"></path>
+         <short value="Visiting or postal addresses for the contact"></short>
+         <definition value="Visiting or postal addresses for the contact."></definition>
+         <requirements value="May need to keep track of a contact party's address for contacting, billing or reporting requirements."></requirements>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Organization.contact.address"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Address"></code>
+         </type>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="PID-11"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="./addr"></map>
+         </mapping>
+      </element>
+      <element id="Organization.endpoint">
+         <path value="Organization.endpoint"></path>
+         <short value="Technical endpoints providing access to services operated for the organization"></short>
+         <definition value="Technical endpoints providing access to services operated for the organization."></definition>
+         <requirements value="Organizations have multiple systems that provide various services and need to be able to define the technical connection details for how to connect to them, and for what purpose."></requirements>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="Organization.endpoint"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Endpoint"></targetProfile>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="n/a"></map>
+         </mapping>
+      </element>
+   </snapshot>
    <differential>
       <element id="Organization.extension">
          <path value="Organization.extension"></path>
@@ -46,7 +2082,7 @@
          <max value="1"></max>
          <type>
             <code value="Extension"></code>
-            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-MainLocation-1"></profile>
+            <profile value="https://hl7.org.uk/fhir/StructureDefinition/Extension-CareConnect-MainLocation-1"></profile>
          </type>
       </element>
       <element id="Organization.extension:organization-period">
@@ -89,7 +2125,7 @@
          <path value="Organization.identifier.assigner"></path>
          <type>
             <code value="Reference"></code>
-            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Organization-1"></targetProfile>
          </type>
       </element>
       <element id="Organization.identifier:odsSiteCode">
@@ -112,14 +2148,14 @@
          <path value="Organization.identifier.assigner"></path>
          <type>
             <code value="Reference"></code>
-            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Organization-1"></targetProfile>
          </type>
       </element>
       <element id="Organization.partOf">
          <path value="Organization.partOf"></path>
          <type>
             <code value="Reference"></code>
-            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Organization-1"></targetProfile>
          </type>
       </element>
       <element id="Organization.contact.name.family">

@@ -3,29 +3,2344 @@
    <meta>
       <lastUpdated value="2018-07-11T16:43:07.748+01:00"></lastUpdated>
    </meta>
-   <url value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationDispense-1"></url>
-   <version value="1.2.0"></version>
+   <text>
+      <status value="generated"></status>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;">
+            <tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;">
+               <th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/formats.html#table" title="The logical name of the element">Name</a>
+               </th>
+               <th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/formats.html#table" title="Information about the use of the element">Flags</a>
+               </th>
+               <th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a>
+               </th>
+               <th style="width: 100px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/formats.html#table" title="Reference to the type of the element">Type</a>
+               </th>
+               <th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/formats.html#table" title="Additional information about the element">Description &amp; Constraints</a>
+                  <span style="float: right">
+                     <a href="http://hl7.org/fhir/STU3/formats.html#table" title="Legend for this format">
+                        <img src="http://hl7.org/fhir/STU3/help16.png" alt="doco" style="background-color: inherit"></img>
+                     </a>
+                  </span>
+               </th>
+            </tr>
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;">
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#MedicationDispense" title="null">MedicationDispense</a>
+                  <a name="MedicationDispense"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7;">
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#MedicationDispense.identifier" title="null">identifier</a>
+                  <a name="MedicationDispense.identifier"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;">
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#MedicationDispense.identifier.system" title="null">system</a>
+                  <a name="MedicationDispense.identifier.system"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a style="opacity: 0.4" href="http://hl7.org/fhir/STU3/datatypes.html#uri">uri</a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7;">
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#MedicationDispense.identifier.value" title="null">value</a>
+                  <a name="MedicationDispense.identifier.value"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a style="opacity: 0.4" href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;">
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#MedicationDispense.identifier.assigner" title="null">assigner</a>
+                  <a name="MedicationDispense.identifier.assigner"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="opacity: 0.4">0</span>
+                  <span style="opacity: 0.5">..</span>
+                  <span style="opacity: 0.4">1</span>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(
+                  <a href="CareConnect-Organization-1.html">CareConnect-Organization-1</a>)
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7;">
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#MedicationDispense.partOf" title="null">partOf</a>
+                  <a name="MedicationDispense.partOf"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="opacity: 0.4">0</span>
+                  <span style="opacity: 0.5">..</span>
+                  <span style="opacity: 0.4">*</span>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(
+                  <a href="CareConnect-Procedure-1.html">CareConnect-Procedure-1</a>)
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;">
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck14.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#MedicationDispense.medicationReference:medicationReference" title="Slice medicationReference: null">medicationReference:medicationReference</a>
+                  <a name="MedicationDispense.medicationReference"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="opacity: 0.4">1</span>
+                  <span style="opacity: 0.5">..</span>
+                  <span style="opacity: 0.4">1</span>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(
+                  <a href="CareConnect-Medication-1.html">CareConnect-Medication-1</a>)
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7;">
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#MedicationDispense.subject" title="null">subject</a>
+                  <a name="MedicationDispense.subject"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="opacity: 0.4">0</span>
+                  <span style="opacity: 0.5">..</span>
+                  <span style="opacity: 0.4">1</span>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(
+                  <a href="http://hl7.org/fhir/STU3/group.html">Group</a> | 
+                  <a href="CareConnect-Patient-1.html">CareConnect-Patient-1</a>)
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;">
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#MedicationDispense.context" title="null">context</a>
+                  <a name="MedicationDispense.context"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="opacity: 0.4">0</span>
+                  <span style="opacity: 0.5">..</span>
+                  <span style="opacity: 0.4">1</span>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(
+                  <a href="CareConnect-EpisodeOfCare-1.html">CareConnect-EpisodeOfCare-1</a> | 
+                  <a href="CareConnect-Encounter-1.html">CareConnect-Encounter-1</a>)
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7;">
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#MedicationDispense.performer" title="null">performer</a>
+                  <a name="MedicationDispense.performer"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;">
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#MedicationDispense.performer.actor" title="null">actor</a>
+                  <a name="MedicationDispense.performer.actor"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="opacity: 0.4">1</span>
+                  <span style="opacity: 0.5">..</span>
+                  <span style="opacity: 0.4">1</span>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(
+                  <a href="http://hl7.org/fhir/STU3/device.html">Device</a> | 
+                  <a href="CareConnect-RelatedPerson-1.html">CareConnect-RelatedPerson-1</a> | 
+                  <a href="CareConnect-Organization-1.html">CareConnect-Organization-1</a> | 
+                  <a href="CareConnect-Patient-1.html">CareConnect-Patient-1</a> | 
+                  <a href="CareConnect-Practitioner-1.html">CareConnect-Practitioner-1</a>)
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7;">
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#MedicationDispense.performer.onBehalfOf" title="null">onBehalfOf</a>
+                  <a name="MedicationDispense.performer.onBehalfOf"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="opacity: 0.4">0</span>
+                  <span style="opacity: 0.5">..</span>
+                  <span style="opacity: 0.4">1</span>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(
+                  <a href="CareConnect-Organization-1.html">CareConnect-Organization-1</a>)
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;">
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#MedicationDispense.authorizingPrescription" title="null">authorizingPrescription</a>
+                  <a name="MedicationDispense.authorizingPrescription"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="opacity: 0.4">0</span>
+                  <span style="opacity: 0.5">..</span>
+                  <span style="opacity: 0.4">*</span>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(
+                  <a href="CareConnect-MedicationRequest-1.html">CareConnect-MedicationRequest-1</a>)
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7;">
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#MedicationDispense.type" title="null">type</a>
+                  <a name="MedicationDispense.type"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="opacity: 0.4">0</span>
+                  <span style="opacity: 0.5">..</span>
+                  <span style="opacity: 0.4">1</span>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a style="opacity: 0.4" href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">To identify the type of medication supply.
+                  <br></br>
+                  <span style="font-weight:bold">Binding: </span>
+                  <a href="valueset-CareConnect-MedicationSupplyType-1.html">Care Connect Medication Supply Type</a> (
+                  <a href="http://hl7.org/fhir/STU3/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.">preferred</a>)
+               </td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;">
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#MedicationDispense.quantity" title="null">quantity</a>
+                  <a name="MedicationDispense.quantity"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7;">
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck112.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_extension_simple.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Simple Extension" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#MedicationDispense.quantity.extension" title="null">extension</a>
+                  <a name="MedicationDispense.quantity.extension"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="opacity: 0.4">0</span>
+                  <span style="opacity: 0.5">..</span>
+                  <span style="opacity: 0.4">*</span>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a style="opacity: 0.4" href="http://hl7.org/fhir/STU3/extensibility.html#Extension">Extension</a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="font-weight:bold">Slice: </span>Unordered, Open by value:url
+               </td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;">
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck104.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#MedicationDispense.quantity.extension:quantityText" title="Extension URL = https://hl7.org.uk/fhir/StructureDefinition/Extension-CareConnect-MedicationQuantityText-1">Extension-CareConnect-MedicationQuantityText-1</a>
+                  <a name="MedicationDispense.quantity.extension"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="opacity: 0.4">0</span>..
+                  <span style="opacity: 0.4">1</span>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Quantity representation
+                  <br></br>
+                  <span style="font-weight:bold">URL: </span>
+                  <a href="http://hl7.org/fhir/STU3/extension-Extension-CareConnect-MedicationQuantityText-1.html">https://hl7.org.uk/fhir/StructureDefinition/Extension-CareConnect-MedicationQuantityText-1</a>
+               </td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7;">
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#MedicationDispense.destination" title="null">destination</a>
+                  <a name="MedicationDispense.destination"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="opacity: 0.4">0</span>
+                  <span style="opacity: 0.5">..</span>
+                  <span style="opacity: 0.4">1</span>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(
+                  <a href="CareConnect-Location-1.html">CareConnect-Location-1</a>)
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;">
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#MedicationDispense.receiver" title="null">receiver</a>
+                  <a name="MedicationDispense.receiver"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="opacity: 0.4">0</span>
+                  <span style="opacity: 0.5">..</span>
+                  <span style="opacity: 0.4">*</span>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(
+                  <a href="CareConnect-Patient-1.html">CareConnect-Patient-1</a> | 
+                  <a href="CareConnect-Practitioner-1.html">CareConnect-Practitioner-1</a>)
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7;">
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#MedicationDispense.note" title="null">note</a>
+                  <a name="MedicationDispense.note"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;">
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_choice.gif" alt="." style="background-color: white; background-color: inherit" title="Choice of Types" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#MedicationDispense.note.author[x]" title="null">author[x]</a>
+                  <a name="MedicationDispense.note.author_x_"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="opacity: 0.4">0</span>
+                  <span style="opacity: 0.5">..</span>
+                  <span style="opacity: 0.4">1</span>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7;">
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"></img> authorReference
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/references.html#Reference">Reference</a>(
+                  <a href="CareConnect-RelatedPerson-1.html">CareConnect-RelatedPerson-1</a> | 
+                  <a href="CareConnect-Patient-1.html">CareConnect-Patient-1</a> | 
+                  <a href="CareConnect-Practitioner-1.html">CareConnect-Practitioner-1</a>)
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;">
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1000.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"></img> 
+                  <span title="Base StructureDefinition for string Type: A sequence of Unicode characters">authorString</span>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7;">
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#MedicationDispense.substitution" title="null">substitution</a>
+                  <a name="MedicationDispense.substitution"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;">
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#MedicationDispense.substitution.responsibleParty" title="null">responsibleParty</a>
+                  <a name="MedicationDispense.substitution.responsibleParty"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="opacity: 0.4">0</span>
+                  <span style="opacity: 0.5">..</span>
+                  <span style="opacity: 0.4">*</span>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(
+                  <a href="CareConnect-Practitioner-1.html">CareConnect-Practitioner-1</a>)
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr>
+               <td colspan="5" class="hierarchy">
+                  <br></br>
+                  <a href="http://hl7.org/fhir/STU3/formats.html#table" title="Legend for this format">
+                     <img src="http://hl7.org/fhir/STU3/help16.png" alt="doco" style="background-color: inherit"></img> Documentation for this format
+                  </a>
+               </td>
+            </tr>
+         </table>
+      </div>
+   </text>
+   <url value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-MedicationDispense-1"></url>
+   <version value="3.0.0"></version>
    <name value="CareConnect-MedicationDispense-1"></name>
    <status value="draft"></status>
-   <date value="2019-06-14"></date>
-   <publisher value="HL7 UK"></publisher>
+   <date value="2019-06-14T00:00:00+01:00"></date>
+   <publisher value="INTEROpen"></publisher>
    <contact>
-      <name value="INTEROPen"></name>
       <telecom>
-         <system value="email"></system>
-         <value value="admin@interopen.org"></value>
-         <use value="work"></use>
+         <system value="other"></system>
+         <value value="https://interopen.ryver.com/"></value>
       </telecom>
    </contact>
    <description value="Indicates that a medication product is to be or has been dispensed for a named person/patient."></description>
-   <purpose value="CURATED BY INTEROPen see: http://www.interopen.org/careconnect-curation-methodology/ "></purpose>
+   <jurisdiction>
+      <coding>
+         <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"></system>
+         <code value="826"></code>
+      </coding>
+   </jurisdiction>
+   <purpose value="CURATED BY INTEROPen see: http://www.interopen.org/careconnect-curation-methodology/"></purpose>
    <copyright value="Copyright © 2019 HL7 UK  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.  HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html"></copyright>
-   <fhirVersion value="3.0.1"></fhirVersion>
+   <fhirVersion value="3.0.2"></fhirVersion>
+   <mapping>
+      <identity value="workflow"></identity>
+      <uri value="http://hl7.org/fhir/workflow"></uri>
+      <name value="Workflow Mapping"></name>
+   </mapping>
+   <mapping>
+      <identity value="rim"></identity>
+      <uri value="http://hl7.org/v3"></uri>
+      <name value="RIM Mapping"></name>
+   </mapping>
+   <mapping>
+      <identity value="w5"></identity>
+      <uri value="http://hl7.org/fhir/w5"></uri>
+      <name value="W5 Mapping"></name>
+   </mapping>
+   <mapping>
+      <identity value="v2"></identity>
+      <uri value="http://hl7.org/v2"></uri>
+      <name value="HL7 v2 Mapping"></name>
+   </mapping>
    <kind value="resource"></kind>
    <abstract value="false"></abstract>
    <type value="MedicationDispense"></type>
    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationDispense"></baseDefinition>
    <derivation value="constraint"></derivation>
+   <snapshot>
+      <element id="MedicationDispense">
+         <path value="MedicationDispense"></path>
+         <short value="Dispensing a medication to a named patient"></short>
+         <definition value="Indicates that a medication product is to be or has been dispensed for a named person/patient.  This includes a description of the medication product (supply) provided and the instructions for administering the medication.  The medication dispense is the result of a pharmacy system responding to a medication order."></definition>
+         <comment value="The WG will be updating the MedicationDispense resource  to adjust each affected resource to align with the workflow pattern (see workflow.html)."></comment>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="MedicationDispense"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <constraint>
+            <key value="dom-2"></key>
+            <severity value="error"></severity>
+            <human value="If the resource is contained in another resource, it SHALL NOT contain nested Resources"></human>
+            <expression value="contained.contained.empty()"></expression>
+            <xpath value="not(parent::f:contained and f:contained)"></xpath>
+            <source value="DomainResource"></source>
+         </constraint>
+         <constraint>
+            <key value="dom-1"></key>
+            <severity value="error"></severity>
+            <human value="If the resource is contained in another resource, it SHALL NOT contain any narrative"></human>
+            <expression value="contained.text.empty()"></expression>
+            <xpath value="not(parent::f:contained and f:text)"></xpath>
+            <source value="DomainResource"></source>
+         </constraint>
+         <constraint>
+            <key value="dom-4"></key>
+            <severity value="error"></severity>
+            <human value="If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated"></human>
+            <expression value="contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()"></expression>
+            <xpath value="not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))"></xpath>
+            <source value="DomainResource"></source>
+         </constraint>
+         <constraint>
+            <key value="dom-3"></key>
+            <severity value="error"></severity>
+            <human value="If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource"></human>
+            <expression value="contained.where(('#'+id in %resource.descendants().reference).not()).empty()"></expression>
+            <xpath value="not(exists(for $id in f:contained/*/@id return $id[not(ancestor::f:contained/parent::*/descendant::f:reference/@value=concat('#', $id))]))"></xpath>
+            <source value="DomainResource"></source>
+         </constraint>
+         <constraint>
+            <key value="mdd-1"></key>
+            <severity value="error"></severity>
+            <human value="whenHandedOver cannot be before whenPrepared"></human>
+            <expression value="whenHandedOver.empty() or whenPrepared.empty() or whenHandedOver &gt;= whenPrepared"></expression>
+            <xpath value="not(exists(f:whenHandedOver/@value)) or not(exists(f:whenPrepared/@value)) or ( f:whenHandedOver/@value &gt;= f:whenPrepared/@value)"></xpath>
+         </constraint>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="Entity. Role, or Act"></map>
+         </mapping>
+         <mapping>
+            <identity value="workflow"></identity>
+            <map value="..Event"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="Supply[moodCode=EVN]"></map>
+         </mapping>
+         <mapping>
+            <identity value="w5"></identity>
+            <map value="clinical.medication"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.id">
+         <path value="MedicationDispense.id"></path>
+         <short value="Logical id of this artifact"></short>
+         <definition value="The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes."></definition>
+         <comment value="The only time that a resource does not have an id is when it is being submitted to the server using a create operation."></comment>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Resource.id"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="id"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+      </element>
+      <element id="MedicationDispense.meta">
+         <path value="MedicationDispense.meta"></path>
+         <short value="Metadata about the resource"></short>
+         <definition value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Resource.meta"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Meta"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+      </element>
+      <element id="MedicationDispense.implicitRules">
+         <path value="MedicationDispense.implicitRules"></path>
+         <short value="A set of rules under which this content was created"></short>
+         <definition value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content."></definition>
+         <comment value="Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. 
+
+This element is labelled as a modifier because the implicit rules may provide additional knowledge about the resource that modifies it's meaning or interpretation."></comment>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Resource.implicitRules"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="uri"></code>
+         </type>
+         <isModifier value="true"></isModifier>
+         <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"></isModifierReason>
+         <isSummary value="true"></isSummary>
+      </element>
+      <element id="MedicationDispense.language">
+         <path value="MedicationDispense.language"></path>
+         <short value="Language of the resource content"></short>
+         <definition value="The base language in which the resource is written."></definition>
+         <comment value="Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource  Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute)."></comment>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Resource.language"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="code"></code>
+         </type>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
+               <valueCanonical value="http://hl7.org/fhir/ValueSet/all-languages"></valueCanonical>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="Language"></valueString>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+               <valueBoolean value="true"></valueBoolean>
+            </extension>
+            <strength value="extensible"></strength>
+            <description value="A human language."></description>
+            <valueSet value="http://hl7.org/fhir/ValueSet/languages"></valueSet>
+         </binding>
+      </element>
+      <element id="MedicationDispense.text">
+         <path value="MedicationDispense.text"></path>
+         <short value="Text summary of the resource, for human interpretation"></short>
+         <definition value="A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety."></definition>
+         <comment value="Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative. In some cases, a resource may only have text with little or no additional discrete data (as long as all minOccurs=1 elements are satisfied).  This may be necessary for data from legacy systems where information is captured as a &quot;text blob&quot; or where text is additionally entered raw or narrated and encoded in formation is added later."></comment>
+         <alias value="narrative"></alias>
+         <alias value="html"></alias>
+         <alias value="xhtml"></alias>
+         <alias value="display"></alias>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="DomainResource.text"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Narrative"></code>
+         </type>
+         <condition value="dom-1"></condition>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="Act.text?"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.contained">
+         <path value="MedicationDispense.contained"></path>
+         <short value="Contained, inline Resources"></short>
+         <definition value="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope."></definition>
+         <comment value="This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again."></comment>
+         <alias value="inline resources"></alias>
+         <alias value="anonymous resources"></alias>
+         <alias value="contained resources"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="DomainResource.contained"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Resource"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="N/A"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.extension">
+         <path value="MedicationDispense.extension"></path>
+         <short value="Additional Content defined by implementations"></short>
+         <definition value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."></definition>
+         <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+         <alias value="extensions"></alias>
+         <alias value="user content"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="DomainResource.extension"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Extension"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="N/A"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.modifierExtension">
+         <path value="MedicationDispense.modifierExtension"></path>
+         <short value="Extensions that cannot be ignored"></short>
+         <definition value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."></definition>
+         <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+         <alias value="extensions"></alias>
+         <alias value="user content"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="DomainResource.modifierExtension"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Extension"></code>
+         </type>
+         <isModifier value="true"></isModifier>
+         <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"></isModifierReason>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="N/A"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.identifier">
+         <path value="MedicationDispense.identifier"></path>
+         <short value="External identifier"></short>
+         <definition value="Identifier assigned by the dispensing facility - this is an identifier assigned outside FHIR."></definition>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="MedicationDispense.identifier"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Identifier"></code>
+         </type>
+         <mapping>
+            <identity value="workflow"></identity>
+            <map value="…identifier"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".id"></map>
+         </mapping>
+         <mapping>
+            <identity value="w5"></identity>
+            <map value="id"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.identifier.id">
+         <path value="MedicationDispense.identifier.id"></path>
+         <representation value="xmlAttr"></representation>
+         <short value="xml:id (or equivalent in JSON)"></short>
+         <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Element.id"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="n/a"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.identifier.extension">
+         <path value="MedicationDispense.identifier.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <description value="Extensions are always sliced by (at least) url"></description>
+            <rules value="open"></rules>
+         </slicing>
+         <short value="Additional Content defined by implementations"></short>
+         <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."></definition>
+         <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+         <alias value="extensions"></alias>
+         <alias value="user content"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="Element.extension"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Extension"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="n/a"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.identifier.use">
+         <path value="MedicationDispense.identifier.use"></path>
+         <short value="usual | official | temp | secondary (If known)"></short>
+         <definition value="The purpose of this identifier."></definition>
+         <comment value="This is labeled as &quot;Is Modifier&quot; because applications should not mistake a temporary id for a permanent one. Applications can assume that an identifier is permanent unless it explicitly says that it is temporary."></comment>
+         <requirements value="Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers."></requirements>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Identifier.use"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="code"></code>
+         </type>
+         <isModifier value="true"></isModifier>
+         <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"></isModifierReason>
+         <isSummary value="true"></isSummary>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="IdentifierUse"></valueString>
+            </extension>
+            <strength value="required"></strength>
+            <description value="Identifies the purpose for this identifier, if known ."></description>
+            <valueSet value="http://hl7.org/fhir/ValueSet/identifier-use"></valueSet>
+         </binding>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="N/A"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="Role.code or implied by context"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.identifier.type">
+         <path value="MedicationDispense.identifier.type"></path>
+         <short value="Description of identifier"></short>
+         <definition value="A coded type for the identifier that can be used to determine which identifier to use for a specific purpose."></definition>
+         <comment value="This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage. 
+
+Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type."></comment>
+         <requirements value="Allows users to make use of identifiers when the identifier system is not known."></requirements>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Identifier.type"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="CodeableConcept"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="IdentifierType"></valueString>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+               <valueBoolean value="true"></valueBoolean>
+            </extension>
+            <strength value="extensible"></strength>
+            <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose."></description>
+            <valueSet value="http://hl7.org/fhir/ValueSet/identifier-type"></valueSet>
+         </binding>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="CX.5"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="Role.code or implied by context"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.identifier.system">
+         <path value="MedicationDispense.identifier.system"></path>
+         <short value="The namespace for the identifier value"></short>
+         <definition value="Establishes the namespace for the value - that is, a URL that describes a set values that are unique."></definition>
+         <requirements value="There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers."></requirements>
+         <min value="1"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Identifier.system"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="uri"></code>
+         </type>
+         <example>
+            <label value="General"></label>
+            <valueUri value="http://www.acme.com/identifiers/patient"></valueUri>
+         </example>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="CX.4 / EI-2-4"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="II.root or Role.id.root"></map>
+         </mapping>
+         <mapping>
+            <identity value="servd"></identity>
+            <map value="./IdentifierType"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.identifier.value">
+         <path value="MedicationDispense.identifier.value"></path>
+         <short value="The value that is unique"></short>
+         <definition value="The portion of the identifier typically relevant to the user and which is unique within the context of the system."></definition>
+         <comment value="If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](http://hl7.org/fhir/STU3/extension-rendered-value.html)."></comment>
+         <min value="1"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Identifier.value"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <example>
+            <label value="General"></label>
+            <valueString value="123456"></valueString>
+         </example>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="CX.1 / EI.1"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="II.extension or II.root if system indicates OID or GUID (Or Role.id.extension or root)"></map>
+         </mapping>
+         <mapping>
+            <identity value="servd"></identity>
+            <map value="./Value"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.identifier.period">
+         <path value="MedicationDispense.identifier.period"></path>
+         <short value="Time period when id is/was valid for use"></short>
+         <definition value="Time period during which identifier is/was valid for use."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Identifier.period"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Period"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="CX.7 + CX.8"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="Role.effectiveTime or implied by context"></map>
+         </mapping>
+         <mapping>
+            <identity value="servd"></identity>
+            <map value="./StartDate and ./EndDate"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.identifier.assigner">
+         <path value="MedicationDispense.identifier.assigner"></path>
+         <short value="Organization that issued id (may be just text)"></short>
+         <definition value="Organization that issued/manages the identifier."></definition>
+         <comment value="The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization."></comment>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Identifier.assigner"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="CX.4 / (CX.4,CX.9,CX.10)"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper"></map>
+         </mapping>
+         <mapping>
+            <identity value="servd"></identity>
+            <map value="./IdentifierIssuingAuthority"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.partOf">
+         <path value="MedicationDispense.partOf"></path>
+         <short value="Event that dispense is part of"></short>
+         <definition value="The procedure that the dispense is done because of."></definition>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="MedicationDispense.partOf"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Procedure-1"></targetProfile>
+         </type>
+         <mapping>
+            <identity value="workflow"></identity>
+            <map value="…part of"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".outboundRelationship[typeCode=COMP]/target[classCode=PROC,moodCode=EVN]"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.status">
+         <path value="MedicationDispense.status"></path>
+         <short value="preparation | in-progress | on-hold | completed | entered-in-error | stopped"></short>
+         <definition value="A code specifying the state of the set of dispense events."></definition>
+         <comment value="This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid."></comment>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="MedicationDispense.status"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="code"></code>
+         </type>
+         <isModifier value="true"></isModifier>
+         <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"></isModifierReason>
+         <isSummary value="true"></isSummary>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="MedicationDispenseStatus"></valueString>
+            </extension>
+            <strength value="required"></strength>
+            <description value="A coded concept specifying the state of the dispense event."></description>
+            <valueSet value="http://hl7.org/fhir/ValueSet/medication-dispense-status"></valueSet>
+         </binding>
+         <mapping>
+            <identity value="workflow"></identity>
+            <map value="…status"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".statusCode"></map>
+         </mapping>
+         <mapping>
+            <identity value="w5"></identity>
+            <map value="status"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.category">
+         <path value="MedicationDispense.category"></path>
+         <short value="Type of medication dispense"></short>
+         <definition value="Indicates type of medication dispense and where the medication is expected to be consumed or administered."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="MedicationDispense.category"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="CodeableConcept"></code>
+         </type>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="MedicationDispenseCategory"></valueString>
+            </extension>
+            <strength value="preferred"></strength>
+            <description value="A code describing where the dispensed medication is expected to be consumed or administered"></description>
+            <valueSet value="http://hl7.org/fhir/ValueSet/medication-dispense-category"></valueSet>
+         </binding>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".inboundRelationship[typeCode=COMP].source[classCode=OBS, moodCode=EVN, code=&quot;type of medication dispense&quot;].value"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.medication[x]">
+         <path value="MedicationDispense.medication[x]"></path>
+         <slicing>
+            <discriminator>
+               <type value="type"></type>
+               <path value="$this"></path>
+            </discriminator>
+            <ordered value="false"></ordered>
+            <rules value="closed"></rules>
+         </slicing>
+         <short value="What medication was supplied"></short>
+         <definition value="Identifies the medication being administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication from a known list of medications."></definition>
+         <comment value="If only a code is specified, then it needs to be a code for a specific product. If more information is required, then the use of the medication resource is recommended.  For example if you require form or lot number, then you must reference the Medication resource. ."></comment>
+         <min value="1"></min>
+         <max value="1"></max>
+         <base>
+            <path value="MedicationDispense.medication[x]"></path>
+            <min value="1"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="workflow"></identity>
+            <map value="…code"></map>
+         </mapping>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="RXD-2-Dispense/Give Code"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".participation[typeCode=PRD].role"></map>
+         </mapping>
+         <mapping>
+            <identity value="w5"></identity>
+            <map value="what"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.medication[x]:medicationReference">
+         <path value="MedicationDispense.medication[x]"></path>
+         <sliceName value="medicationReference"></sliceName>
+         <short value="What medication was supplied"></short>
+         <definition value="Identifies the medication being administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication from a known list of medications."></definition>
+         <comment value="If only a code is specified, then it needs to be a code for a specific product. If more information is required, then the use of the medication resource is recommended.  For example if you require form or lot number, then you must reference the Medication resource. ."></comment>
+         <min value="1"></min>
+         <max value="1"></max>
+         <base>
+            <path value="MedicationDispense.medication[x]"></path>
+            <min value="1"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Medication-1"></targetProfile>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="workflow"></identity>
+            <map value="…code"></map>
+         </mapping>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="RXD-2-Dispense/Give Code"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".participation[typeCode=PRD].role"></map>
+         </mapping>
+         <mapping>
+            <identity value="w5"></identity>
+            <map value="what"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.subject">
+         <path value="MedicationDispense.subject"></path>
+         <short value="Who the dispense is for"></short>
+         <definition value="A link to a resource representing the person or the group to whom the medication will be given."></definition>
+         <comment value="SubstanceAdministration-&gt;subject-&gt;Patient."></comment>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="MedicationDispense.subject"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="workflow"></identity>
+            <map value="…subject"></map>
+         </mapping>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="PID-3-Patient ID List"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".participation[typeCode=SBJ].role[classCode=PAT]"></map>
+         </mapping>
+         <mapping>
+            <identity value="w5"></identity>
+            <map value="who.focus"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.context">
+         <path value="MedicationDispense.context"></path>
+         <short value="Encounter / Episode associated with event"></short>
+         <definition value="The encounter or episode of care that establishes the context for this event."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="MedicationDispense.context"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-EpisodeOfCare-1"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Encounter-1"></targetProfile>
+         </type>
+         <mapping>
+            <identity value="workflow"></identity>
+            <map value="…context"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".inboundRelationship[typeCode=COMP].source[classCode=ENC, moodCode=EVN, code=&quot;type of encounter or episode&quot;]"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.supportingInformation">
+         <path value="MedicationDispense.supportingInformation"></path>
+         <short value="Information that supports the dispensing of the medication"></short>
+         <definition value="Additional information that supports the medication being dispensed."></definition>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="MedicationDispense.supportingInformation"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"></targetProfile>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".outboundRelationship[typeCode=PERT].target[A_SupportingClinicalStatement CMET minimal with many different choices of classCodes(ORG, ENC, PROC, SPLY, SBADM, OBS) and each of the act class codes draws from one or more of the following moodCodes (EVN, DEF, INT PRMS, RQO, PRP, APT, ARQ, GOL)]"></map>
+         </mapping>
+         <mapping>
+            <identity value="w5"></identity>
+            <map value="context"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.performer">
+         <path value="MedicationDispense.performer"></path>
+         <short value="Who performed event"></short>
+         <definition value="Indicates who or what performed the event.  It should be assumed that the performer is the dispenser of the medication."></definition>
+         <comment value="The performer will be reviewed as part of STU4."></comment>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="MedicationDispense.performer"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="BackboneElement"></code>
+         </type>
+         <constraint>
+            <key value="ele-1"></key>
+            <severity value="error"></severity>
+            <human value="All FHIR elements must have a @value or children"></human>
+            <expression value="hasValue() | (children().count() &gt; id.count())"></expression>
+            <xpath value="@value|f:*|h:div"></xpath>
+            <source value="Element"></source>
+         </constraint>
+         <mapping>
+            <identity value="workflow"></identity>
+            <map value="…performer"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".participation[typeCode=PRF]"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.performer.id">
+         <path value="MedicationDispense.performer.id"></path>
+         <representation value="xmlAttr"></representation>
+         <short value="xml:id (or equivalent in JSON)"></short>
+         <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Element.id"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="n/a"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.performer.extension">
+         <path value="MedicationDispense.performer.extension"></path>
+         <short value="Additional Content defined by implementations"></short>
+         <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."></definition>
+         <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+         <alias value="extensions"></alias>
+         <alias value="user content"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="Element.extension"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Extension"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="n/a"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.performer.modifierExtension">
+         <path value="MedicationDispense.performer.modifierExtension"></path>
+         <short value="Extensions that cannot be ignored"></short>
+         <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."></definition>
+         <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+         <alias value="extensions"></alias>
+         <alias value="user content"></alias>
+         <alias value="modifiers"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="BackboneElement.modifierExtension"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Extension"></code>
+         </type>
+         <isModifier value="true"></isModifier>
+         <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"></isModifierReason>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="N/A"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.performer.actor">
+         <path value="MedicationDispense.performer.actor"></path>
+         <short value="Individual who was performing"></short>
+         <definition value="The device, practitioner, etc. who performed the action.  It should be assumed that the actor is the dispenser of the medication."></definition>
+         <min value="1"></min>
+         <max value="1"></max>
+         <base>
+            <path value="MedicationDispense.performer.actor"></path>
+            <min value="1"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-RelatedPerson-1"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+         <mapping>
+            <identity value="workflow"></identity>
+            <map value="….actor"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".role"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.performer.onBehalfOf">
+         <path value="MedicationDispense.performer.onBehalfOf"></path>
+         <short value="Organization organization was acting for"></short>
+         <definition value="The organization the device or practitioner was acting on behalf of."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="MedicationDispense.performer.onBehalfOf"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+         <mapping>
+            <identity value="workflow"></identity>
+            <map value="….onBehalfOf"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".role.scopingOrganization"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.authorizingPrescription">
+         <path value="MedicationDispense.authorizingPrescription"></path>
+         <short value="Medication order that authorizes the dispense"></short>
+         <definition value="Indicates the medication order that is being dispensed against."></definition>
+         <comment value="Maps to basedOn in Event logical model."></comment>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="MedicationDispense.authorizingPrescription"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-MedicationRequest-1"></targetProfile>
+         </type>
+         <mapping>
+            <identity value="workflow"></identity>
+            <map value="…basedOn"></map>
+         </mapping>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="ORC-2 Placer Order Number"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".outboundRelationship[typeCode=FLFS].target[moodCode=RQO]"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.type">
+         <path value="MedicationDispense.type"></path>
+         <short value="To identify the type of medication supply."></short>
+         <definition value="Indicates the type of dispensing event that is performed. For example, Trial Fill, Completion of Trial, Partial Fill, Emergency Fill, Samples, etc."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="MedicationDispense.type"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="CodeableConcept"></code>
+         </type>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="MedicationDispenseType"></valueString>
+            </extension>
+            <strength value="preferred"></strength>
+            <description value="A ValueSet to identify the type of medication supply."></description>
+            <valueSet value="https://hl7.org.uk/fhir/ValueSet/CareConnect-MedicationSupplyType-1"></valueSet>
+         </binding>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="RXD-33-Dispense Type"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".code"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.quantity">
+         <path value="MedicationDispense.quantity"></path>
+         <short value="Amount dispensed"></short>
+         <definition value="The amount of medication that has been dispensed. Includes unit of measure."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="MedicationDispense.quantity"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Quantity"></code>
+            <profile value="http://hl7.org/fhir/StructureDefinition/SimpleQuantity"></profile>
+         </type>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="RXD-4-Actual Dispense Amount / RXD-5.1-Actual Dispense Units.code / RXD-5.3-Actual Dispense Units.name of coding system"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".quantity"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.quantity.id">
+         <path value="MedicationDispense.quantity.id"></path>
+         <representation value="xmlAttr"></representation>
+         <short value="xml:id (or equivalent in JSON)"></short>
+         <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Element.id"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="n/a"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.quantity.extension">
+         <path value="MedicationDispense.quantity.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <description value="Extensions are always sliced by (at least) url"></description>
+            <rules value="open"></rules>
+         </slicing>
+         <short value="Extension"></short>
+         <definition value="An Extension"></definition>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="Element.extension"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Extension"></code>
+         </type>
+      </element>
+      <element id="MedicationDispense.quantity.extension:quantityText">
+         <path value="MedicationDispense.quantity.extension"></path>
+         <sliceName value="quantityText"></sliceName>
+         <short value="Quantity representation"></short>
+         <definition value="Quantity representation."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Element.extension"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Extension"></code>
+            <profile value="https://hl7.org.uk/fhir/StructureDefinition/Extension-CareConnect-MedicationQuantityText-1"></profile>
+         </type>
+      </element>
+      <element id="MedicationDispense.quantity.value">
+         <path value="MedicationDispense.quantity.value"></path>
+         <short value="Numerical value (with implicit precision)"></short>
+         <definition value="The value of the measured amount. The value includes an implicit precision in the presentation of the value."></definition>
+         <comment value="The implicit precision in the value should always be honored. Monetary values have their own rules for handling precision (refer to standard accounting text books)."></comment>
+         <requirements value="Precision is handled implicitly in almost all cases of measurement."></requirements>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Quantity.value"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="decimal"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="SN.2  / CQ - N/A"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="PQ.value, CO.value, MO.value, IVL.high or IVL.low depending on the value"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.quantity.comparator">
+         <path value="MedicationDispense.quantity.comparator"></path>
+         <short value="&lt; | &lt;= | &gt;= | &gt; - how to understand the value"></short>
+         <definition value="Not allowed to be used in this context"></definition>
+         <comment value="This is labeled as &quot;Is Modifier&quot; because the comparator modifies the interpretation of the value significantly. If there is no comparator, then there is no modification of the value."></comment>
+         <requirements value="Need a framework for handling measures where the value is &lt;5ug/L or &gt;400mg/L due to the limitations of measuring methodology."></requirements>
+         <min value="0"></min>
+         <max value="0"></max>
+         <base>
+            <path value="Quantity.comparator"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="code"></code>
+         </type>
+         <meaningWhenMissing value="If there is no comparator, then there is no modification of the value"></meaningWhenMissing>
+         <isModifier value="true"></isModifier>
+         <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"></isModifierReason>
+         <isSummary value="true"></isSummary>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="QuantityComparator"></valueString>
+            </extension>
+            <strength value="required"></strength>
+            <description value="How the Quantity should be understood and represented."></description>
+            <valueSet value="http://hl7.org/fhir/ValueSet/quantity-comparator"></valueSet>
+         </binding>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="SN.1  / CQ.1"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="IVL properties"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.quantity.unit">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+            <valueBoolean value="true"></valueBoolean>
+         </extension>
+         <path value="MedicationDispense.quantity.unit"></path>
+         <short value="Unit representation"></short>
+         <definition value="A human-readable form of the unit."></definition>
+         <requirements value="There are many representations for units of measure and in many contexts, particular representations are fixed and required. I.e. mcg for micrograms."></requirements>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Quantity.unit"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="(see OBX.6 etc.) / CQ.2"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="PQ.unit"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.quantity.system">
+         <path value="MedicationDispense.quantity.system"></path>
+         <short value="System that defines coded unit form"></short>
+         <definition value="The identification of the system that provides the coded form of the unit."></definition>
+         <requirements value="Need to know the system that defines the coded form of the unit."></requirements>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Quantity.system"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="uri"></code>
+         </type>
+         <condition value="qty-3"></condition>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="(see OBX.6 etc.) / CQ.2"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="CO.codeSystem, PQ.translation.codeSystem"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.quantity.code">
+         <path value="MedicationDispense.quantity.code"></path>
+         <short value="Coded form of the unit"></short>
+         <definition value="A computer processable form of the unit in some unit representation system."></definition>
+         <comment value="The preferred system is UCUM, but SNOMED CT can also be used (for customary units) or ISO 4217 for currency.  The context of use may additionally require a code from a particular system."></comment>
+         <requirements value="Need a computable form of the unit that is fixed across all forms. UCUM provides this for quantities, but SNOMED CT provides many units of interest."></requirements>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Quantity.code"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="code"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="(see OBX.6 etc.) / CQ.2"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="PQ.code, MO.currency, PQ.translation.code"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.daysSupply">
+         <path value="MedicationDispense.daysSupply"></path>
+         <short value="Amount of medication expressed as a timing amount"></short>
+         <definition value="The amount of medication expressed as a timing amount."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="MedicationDispense.daysSupply"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Quantity"></code>
+            <profile value="http://hl7.org/fhir/StructureDefinition/SimpleQuantity"></profile>
+         </type>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="TQ1.6 Timing/Quantity Segment Service Duration.Prior to v2.5, ORC.7.3 Common Order Segment / Quantity/Timing / Duration component.  This is a formatted string, first character for the time unit (e.g., D=days), followed by the value.  For example, “D14” represents “14 days supply”From v2.5 on, TQ1.6 Timing/Quantity Segment / Service Duration.  This is a CQ data type (&lt;Quantity (NM)&gt; ^ &lt;Units (CWE)&gt;), thus for days supply, assuming the unit of measure is “days”, the numeric value is TQ1.6.1 (…|14^For backwards compatibility, ORC.7 was permitted through v2.6.  Both forms (field and segment) may be present in v2.5, v2.5.1, and v2.6"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="effectiveUseTime"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.whenPrepared">
+         <path value="MedicationDispense.whenPrepared"></path>
+         <short value="When product was packaged and reviewed"></short>
+         <definition value="The time when the dispensed product was packaged and reviewed."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="MedicationDispense.whenPrepared"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="dateTime"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="RXD-3-Date/Time Dispensed"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".effectiveTime[xmi:type=IVL_TS].low"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.whenHandedOver">
+         <path value="MedicationDispense.whenHandedOver"></path>
+         <short value="When product was given out"></short>
+         <definition value="The time the dispensed product was provided to the patient or their representative."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="MedicationDispense.whenHandedOver"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="dateTime"></code>
+         </type>
+         <mapping>
+            <identity value="workflow"></identity>
+            <map value="…occurrenceDateTime"></map>
+         </mapping>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="RXD-3-Date/Time Dispensed"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".effectiveTime[xmi:type=IVL_TS].high"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.destination">
+         <path value="MedicationDispense.destination"></path>
+         <short value="Where the medication was sent"></short>
+         <definition value="Identification of the facility/location where the medication was shipped to, as part of the dispense event."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="MedicationDispense.destination"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Location-1"></targetProfile>
+         </type>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="RXD-13 Dispense-to Location; RXD-30 Dispense to Pharmacy; RXD-31 Dispense to Pharmacy Address"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".participation[typeCode=DST].role"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.receiver">
+         <path value="MedicationDispense.receiver"></path>
+         <short value="Who collected the medication"></short>
+         <definition value="Identifies the person who picked up the medication.  This will usually be a patient or their caregiver, but some cases exist where it can be a healthcare professional."></definition>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="MedicationDispense.receiver"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".participation[typeCode=RCV].role"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.note">
+         <path value="MedicationDispense.note"></path>
+         <short value="Information about the dispense"></short>
+         <definition value="Extra information about the dispense that could not be conveyed in the other attributes."></definition>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="MedicationDispense.note"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Annotation"></code>
+         </type>
+         <mapping>
+            <identity value="workflow"></identity>
+            <map value="…note"></map>
+         </mapping>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="RXD-9 Dispense Notes"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".inboundRelationship[typeCode=SUBJ]/source[classCode=ACT,moodCode=EVN]"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.note.id">
+         <path value="MedicationDispense.note.id"></path>
+         <representation value="xmlAttr"></representation>
+         <short value="xml:id (or equivalent in JSON)"></short>
+         <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Element.id"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="n/a"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.note.extension">
+         <path value="MedicationDispense.note.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <description value="Extensions are always sliced by (at least) url"></description>
+            <rules value="open"></rules>
+         </slicing>
+         <short value="Additional Content defined by implementations"></short>
+         <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."></definition>
+         <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+         <alias value="extensions"></alias>
+         <alias value="user content"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="Element.extension"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Extension"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="n/a"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.note.author[x]">
+         <path value="MedicationDispense.note.author[x]"></path>
+         <short value="Individual responsible for the annotation"></short>
+         <definition value="The individual responsible for making the annotation."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Annotation.author[x]"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-RelatedPerson-1"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+         <type>
+            <code value="string"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="N/A"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="Act.participant[typeCode=AUT].role"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.note.time">
+         <path value="MedicationDispense.note.time"></path>
+         <short value="When the annotation was made"></short>
+         <definition value="Indicates when this particular annotation was made."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Annotation.time"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="dateTime"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="N/A"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="Act.effectiveTime"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.note.text">
+         <path value="MedicationDispense.note.text"></path>
+         <short value="The annotation  - text content"></short>
+         <definition value="The text of the annotation."></definition>
+         <min value="1"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Annotation.text"></path>
+            <min value="1"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="N/A"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="Act.text"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.dosageInstruction">
+         <path value="MedicationDispense.dosageInstruction"></path>
+         <short value="How the medication is to be used by the patient or administered by the caregiver"></short>
+         <definition value="Indicates how the medication is to be used by the patient."></definition>
+         <comment value="When the dose or rate is intended to change over the entire administration period (e.g. Tapering dose prescriptions), multiple instances of dosage instructions will need to be supplied to convey the different doses/rates.The pharmacist reviews the medication order prior to dispense and updates the dosageInstruction based on the actual product being dispensed."></comment>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="MedicationDispense.dosageInstruction"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Dosage"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".outboundRelationship[typeCode=COMP].target[classCode=SBADM, moodCode=INT]"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.substitution">
+         <path value="MedicationDispense.substitution"></path>
+         <short value="Whether a substitution was performed on the dispense"></short>
+         <definition value="Indicates whether or not substitution was made as part of the dispense.  In some cases substitution will be expected but does not happen, in other cases substitution is not expected but does happen.  This block explains what substitution did or did not happen and why.  If nothing is specified, substitution was not done."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="MedicationDispense.substitution"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="BackboneElement"></code>
+         </type>
+         <constraint>
+            <key value="ele-1"></key>
+            <severity value="error"></severity>
+            <human value="All FHIR elements must have a @value or children"></human>
+            <expression value="hasValue() | (children().count() &gt; id.count())"></expression>
+            <xpath value="@value|f:*|h:div"></xpath>
+            <source value="Element"></source>
+         </constraint>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".outboundRelationship[typeCode=COMP].target[classCode=SUBST, moodCode=EVN]"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.substitution.id">
+         <path value="MedicationDispense.substitution.id"></path>
+         <representation value="xmlAttr"></representation>
+         <short value="xml:id (or equivalent in JSON)"></short>
+         <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Element.id"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="n/a"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.substitution.extension">
+         <path value="MedicationDispense.substitution.extension"></path>
+         <short value="Additional Content defined by implementations"></short>
+         <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."></definition>
+         <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+         <alias value="extensions"></alias>
+         <alias value="user content"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="Element.extension"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Extension"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="n/a"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.substitution.modifierExtension">
+         <path value="MedicationDispense.substitution.modifierExtension"></path>
+         <short value="Extensions that cannot be ignored"></short>
+         <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."></definition>
+         <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+         <alias value="extensions"></alias>
+         <alias value="user content"></alias>
+         <alias value="modifiers"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="BackboneElement.modifierExtension"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Extension"></code>
+         </type>
+         <isModifier value="true"></isModifier>
+         <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"></isModifierReason>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="N/A"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.substitution.wasSubstituted">
+         <path value="MedicationDispense.substitution.wasSubstituted"></path>
+         <short value="Whether a substitution was or was not performed on the dispense"></short>
+         <definition value="True if the dispenser dispensed a different drug or product from what was prescribed."></definition>
+         <min value="1"></min>
+         <max value="1"></max>
+         <base>
+            <path value="MedicationDispense.substitution.wasSubstituted"></path>
+            <min value="1"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="boolean"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".actionNegationInd"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.substitution.type">
+         <path value="MedicationDispense.substitution.type"></path>
+         <short value="Code signifying whether a different drug was dispensed from what was prescribed"></short>
+         <definition value="A code signifying whether a different drug was dispensed from what was prescribed."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="MedicationDispense.substitution.type"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="CodeableConcept"></code>
+         </type>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="MedicationIntendedSubstitutionType"></valueString>
+            </extension>
+            <strength value="example"></strength>
+            <description value="A coded concept describing whether a different medicinal product may be dispensed other than the product as specified exactly in the prescription"></description>
+            <valueSet value="http://hl7.org/fhir/ValueSet/v3-ActSubstanceAdminSubstitutionCode"></valueSet>
+         </binding>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="RXO-9-Allow Substitutions / RXE-9-Substitution Status"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".code"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.substitution.reason">
+         <path value="MedicationDispense.substitution.reason"></path>
+         <short value="Why was substitution made"></short>
+         <definition value="Indicates the reason for the substitution of (or lack of substitution) from what was prescribed."></definition>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="MedicationDispense.substitution.reason"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="CodeableConcept"></code>
+         </type>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="MedicationIntendedSubstitutionReason"></valueString>
+            </extension>
+            <strength value="example"></strength>
+            <description value="A coded concept describing the reason that a different medication should (or should not) be substituted from what was prescribed"></description>
+            <valueSet value="http://hl7.org/fhir/ValueSet/v3-SubstanceAdminSubstitutionReason"></valueSet>
+         </binding>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".reasonCode"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.substitution.responsibleParty">
+         <path value="MedicationDispense.substitution.responsibleParty"></path>
+         <short value="Who is responsible for the substitution"></short>
+         <definition value="The person or organization that has primary responsibility for the substitution."></definition>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="MedicationDispense.substitution.responsibleParty"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".participation[typeCode=PFM].role[classCode=ASSIGN]"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.detectedIssue">
+         <path value="MedicationDispense.detectedIssue"></path>
+         <short value="Clinical issue with action"></short>
+         <definition value="Indicates an actual or potential clinical issue with or between one or more active or proposed clinical actions for a patient; e.g. Drug-drug interaction, duplicate therapy, dosage alert etc."></definition>
+         <alias value="Contraindication"></alias>
+         <alias value="Drug Utilization Review (DUR)"></alias>
+         <alias value="Alert"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="MedicationDispense.detectedIssue"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/DetectedIssue"></targetProfile>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".inboundRelationship[typeCode=SUBJ]/source[classCode=ALRT,moodCode=EVN].value"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.notDone">
+         <path value="MedicationDispense.notDone"></path>
+         <short value="Whether the dispense was or was not performed"></short>
+         <definition value="True if the dispense was not performed for some reason."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="MedicationDispense.notDone"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="boolean"></code>
+         </type>
+         <mapping>
+            <identity value="workflow"></identity>
+            <map value="…notDone"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".actionNegationInd"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.notDoneReason[x]">
+         <path value="MedicationDispense.notDoneReason[x]"></path>
+         <short value="Why a dispense was not performed"></short>
+         <definition value="Indicates the reason why a dispense was not performed."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="MedicationDispense.notDoneReason[x]"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="CodeableConcept"></code>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/DetectedIssue"></targetProfile>
+         </type>
+         <mapping>
+            <identity value="workflow"></identity>
+            <map value="…notDoneReason"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".outboundRelationship[typeCode=RSON]/target[classCode=OBS,moodCode=EVN, code=&quot;not done reason&quot;].value"></map>
+         </mapping>
+      </element>
+      <element id="MedicationDispense.eventHistory">
+         <path value="MedicationDispense.eventHistory"></path>
+         <short value="A list of releveant lifecycle events"></short>
+         <definition value="A summary of the events of interest that have occurred, such as when the dispense was verified."></definition>
+         <comment value="This may not include provenances for all versions of the request – only those deemed “relevant” or important. This SHALL NOT include the Provenance associated with this current version of the resource. (If that provenance is deemed to be a “relevant” change, it will need to be added as part of a later update. Until then, it can be queried directly as the Provenance that points to this version using _revinclude All Provenances should have some historical version of this Request as their subject.)."></comment>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="MedicationDispense.eventHistory"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Provenance"></targetProfile>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".inboundRelationship(typeCode=SUBJ].source[classCode=CACT, moodCode=EVN]"></map>
+         </mapping>
+      </element>
+   </snapshot>
    <differential>
       <element id="MedicationDispense.identifier.system">
          <path value="MedicationDispense.identifier.system"></path>
@@ -39,14 +2354,14 @@
          <path value="MedicationDispense.identifier.assigner"></path>
          <type>
             <code value="Reference"></code>
-            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Organization-1"></targetProfile>
          </type>
       </element>
       <element id="MedicationDispense.partOf">
          <path value="MedicationDispense.partOf"></path>
          <type>
             <code value="Reference"></code>
-            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Procedure-1"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Procedure-1"></targetProfile>
          </type>
       </element>
       <element id="MedicationDispense.medicationReference:medicationReference">
@@ -54,7 +2369,7 @@
          <sliceName value="medicationReference"></sliceName>
          <type>
             <code value="Reference"></code>
-            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Medication-1"></targetProfile>
          </type>
       </element>
       <element id="MedicationDispense.subject">
@@ -62,21 +2377,15 @@
          <type>
             <code value="Reference"></code>
             <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"></targetProfile>
-         </type>
-         <type>
-            <code value="Reference"></code>
-            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Patient-1"></targetProfile>
          </type>
       </element>
       <element id="MedicationDispense.context">
          <path value="MedicationDispense.context"></path>
          <type>
             <code value="Reference"></code>
-            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-EpisodeOfCare-1"></targetProfile>
-         </type>
-         <type>
-            <code value="Reference"></code>
-            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-EpisodeOfCare-1"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Encounter-1"></targetProfile>
          </type>
       </element>
       <element id="MedicationDispense.performer.actor">
@@ -84,36 +2393,24 @@
          <type>
             <code value="Reference"></code>
             <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"></targetProfile>
-         </type>
-         <type>
-            <code value="Reference"></code>
-            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-RelatedPerson-1"></targetProfile>
-         </type>
-         <type>
-            <code value="Reference"></code>
-            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
-         </type>
-         <type>
-            <code value="Reference"></code>
-            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
-         </type>
-         <type>
-            <code value="Reference"></code>
-            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-RelatedPerson-1"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
          </type>
       </element>
       <element id="MedicationDispense.performer.onBehalfOf">
          <path value="MedicationDispense.performer.onBehalfOf"></path>
          <type>
             <code value="Reference"></code>
-            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Organization-1"></targetProfile>
          </type>
       </element>
       <element id="MedicationDispense.authorizingPrescription">
          <path value="MedicationDispense.authorizingPrescription"></path>
          <type>
             <code value="Reference"></code>
-            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-MedicationRequest-1"></targetProfile>
          </type>
       </element>
       <element id="MedicationDispense.type">
@@ -125,9 +2422,7 @@
             </extension>
             <strength value="preferred"></strength>
             <description value="A ValueSet to identify the type of medication supply."></description>
-            <valueSetReference>
-               <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-MedicationSupplyType-1"></reference>
-            </valueSetReference>
+            <valueSet value="https://hl7.org.uk/fhir/ValueSet/CareConnect-MedicationSupplyType-1"></valueSet>
          </binding>
       </element>
       <element id="MedicationDispense.quantity.extension">
@@ -146,50 +2441,41 @@
          <max value="1"></max>
          <type>
             <code value="Extension"></code>
-            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-MedicationQuantityText-1"></profile>
+            <profile value="https://hl7.org.uk/fhir/StructureDefinition/Extension-CareConnect-MedicationQuantityText-1"></profile>
          </type>
       </element>
       <element id="MedicationDispense.destination">
          <path value="MedicationDispense.destination"></path>
          <type>
             <code value="Reference"></code>
-            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Location-1"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Location-1"></targetProfile>
          </type>
       </element>
       <element id="MedicationDispense.receiver">
          <path value="MedicationDispense.receiver"></path>
          <type>
             <code value="Reference"></code>
-            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
-         </type>
-         <type>
-            <code value="Reference"></code>
-            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
          </type>
       </element>
       <element id="MedicationDispense.note.author[x]">
          <path value="MedicationDispense.note.author[x]"></path>
          <type>
             <code value="Reference"></code>
-            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-RelatedPerson-1"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-RelatedPerson-1"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
          </type>
          <type>
             <code value="string"></code>
-         </type>
-         <type>
-            <code value="Reference"></code>
-            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
-         </type>
-         <type>
-            <code value="Reference"></code>
-            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
          </type>
       </element>
       <element id="MedicationDispense.substitution.responsibleParty">
          <path value="MedicationDispense.substitution.responsibleParty"></path>
          <type>
             <code value="Reference"></code>
-            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
          </type>
       </element>
    </differential>

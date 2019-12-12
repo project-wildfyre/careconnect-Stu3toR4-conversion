@@ -1,77 +1,1285 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="CareConnect-EpisodeOfCare-1"></id>
-    <url value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-EpisodeOfCare-1"></url>
-    <version value="1.0.0"></version>
-    <name value="CareConnect-EpisodeOfCare-1"></name>
-    <status value="draft"></status>
-    <date value="2019-03-04T14:44:34.123+00:00"></date>
-    <publisher value="NHS Digital"></publisher>
-    <contact>
-        <name value="Interoperability Team"></name>
-        <telecom>
-            <system value="email"></system>
-            <value value="interoperabilityteam@nhs.net"></value>
-            <use value="work"></use>
-        </telecom>
-    </contact>
-    <description value="An association between a patient and an organization / healthcare provider(s) during which time encounters may occur. The managing organization assumes a level of responsibility for the patient during this time."></description>
-    <purpose value="[NOT CURATED BY INTEROPEN see: http://www.interopen.org/careconnect-curation-methodology/] Initial development for the Digital Maternity programme"></purpose>
-    <copyright value="Copyright © 2016 HL7 UK    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at    http://www.apache.org/licenses/LICENSE-2.0    Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.    HL7® FHIR® standard Copyright © 2011+ HL7    The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at    https://www.hl7.org/fhir/license.html"></copyright>
-    <fhirVersion value="3.0.1"></fhirVersion>
-    <kind value="resource"></kind>
-    <abstract value="false"></abstract>
-    <type value="EpisodeOfCare"></type>
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"></baseDefinition>
-    <derivation value="constraint"></derivation>
-    <differential>
-        <element id="EpisodeOfCare.identifier.assigner">
-            <path value="EpisodeOfCare.identifier.assigner"></path>
-            <type>
-                <code value="Reference"></code>
-                <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
-            </type>
-        </element>
-        <element id="EpisodeOfCare.diagnosis.condition">
+   <id value="CareConnect-EpisodeOfCare-1"></id>
+   <text>
+      <status value="generated"></status>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;">
+            <tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;">
+               <th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/formats.html#table" title="The logical name of the element">Name</a>
+               </th>
+               <th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/formats.html#table" title="Information about the use of the element">Flags</a>
+               </th>
+               <th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a>
+               </th>
+               <th style="width: 100px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/formats.html#table" title="Reference to the type of the element">Type</a>
+               </th>
+               <th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/formats.html#table" title="Additional information about the element">Description &amp; Constraints</a>
+                  <span style="float: right">
+                     <a href="http://hl7.org/fhir/STU3/formats.html#table" title="Legend for this format">
+                        <img src="http://hl7.org/fhir/STU3/help16.png" alt="doco" style="background-color: inherit"></img>
+                     </a>
+                  </span>
+               </th>
+            </tr>
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;">
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#EpisodeOfCare" title="null">EpisodeOfCare</a>
+                  <a name="EpisodeOfCare"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7;">
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#EpisodeOfCare.identifier" title="null">identifier</a>
+                  <a name="EpisodeOfCare.identifier"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;">
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#EpisodeOfCare.identifier.assigner" title="null">assigner</a>
+                  <a name="EpisodeOfCare.identifier.assigner"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="opacity: 0.4">0</span>
+                  <span style="opacity: 0.5">..</span>
+                  <span style="opacity: 0.4">1</span>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(
+                  <a href="CareConnect-Organization-1.html">CareConnect-Organization-1</a>)
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7;">
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#EpisodeOfCare.diagnosis" title="null">diagnosis</a>
+                  <a name="EpisodeOfCare.diagnosis"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;">
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#EpisodeOfCare.diagnosis.condition" title="null">condition</a>
+                  <a name="EpisodeOfCare.diagnosis.condition"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="opacity: 0.4">1</span>
+                  <span style="opacity: 0.5">..</span>
+                  <span style="opacity: 0.4">1</span>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(
+                  <a href="CareConnect-Condition-1.html">CareConnect-Condition-1</a>)
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7;">
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#EpisodeOfCare.patient" title="null">patient</a>
+                  <a name="EpisodeOfCare.patient"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="opacity: 0.4">1</span>
+                  <span style="opacity: 0.5">..</span>
+                  <span style="opacity: 0.4">1</span>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(
+                  <a href="CareConnect-Patient-1.html">CareConnect-Patient-1</a>)
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;">
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#EpisodeOfCare.managingOrganization" title="null">managingOrganization</a>
+                  <a name="EpisodeOfCare.managingOrganization"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="opacity: 0.4">0</span>
+                  <span style="opacity: 0.5">..</span>
+                  <span style="opacity: 0.4">1</span>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(
+                  <a href="CareConnect-Organization-1.html">CareConnect-Organization-1</a>)
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7;">
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#EpisodeOfCare.referralRequest" title="null">referralRequest</a>
+                  <a name="EpisodeOfCare.referralRequest"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="opacity: 0.4">0</span>
+                  <span style="opacity: 0.5">..</span>
+                  <span style="opacity: 0.4">*</span>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(
+                  <a href="CareConnect-ReferralRequest-1.html">CareConnect-ReferralRequest-1</a>)
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;">
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#EpisodeOfCare.careManager" title="null">careManager</a>
+                  <a name="EpisodeOfCare.careManager"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="opacity: 0.4">0</span>
+                  <span style="opacity: 0.5">..</span>
+                  <span style="opacity: 0.4">1</span>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(
+                  <a href="CareConnect-Practitioner-1.html">CareConnect-Practitioner-1</a>)
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7;">
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#EpisodeOfCare.team" title="null">team</a>
+                  <a name="EpisodeOfCare.team"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="opacity: 0.4">0</span>
+                  <span style="opacity: 0.5">..</span>
+                  <span style="opacity: 0.4">*</span>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(
+                  <a href="CareConnect-CareTeam-1.html">CareConnect-CareTeam-1</a>)
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr>
+               <td colspan="5" class="hierarchy">
+                  <br></br>
+                  <a href="http://hl7.org/fhir/STU3/formats.html#table" title="Legend for this format">
+                     <img src="http://hl7.org/fhir/STU3/help16.png" alt="doco" style="background-color: inherit"></img> Documentation for this format
+                  </a>
+               </td>
+            </tr>
+         </table>
+      </div>
+   </text>
+   <url value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-EpisodeOfCare-1"></url>
+   <version value="3.0.0"></version>
+   <name value="CareConnect-EpisodeOfCare-1"></name>
+   <status value="draft"></status>
+   <date value="2019-03-04T14:44:34+00:00"></date>
+   <publisher value="INTEROpen"></publisher>
+   <contact>
+      <telecom>
+         <system value="other"></system>
+         <value value="https://interopen.ryver.com/"></value>
+      </telecom>
+   </contact>
+   <description value="An association between a patient and an organization / healthcare provider(s) during which time encounters may occur. The managing organization assumes a level of responsibility for the patient during this time."></description>
+   <jurisdiction>
+      <coding>
+         <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"></system>
+         <code value="826"></code>
+      </coding>
+   </jurisdiction>
+   <purpose value="[NOT CURATED BY INTEROPEN see: http://www.interopen.org/careconnect-curation-methodology/] Initial development for the Digital Maternity programme"></purpose>
+   <copyright value="Copyright © 2016 HL7 UK    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at    http://www.apache.org/licenses/LICENSE-2.0    Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.    HL7® FHIR® standard Copyright © 2011+ HL7    The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at    https://www.hl7.org/fhir/license.html"></copyright>
+   <fhirVersion value="3.0.2"></fhirVersion>
+   <mapping>
+      <identity value="rim"></identity>
+      <uri value="http://hl7.org/v3"></uri>
+      <name value="RIM Mapping"></name>
+   </mapping>
+   <mapping>
+      <identity value="w5"></identity>
+      <uri value="http://hl7.org/fhir/w5"></uri>
+      <name value="W5 Mapping"></name>
+   </mapping>
+   <kind value="resource"></kind>
+   <abstract value="false"></abstract>
+   <type value="EpisodeOfCare"></type>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"></baseDefinition>
+   <derivation value="constraint"></derivation>
+   <snapshot>
+      <element id="EpisodeOfCare">
+         <path value="EpisodeOfCare"></path>
+         <short value="An association of a Patient with an Organization and  Healthcare Provider(s) for a period of time that the Organization assumes some level of responsibility"></short>
+         <definition value="An association between a patient and an organization / healthcare provider(s) during which time encounters may occur. The managing organization assumes a level of responsibility for the patient during this time."></definition>
+         <alias value="Case Program Problem"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="EpisodeOfCare"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <constraint>
+            <key value="dom-2"></key>
+            <severity value="error"></severity>
+            <human value="If the resource is contained in another resource, it SHALL NOT contain nested Resources"></human>
+            <expression value="contained.contained.empty()"></expression>
+            <xpath value="not(parent::f:contained and f:contained)"></xpath>
+            <source value="DomainResource"></source>
+         </constraint>
+         <constraint>
+            <key value="dom-1"></key>
+            <severity value="error"></severity>
+            <human value="If the resource is contained in another resource, it SHALL NOT contain any narrative"></human>
+            <expression value="contained.text.empty()"></expression>
+            <xpath value="not(parent::f:contained and f:text)"></xpath>
+            <source value="DomainResource"></source>
+         </constraint>
+         <constraint>
+            <key value="dom-4"></key>
+            <severity value="error"></severity>
+            <human value="If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated"></human>
+            <expression value="contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()"></expression>
+            <xpath value="not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))"></xpath>
+            <source value="DomainResource"></source>
+         </constraint>
+         <constraint>
+            <key value="dom-3"></key>
+            <severity value="error"></severity>
+            <human value="If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource"></human>
+            <expression value="contained.where(('#'+id in %resource.descendants().reference).not()).empty()"></expression>
+            <xpath value="not(exists(for $id in f:contained/*/@id return $id[not(ancestor::f:contained/parent::*/descendant::f:reference/@value=concat('#', $id))]))"></xpath>
+            <source value="DomainResource"></source>
+         </constraint>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="Entity. Role, or Act"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="n/a"></map>
+         </mapping>
+         <mapping>
+            <identity value="w5"></identity>
+            <map value="workflow.encounter"></map>
+         </mapping>
+      </element>
+      <element id="EpisodeOfCare.id">
+         <path value="EpisodeOfCare.id"></path>
+         <short value="Logical id of this artifact"></short>
+         <definition value="The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes."></definition>
+         <comment value="The only time that a resource does not have an id is when it is being submitted to the server using a create operation."></comment>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Resource.id"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="id"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+      </element>
+      <element id="EpisodeOfCare.meta">
+         <path value="EpisodeOfCare.meta"></path>
+         <short value="Metadata about the resource"></short>
+         <definition value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Resource.meta"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Meta"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+      </element>
+      <element id="EpisodeOfCare.implicitRules">
+         <path value="EpisodeOfCare.implicitRules"></path>
+         <short value="A set of rules under which this content was created"></short>
+         <definition value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content."></definition>
+         <comment value="Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. 
+
+This element is labelled as a modifier because the implicit rules may provide additional knowledge about the resource that modifies it's meaning or interpretation."></comment>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Resource.implicitRules"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="uri"></code>
+         </type>
+         <isModifier value="true"></isModifier>
+         <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"></isModifierReason>
+         <isSummary value="true"></isSummary>
+      </element>
+      <element id="EpisodeOfCare.language">
+         <path value="EpisodeOfCare.language"></path>
+         <short value="Language of the resource content"></short>
+         <definition value="The base language in which the resource is written."></definition>
+         <comment value="Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource  Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute)."></comment>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Resource.language"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="code"></code>
+         </type>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
+               <valueCanonical value="http://hl7.org/fhir/ValueSet/all-languages"></valueCanonical>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="Language"></valueString>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+               <valueBoolean value="true"></valueBoolean>
+            </extension>
+            <strength value="extensible"></strength>
+            <description value="A human language."></description>
+            <valueSet value="http://hl7.org/fhir/ValueSet/languages"></valueSet>
+         </binding>
+      </element>
+      <element id="EpisodeOfCare.text">
+         <path value="EpisodeOfCare.text"></path>
+         <short value="Text summary of the resource, for human interpretation"></short>
+         <definition value="A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety."></definition>
+         <comment value="Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative. In some cases, a resource may only have text with little or no additional discrete data (as long as all minOccurs=1 elements are satisfied).  This may be necessary for data from legacy systems where information is captured as a &quot;text blob&quot; or where text is additionally entered raw or narrated and encoded in formation is added later."></comment>
+         <alias value="narrative"></alias>
+         <alias value="html"></alias>
+         <alias value="xhtml"></alias>
+         <alias value="display"></alias>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="DomainResource.text"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Narrative"></code>
+         </type>
+         <condition value="dom-1"></condition>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="Act.text?"></map>
+         </mapping>
+      </element>
+      <element id="EpisodeOfCare.contained">
+         <path value="EpisodeOfCare.contained"></path>
+         <short value="Contained, inline Resources"></short>
+         <definition value="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope."></definition>
+         <comment value="This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again."></comment>
+         <alias value="inline resources"></alias>
+         <alias value="anonymous resources"></alias>
+         <alias value="contained resources"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="DomainResource.contained"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Resource"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="N/A"></map>
+         </mapping>
+      </element>
+      <element id="EpisodeOfCare.extension">
+         <path value="EpisodeOfCare.extension"></path>
+         <short value="Additional Content defined by implementations"></short>
+         <definition value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."></definition>
+         <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+         <alias value="extensions"></alias>
+         <alias value="user content"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="DomainResource.extension"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Extension"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="N/A"></map>
+         </mapping>
+      </element>
+      <element id="EpisodeOfCare.modifierExtension">
+         <path value="EpisodeOfCare.modifierExtension"></path>
+         <short value="Extensions that cannot be ignored"></short>
+         <definition value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."></definition>
+         <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+         <alias value="extensions"></alias>
+         <alias value="user content"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="DomainResource.modifierExtension"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Extension"></code>
+         </type>
+         <isModifier value="true"></isModifier>
+         <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"></isModifierReason>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="N/A"></map>
+         </mapping>
+      </element>
+      <element id="EpisodeOfCare.identifier">
+         <path value="EpisodeOfCare.identifier"></path>
+         <short value="Business Identifier(s) relevant for this EpisodeOfCare"></short>
+         <definition value="The EpisodeOfCare may be known by different identifiers for different contexts of use, such as when an external agency is tracking the Episode for funding purposes."></definition>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="EpisodeOfCare.identifier"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Identifier"></code>
+         </type>
+         <mapping>
+            <identity value="w5"></identity>
+            <map value="id"></map>
+         </mapping>
+      </element>
+      <element id="EpisodeOfCare.identifier.id">
+         <path value="EpisodeOfCare.identifier.id"></path>
+         <representation value="xmlAttr"></representation>
+         <short value="xml:id (or equivalent in JSON)"></short>
+         <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Element.id"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="n/a"></map>
+         </mapping>
+      </element>
+      <element id="EpisodeOfCare.identifier.extension">
+         <path value="EpisodeOfCare.identifier.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <description value="Extensions are always sliced by (at least) url"></description>
+            <rules value="open"></rules>
+         </slicing>
+         <short value="Additional Content defined by implementations"></short>
+         <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."></definition>
+         <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+         <alias value="extensions"></alias>
+         <alias value="user content"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="Element.extension"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Extension"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="n/a"></map>
+         </mapping>
+      </element>
+      <element id="EpisodeOfCare.identifier.use">
+         <path value="EpisodeOfCare.identifier.use"></path>
+         <short value="usual | official | temp | secondary (If known)"></short>
+         <definition value="The purpose of this identifier."></definition>
+         <comment value="This is labeled as &quot;Is Modifier&quot; because applications should not mistake a temporary id for a permanent one. Applications can assume that an identifier is permanent unless it explicitly says that it is temporary."></comment>
+         <requirements value="Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers."></requirements>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Identifier.use"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="code"></code>
+         </type>
+         <isModifier value="true"></isModifier>
+         <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"></isModifierReason>
+         <isSummary value="true"></isSummary>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="IdentifierUse"></valueString>
+            </extension>
+            <strength value="required"></strength>
+            <description value="Identifies the purpose for this identifier, if known ."></description>
+            <valueSet value="http://hl7.org/fhir/ValueSet/identifier-use"></valueSet>
+         </binding>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="N/A"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="Role.code or implied by context"></map>
+         </mapping>
+      </element>
+      <element id="EpisodeOfCare.identifier.type">
+         <path value="EpisodeOfCare.identifier.type"></path>
+         <short value="Description of identifier"></short>
+         <definition value="A coded type for the identifier that can be used to determine which identifier to use for a specific purpose."></definition>
+         <comment value="This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage. 
+
+Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type."></comment>
+         <requirements value="Allows users to make use of identifiers when the identifier system is not known."></requirements>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Identifier.type"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="CodeableConcept"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="IdentifierType"></valueString>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+               <valueBoolean value="true"></valueBoolean>
+            </extension>
+            <strength value="extensible"></strength>
+            <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose."></description>
+            <valueSet value="http://hl7.org/fhir/ValueSet/identifier-type"></valueSet>
+         </binding>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="CX.5"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="Role.code or implied by context"></map>
+         </mapping>
+      </element>
+      <element id="EpisodeOfCare.identifier.system">
+         <path value="EpisodeOfCare.identifier.system"></path>
+         <short value="The namespace for the identifier value"></short>
+         <definition value="Establishes the namespace for the value - that is, a URL that describes a set values that are unique."></definition>
+         <requirements value="There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers."></requirements>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Identifier.system"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="uri"></code>
+         </type>
+         <example>
+            <label value="General"></label>
+            <valueUri value="http://www.acme.com/identifiers/patient"></valueUri>
+         </example>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="CX.4 / EI-2-4"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="II.root or Role.id.root"></map>
+         </mapping>
+         <mapping>
+            <identity value="servd"></identity>
+            <map value="./IdentifierType"></map>
+         </mapping>
+      </element>
+      <element id="EpisodeOfCare.identifier.value">
+         <path value="EpisodeOfCare.identifier.value"></path>
+         <short value="The value that is unique"></short>
+         <definition value="The portion of the identifier typically relevant to the user and which is unique within the context of the system."></definition>
+         <comment value="If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](http://hl7.org/fhir/STU3/extension-rendered-value.html)."></comment>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Identifier.value"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <example>
+            <label value="General"></label>
+            <valueString value="123456"></valueString>
+         </example>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="CX.1 / EI.1"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="II.extension or II.root if system indicates OID or GUID (Or Role.id.extension or root)"></map>
+         </mapping>
+         <mapping>
+            <identity value="servd"></identity>
+            <map value="./Value"></map>
+         </mapping>
+      </element>
+      <element id="EpisodeOfCare.identifier.period">
+         <path value="EpisodeOfCare.identifier.period"></path>
+         <short value="Time period when id is/was valid for use"></short>
+         <definition value="Time period during which identifier is/was valid for use."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Identifier.period"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Period"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="CX.7 + CX.8"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="Role.effectiveTime or implied by context"></map>
+         </mapping>
+         <mapping>
+            <identity value="servd"></identity>
+            <map value="./StartDate and ./EndDate"></map>
+         </mapping>
+      </element>
+      <element id="EpisodeOfCare.identifier.assigner">
+         <path value="EpisodeOfCare.identifier.assigner"></path>
+         <short value="Organization that issued id (may be just text)"></short>
+         <definition value="Organization that issued/manages the identifier."></definition>
+         <comment value="The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization."></comment>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Identifier.assigner"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="CX.4 / (CX.4,CX.9,CX.10)"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper"></map>
+         </mapping>
+         <mapping>
+            <identity value="servd"></identity>
+            <map value="./IdentifierIssuingAuthority"></map>
+         </mapping>
+      </element>
+      <element id="EpisodeOfCare.status">
+         <path value="EpisodeOfCare.status"></path>
+         <short value="planned | waitlist | active | onhold | finished | cancelled | entered-in-error"></short>
+         <definition value="planned | waitlist | active | onhold | finished | cancelled."></definition>
+         <comment value="This element is labeled as a modifier because the status contains codes that mark the episode as not currently valid."></comment>
+         <min value="1"></min>
+         <max value="1"></max>
+         <base>
+            <path value="EpisodeOfCare.status"></path>
+            <min value="1"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="code"></code>
+         </type>
+         <isModifier value="true"></isModifier>
+         <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"></isModifierReason>
+         <isSummary value="true"></isSummary>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="EpisodeOfCareStatus"></valueString>
+            </extension>
+            <strength value="required"></strength>
+            <description value="The status of the episode of care."></description>
+            <valueSet value="http://hl7.org/fhir/ValueSet/episode-of-care-status"></valueSet>
+         </binding>
+         <mapping>
+            <identity value="w5"></identity>
+            <map value="status"></map>
+         </mapping>
+      </element>
+      <element id="EpisodeOfCare.statusHistory">
+         <path value="EpisodeOfCare.statusHistory"></path>
+         <short value="Past list of status codes (the current status may be included to cover the start date of the status)"></short>
+         <definition value="The history of statuses that the EpisodeOfCare has been through (without requiring processing the history of the resource)."></definition>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="EpisodeOfCare.statusHistory"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="BackboneElement"></code>
+         </type>
+         <constraint>
+            <key value="ele-1"></key>
+            <severity value="error"></severity>
+            <human value="All FHIR elements must have a @value or children"></human>
+            <expression value="hasValue() | (children().count() &gt; id.count())"></expression>
+            <xpath value="@value|f:*|h:div"></xpath>
+            <source value="Element"></source>
+         </constraint>
+      </element>
+      <element id="EpisodeOfCare.statusHistory.id">
+         <path value="EpisodeOfCare.statusHistory.id"></path>
+         <representation value="xmlAttr"></representation>
+         <short value="xml:id (or equivalent in JSON)"></short>
+         <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Element.id"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="n/a"></map>
+         </mapping>
+      </element>
+      <element id="EpisodeOfCare.statusHistory.extension">
+         <path value="EpisodeOfCare.statusHistory.extension"></path>
+         <short value="Additional Content defined by implementations"></short>
+         <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."></definition>
+         <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+         <alias value="extensions"></alias>
+         <alias value="user content"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="Element.extension"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Extension"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="n/a"></map>
+         </mapping>
+      </element>
+      <element id="EpisodeOfCare.statusHistory.modifierExtension">
+         <path value="EpisodeOfCare.statusHistory.modifierExtension"></path>
+         <short value="Extensions that cannot be ignored"></short>
+         <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."></definition>
+         <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+         <alias value="extensions"></alias>
+         <alias value="user content"></alias>
+         <alias value="modifiers"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="BackboneElement.modifierExtension"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Extension"></code>
+         </type>
+         <isModifier value="true"></isModifier>
+         <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"></isModifierReason>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="N/A"></map>
+         </mapping>
+      </element>
+      <element id="EpisodeOfCare.statusHistory.status">
+         <path value="EpisodeOfCare.statusHistory.status"></path>
+         <short value="planned | waitlist | active | onhold | finished | cancelled | entered-in-error"></short>
+         <definition value="planned | waitlist | active | onhold | finished | cancelled."></definition>
+         <min value="1"></min>
+         <max value="1"></max>
+         <base>
+            <path value="EpisodeOfCare.statusHistory.status"></path>
+            <min value="1"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="code"></code>
+         </type>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="EpisodeOfCareStatus"></valueString>
+            </extension>
+            <strength value="required"></strength>
+            <description value="The status of the episode of care."></description>
+            <valueSet value="http://hl7.org/fhir/ValueSet/episode-of-care-status"></valueSet>
+         </binding>
+      </element>
+      <element id="EpisodeOfCare.statusHistory.period">
+         <path value="EpisodeOfCare.statusHistory.period"></path>
+         <short value="Duration the EpisodeOfCare was in the specified status"></short>
+         <definition value="The period during this EpisodeOfCare that the specific status applied."></definition>
+         <min value="1"></min>
+         <max value="1"></max>
+         <base>
+            <path value="EpisodeOfCare.statusHistory.period"></path>
+            <min value="1"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Period"></code>
+         </type>
+      </element>
+      <element id="EpisodeOfCare.type">
+         <path value="EpisodeOfCare.type"></path>
+         <short value="Type/class  - e.g. specialist referral, disease management"></short>
+         <definition value="A classification of the type of episode of care; e.g. specialist referral, disease management, type of funded care."></definition>
+         <comment value="The type can be very important in processing as this could be used in determining if the EpisodeOfCare is relevant to specific government reporting, or other types of classifications."></comment>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="EpisodeOfCare.type"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="CodeableConcept"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="EpisodeOfCareType"></valueString>
+            </extension>
+            <strength value="example"></strength>
+            <description value="The type of the episode of care"></description>
+            <valueSet value="http://hl7.org/fhir/ValueSet/episodeofcare-type"></valueSet>
+         </binding>
+         <mapping>
+            <identity value="w5"></identity>
+            <map value="class"></map>
+         </mapping>
+      </element>
+      <element id="EpisodeOfCare.diagnosis">
+         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+            <valueString value="Diagnosis"></valueString>
+         </extension>
+         <path value="EpisodeOfCare.diagnosis"></path>
+         <short value="The list of diagnosis relevant to this episode of care"></short>
+         <definition value="The list of diagnosis relevant to this episode of care."></definition>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="EpisodeOfCare.diagnosis"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="BackboneElement"></code>
+         </type>
+         <constraint>
+            <key value="ele-1"></key>
+            <severity value="error"></severity>
+            <human value="All FHIR elements must have a @value or children"></human>
+            <expression value="hasValue() | (children().count() &gt; id.count())"></expression>
+            <xpath value="@value|f:*|h:div"></xpath>
+            <source value="Element"></source>
+         </constraint>
+         <isSummary value="true"></isSummary>
+      </element>
+      <element id="EpisodeOfCare.diagnosis.id">
+         <path value="EpisodeOfCare.diagnosis.id"></path>
+         <representation value="xmlAttr"></representation>
+         <short value="xml:id (or equivalent in JSON)"></short>
+         <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Element.id"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="n/a"></map>
+         </mapping>
+      </element>
+      <element id="EpisodeOfCare.diagnosis.extension">
+         <path value="EpisodeOfCare.diagnosis.extension"></path>
+         <short value="Additional Content defined by implementations"></short>
+         <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."></definition>
+         <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+         <alias value="extensions"></alias>
+         <alias value="user content"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="Element.extension"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Extension"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="n/a"></map>
+         </mapping>
+      </element>
+      <element id="EpisodeOfCare.diagnosis.modifierExtension">
+         <path value="EpisodeOfCare.diagnosis.modifierExtension"></path>
+         <short value="Extensions that cannot be ignored"></short>
+         <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."></definition>
+         <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+         <alias value="extensions"></alias>
+         <alias value="user content"></alias>
+         <alias value="modifiers"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="BackboneElement.modifierExtension"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Extension"></code>
+         </type>
+         <isModifier value="true"></isModifier>
+         <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"></isModifierReason>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="N/A"></map>
+         </mapping>
+      </element>
+      <element id="EpisodeOfCare.diagnosis.condition">
+         <path value="EpisodeOfCare.diagnosis.condition"></path>
+         <short value="Conditions/problems/diagnoses this episode of care is for"></short>
+         <definition value="A list of conditions/problems/diagnoses that this episode of care is intended to be providing care for."></definition>
+         <min value="1"></min>
+         <max value="1"></max>
+         <base>
             <path value="EpisodeOfCare.diagnosis.condition"></path>
-            <type>
-                <code value="Reference"></code>
-                <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"></targetProfile>
-            </type>
-        </element>
-        <element id="EpisodeOfCare.patient">
+            <min value="1"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Condition-1"></targetProfile>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="w5"></identity>
+            <map value="what"></map>
+         </mapping>
+      </element>
+      <element id="EpisodeOfCare.diagnosis.role">
+         <path value="EpisodeOfCare.diagnosis.role"></path>
+         <short value="Role that this diagnosis has within the episode of care (e.g. admission, billing, discharge …)"></short>
+         <definition value="Role that this diagnosis has within the episode of care (e.g. admission, billing, discharge …)."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="EpisodeOfCare.diagnosis.role"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="CodeableConcept"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="DiagnosisRole"></valueString>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+               <valueBoolean value="true"></valueBoolean>
+            </extension>
+            <strength value="preferred"></strength>
+            <description value="The type of diagnosis this condition represents"></description>
+            <valueSet value="http://hl7.org/fhir/ValueSet/diagnosis-role"></valueSet>
+         </binding>
+      </element>
+      <element id="EpisodeOfCare.diagnosis.rank">
+         <path value="EpisodeOfCare.diagnosis.rank"></path>
+         <short value="Ranking of the diagnosis (for each role type)"></short>
+         <definition value="Ranking of the diagnosis (for each role type)."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="EpisodeOfCare.diagnosis.rank"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="positiveInt"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+      </element>
+      <element id="EpisodeOfCare.patient">
+         <path value="EpisodeOfCare.patient"></path>
+         <short value="The patient who is the focus of this episode of care"></short>
+         <definition value="The patient who is the focus of this episode of care."></definition>
+         <min value="1"></min>
+         <max value="1"></max>
+         <base>
             <path value="EpisodeOfCare.patient"></path>
-            <type>
-                <code value="Reference"></code>
-                <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
-            </type>
-        </element>
-        <element id="EpisodeOfCare.managingOrganization">
+            <min value="1"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="w5"></identity>
+            <map value="who.focus"></map>
+         </mapping>
+      </element>
+      <element id="EpisodeOfCare.managingOrganization">
+         <path value="EpisodeOfCare.managingOrganization"></path>
+         <short value="Organization that assumes care"></short>
+         <definition value="The organization that has assumed the specific responsibilities for the specified duration."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
             <path value="EpisodeOfCare.managingOrganization"></path>
-            <type>
-                <code value="Reference"></code>
-                <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
-            </type>
-        </element>
-        <element id="EpisodeOfCare.referralRequest">
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+         <isSummary value="true"></isSummary>
+      </element>
+      <element id="EpisodeOfCare.period">
+         <path value="EpisodeOfCare.period"></path>
+         <short value="Interval during responsibility is assumed"></short>
+         <definition value="The interval during which the managing organization assumes the defined responsibility."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="EpisodeOfCare.period"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Period"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="w5"></identity>
+            <map value="when.init"></map>
+         </mapping>
+      </element>
+      <element id="EpisodeOfCare.referralRequest">
+         <path value="EpisodeOfCare.referralRequest"></path>
+         <short value="Originating Referral Request(s)"></short>
+         <definition value="Referral Request(s) that are fulfilled by this EpisodeOfCare, incoming referrals."></definition>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
             <path value="EpisodeOfCare.referralRequest"></path>
-            <type>
-                <code value="Reference"></code>
-                <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1"></targetProfile>
-            </type>
-        </element>
-        <element id="EpisodeOfCare.careManager">
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-ReferralRequest-1"></targetProfile>
+         </type>
+      </element>
+      <element id="EpisodeOfCare.careManager">
+         <path value="EpisodeOfCare.careManager"></path>
+         <short value="Care manager/care co-ordinator for the patient"></short>
+         <definition value="The practitioner that is the care manager/care co-ordinator for this patient."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
             <path value="EpisodeOfCare.careManager"></path>
-            <type>
-                <code value="Reference"></code>
-                <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
-            </type>
-        </element>
-        <element id="EpisodeOfCare.team">
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+      </element>
+      <element id="EpisodeOfCare.team">
+         <path value="EpisodeOfCare.team"></path>
+         <short value="Other practitioners facilitating this episode of care"></short>
+         <definition value="The list of practitioners that may be facilitating this episode of care for specific purposes."></definition>
+         <alias value="CareTeam"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
             <path value="EpisodeOfCare.team"></path>
-            <type>
-                <code value="Reference"></code>
-                <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-CareTeam-1"></targetProfile>
-            </type>
-        </element>
-    </differential>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-CareTeam-1"></targetProfile>
+         </type>
+      </element>
+      <element id="EpisodeOfCare.account">
+         <path value="EpisodeOfCare.account"></path>
+         <short value="The set of accounts that may be used for billing for this EpisodeOfCare"></short>
+         <definition value="The set of accounts that may be used for billing for this EpisodeOfCare."></definition>
+         <comment value="The billing system may choose to allocate billable items associated with the EpisodeOfCare to different referenced Accounts based on internal business rules."></comment>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="EpisodeOfCare.account"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Account"></targetProfile>
+         </type>
+      </element>
+   </snapshot>
+   <differential>
+      <element id="EpisodeOfCare.identifier.assigner">
+         <path value="EpisodeOfCare.identifier.assigner"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="EpisodeOfCare.diagnosis.condition">
+         <path value="EpisodeOfCare.diagnosis.condition"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Condition-1"></targetProfile>
+         </type>
+      </element>
+      <element id="EpisodeOfCare.patient">
+         <path value="EpisodeOfCare.patient"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+      </element>
+      <element id="EpisodeOfCare.managingOrganization">
+         <path value="EpisodeOfCare.managingOrganization"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+      </element>
+      <element id="EpisodeOfCare.referralRequest">
+         <path value="EpisodeOfCare.referralRequest"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-ReferralRequest-1"></targetProfile>
+         </type>
+      </element>
+      <element id="EpisodeOfCare.careManager">
+         <path value="EpisodeOfCare.careManager"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+      </element>
+      <element id="EpisodeOfCare.team">
+         <path value="EpisodeOfCare.team"></path>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-CareTeam-1"></targetProfile>
+         </type>
+      </element>
+   </differential>
 </StructureDefinition>

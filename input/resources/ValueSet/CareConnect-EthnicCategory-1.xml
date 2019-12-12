@@ -1,23 +1,55 @@
 <ValueSet xmlns="http://hl7.org/fhir">
    <id value="CareConnect-EthnicCategory-1"></id>
+   <text>
+      <status value="generated"></status>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h2>Care Connect Ethnic Category</h2>
+         <div>
+            <p>A ValueSet to identify the ethnicity of a Person, as specified by the Person. This vocabulary describes a persons ethnic category, it is an extension of the Ethnic Category Code described in the NHS Data Model and Dictionary.</p> 
+         </div>
+         <p>
+            <b>Copyright Statement:</b> Copyright © 2016 HL7 UK
+         </p>
+         <p>This value set includes codes from the following code systems:</p>
+         <ul>
+            <li>Include all codes defined in 
+               <a href="CareConnect-EthnicCategory-1.html">
+                  <code>https://hl7.org.uk/fhir/CodeSystem/CareConnect-EthnicCategory-1</code>
+               </a>
+            </li>
+         </ul>
+      </div>
+   </text>
    <extension url="http://hl7.org/fhir/StructureDefinition/valueset-sourceReference">
       <valueUri value="http://www.datadictionary.nhs.uk/data_dictionary/data_field_notes/p/pds/pds_ethnic_category_code_de.asp?shownav=0"></valueUri>
    </extension>
-   <url value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-EthnicCategory-1"></url>
+   <url value="https://hl7.org.uk/fhir/ValueSet/CareConnect-EthnicCategory-1"></url>
    <identifier>
       <system value="urn:ietf:rfc:3986"></system>
       <value value="urn:oid:2.16.840.1.113883.2.1.3.2.4.16.6"></value>
    </identifier>
-   <version value="1.1.0"></version>
+   <version value="3.0.0"></version>
    <name value="Care Connect Ethnic Category"></name>
    <status value="draft"></status>
    <date value="2018-11-02T00:00:00+00:00"></date>
-   <publisher value="HL7 UK"></publisher>
+   <publisher value="INTEROpen"></publisher>
+   <contact>
+      <telecom>
+         <system value="other"></system>
+         <value value="https://interopen.ryver.com/"></value>
+      </telecom>
+   </contact>
    <description value="A ValueSet to identify the ethnicity of a Person, as specified by the Person. This vocabulary describes a persons ethnic category, it is an extension of the Ethnic Category Code described in the NHS Data Model and Dictionary."></description>
+   <jurisdiction>
+      <coding>
+         <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"></system>
+         <code value="826"></code>
+      </coding>
+   </jurisdiction>
    <copyright value="Copyright © 2016 HL7 UK"></copyright>
    <compose>
       <include>
-         <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-EthnicCategory-1"></system>
+         <system value="https://hl7.org.uk/fhir/CodeSystem/CareConnect-EthnicCategory-1"></system>
       </include>
    </compose>
 </ValueSet>

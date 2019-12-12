@@ -1,12 +1,64 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
    <id value="CareConnect-MedicationFlag-1"></id>
-   <url value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-MedicationFlag-1"></url>
-   <version value="1.0.0"></version>
+   <text>
+      <status value="generated"></status>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h2>Care Connect Medication Flag</h2>
+         <div>
+            <p>A CodeSystem to identify detail codes for flagged medication issues.</p> 
+         </div>
+         <p>
+            <b>Copyright Statement:</b> Copyright © 2016 HL7 UK
+         </p>
+         <p>This code system https://hl7.org.uk/fhir/CodeSystem/CareConnect-MedicationFlag-1 defines the following codes:</p>
+         <table class="codes">
+            <tr>
+               <td style="white-space:nowrap">
+                  <b>Code</b>
+               </td>
+               <td>
+                  <b>Display</b>
+               </td>
+               <td>
+                  <b>Definition</b>
+               </td>
+            </tr>
+            <tr>
+               <td style="white-space:nowrap">do-not-discontinue
+                  <a name="CareConnect-MedicationFlag-1-do-not-discontinue"> </a>
+               </td>
+               <td>Do Not discontinue Medication</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td style="white-space:nowrap">continue-indefinitely
+                  <a name="CareConnect-MedicationFlag-1-continue-indefinitely"> </a>
+               </td>
+               <td>Continue Indefinitely</td>
+               <td></td>
+            </tr>
+         </table>
+      </div>
+   </text>
+   <url value="https://hl7.org.uk/fhir/CodeSystem/CareConnect-MedicationFlag-1"></url>
+   <version value="3.0.0"></version>
    <name value="Care Connect Medication Flag"></name>
    <status value="draft"></status>
-   <date value="2017-08-01T00:00:00+00:00"></date>
-   <publisher value="HL7 UK"></publisher>
+   <date value="2017-08-01T01:00:00+01:00"></date>
+   <publisher value="INTEROpen"></publisher>
+   <contact>
+      <telecom>
+         <system value="other"></system>
+         <value value="https://interopen.ryver.com/"></value>
+      </telecom>
+   </contact>
    <description value="A CodeSystem to identify detail codes for flagged medication issues."></description>
+   <jurisdiction>
+      <coding>
+         <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"></system>
+         <code value="826"></code>
+      </coding>
+   </jurisdiction>
    <copyright value="Copyright © 2016 HL7 UK"></copyright>
    <caseSensitive value="true"></caseSensitive>
    <content value="complete"></content>

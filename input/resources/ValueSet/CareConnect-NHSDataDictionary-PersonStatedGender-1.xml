@@ -1,19 +1,51 @@
 <ValueSet xmlns="http://hl7.org/fhir">
    <id value="CareConnect-NHSDataDictionary-PersonStatedGender-1"></id>
+   <text>
+      <status value="generated"></status>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h2>NHS Data Model and Dictionary Person Stated Gender Code</h2>
+         <div>
+            <p>The gender of a Person. Person Stated Gender Code is self declared or inferred by observation for those unable to declare their Person Stated Gender.</p> 
+         </div>
+         <p>
+            <b>Copyright Statement:</b> Copyright © 2016 HL7 UK
+         </p>
+         <p>This value set includes codes from the following code systems:</p>
+         <ul>
+            <li>Include all codes defined in 
+               <a href="CareConnect-NHSDataDictionary-PersonStatedGender-1.html">
+                  <code>https://hl7.org.uk/fhir/CodeSystem/CareConnect-NHSDataDictionary-PersonStatedGender-1</code>
+               </a>
+            </li>
+         </ul>
+      </div>
+   </text>
    <extension url="http://hl7.org/fhir/StructureDefinition/valueset-sourceReference">
       <valueUri value="http://www.datadictionary.nhs.uk/data_dictionary/attributes/p/person/person_stated_gender_code_de.asp?shownav=1"></valueUri>
    </extension>
-   <url value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-NHSDataDictionary-PersonStatedGender-1"></url>
-   <version value="1.0.0"></version>
+   <url value="https://hl7.org.uk/fhir/ValueSet/CareConnect-NHSDataDictionary-PersonStatedGender-1"></url>
+   <version value="3.0.0"></version>
    <name value="NHS Data Model and Dictionary Person Stated Gender Code"></name>
    <status value="active"></status>
-   <date value="2017-08-21T12:00:00+00:00"></date>
-   <publisher value="HL7 UK"></publisher>
+   <date value="2017-08-21T13:00:00+01:00"></date>
+   <publisher value="INTEROpen"></publisher>
+   <contact>
+      <telecom>
+         <system value="other"></system>
+         <value value="https://interopen.ryver.com/"></value>
+      </telecom>
+   </contact>
    <description value="The gender of a Person. Person Stated Gender Code is self declared or inferred by observation for those unable to declare their Person Stated Gender."></description>
+   <jurisdiction>
+      <coding>
+         <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"></system>
+         <code value="826"></code>
+      </coding>
+   </jurisdiction>
    <copyright value="Copyright © 2016 HL7 UK"></copyright>
    <compose>
       <include>
-         <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSDataDictionary-PersonStatedGender-1"></system>
+         <system value="https://hl7.org.uk/fhir/CodeSystem/CareConnect-NHSDataDictionary-PersonStatedGender-1"></system>
       </include>
    </compose>
 </ValueSet>

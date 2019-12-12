@@ -1,34 +1,1387 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
    <id value="CareConnect-RiskAssessment-1"></id>
-   <url value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-RiskAssessment-1"></url>
-   <version value="1.0.0"></version>
+   <text>
+      <status value="generated"></status>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;">
+            <tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;">
+               <th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/formats.html#table" title="The logical name of the element">Name</a>
+               </th>
+               <th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/formats.html#table" title="Information about the use of the element">Flags</a>
+               </th>
+               <th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a>
+               </th>
+               <th style="width: 100px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/formats.html#table" title="Reference to the type of the element">Type</a>
+               </th>
+               <th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/formats.html#table" title="Additional information about the element">Description &amp; Constraints</a>
+                  <span style="float: right">
+                     <a href="http://hl7.org/fhir/STU3/formats.html#table" title="Legend for this format">
+                        <img src="http://hl7.org/fhir/STU3/help16.png" alt="doco" style="background-color: inherit"></img>
+                     </a>
+                  </span>
+               </th>
+            </tr>
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;">
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#RiskAssessment" title="null">RiskAssessment</a>
+                  <a name="RiskAssessment"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7;">
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#RiskAssessment.identifier" title="null">identifier</a>
+                  <a name="RiskAssessment.identifier"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;">
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#RiskAssessment.identifier.assigner" title="null">assigner</a>
+                  <a name="RiskAssessment.identifier.assigner"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="opacity: 0.4">0</span>
+                  <span style="opacity: 0.5">..</span>
+                  <span style="opacity: 0.4">1</span>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(
+                  <a href="CareConnect-Organization-1.html">CareConnect-Organization-1</a>)
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7;">
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#RiskAssessment.subject" title="null">subject</a>
+                  <a name="RiskAssessment.subject"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="opacity: 0.4">0</span>
+                  <span style="opacity: 0.5">..</span>
+                  <span style="opacity: 0.4">1</span>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(
+                  <a href="http://hl7.org/fhir/STU3/group.html">Group</a> | 
+                  <a href="CareConnect-Patient-1.html">CareConnect-Patient-1</a>)
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;">
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#RiskAssessment.context" title="null">context</a>
+                  <a name="RiskAssessment.context"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="opacity: 0.4">0</span>
+                  <span style="opacity: 0.5">..</span>
+                  <span style="opacity: 0.4">1</span>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(
+                  <a href="CareConnect-EpisodeOfCare-1.html">CareConnect-EpisodeOfCare-1</a> | 
+                  <a href="CareConnect-Encounter-1.html">CareConnect-Encounter-1</a>)
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7;">
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#RiskAssessment.condition" title="null">condition</a>
+                  <a name="RiskAssessment.condition"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="opacity: 0.4">0</span>
+                  <span style="opacity: 0.5">..</span>
+                  <span style="opacity: 0.4">1</span>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(
+                  <a href="CareConnect-Condition-1.html">CareConnect-Condition-1</a>)
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;">
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#RiskAssessment.performer" title="null">performer</a>
+                  <a name="RiskAssessment.performer"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <span style="opacity: 0.4">0</span>
+                  <span style="opacity: 0.5">..</span>
+                  <span style="opacity: 0.4">1</span>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(
+                  <a href="http://hl7.org/fhir/STU3/device.html">Device</a> | 
+                  <a href="CareConnect-Practitioner-1.html">CareConnect-Practitioner-1</a>)
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr>
+               <td colspan="5" class="hierarchy">
+                  <br></br>
+                  <a href="http://hl7.org/fhir/STU3/formats.html#table" title="Legend for this format">
+                     <img src="http://hl7.org/fhir/STU3/help16.png" alt="doco" style="background-color: inherit"></img> Documentation for this format
+                  </a>
+               </td>
+            </tr>
+         </table>
+      </div>
+   </text>
+   <url value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-RiskAssessment-1"></url>
+   <version value="3.0.0"></version>
    <name value="CareConnect-RiskAssessment-1"></name>
    <status value="draft"></status>
-   <date value="2019-03-04T15:13:38.35+00:00"></date>
-   <publisher value="NHS Digital"></publisher>
+   <date value="2019-03-04T15:13:38+00:00"></date>
+   <publisher value="INTEROpen"></publisher>
    <contact>
-      <name value="Interoperability Team"></name>
       <telecom>
-         <system value="email"></system>
-         <value value="interoperabilityteam@nhs.net"></value>
-         <use value="work"></use>
+         <system value="other"></system>
+         <value value="https://interopen.ryver.com/"></value>
       </telecom>
    </contact>
    <description value="An assessment of the likely outcome(s) for a patient or other subject as well as the likelihood of each outcome."></description>
+   <jurisdiction>
+      <coding>
+         <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"></system>
+         <code value="826"></code>
+      </coding>
+   </jurisdiction>
    <purpose value="[NOT CURATED BY INTEROPEN see: http://www.interopen.org/careconnect-curation-methodology/] Initial development for the Digital Maternity programme"></purpose>
    <copyright value="Copyright © 2016 HL7 UK    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at    http://www.apache.org/licenses/LICENSE-2.0    Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.    HL7® FHIR® standard Copyright © 2011+ HL7    The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at    https://www.hl7.org/fhir/license.html"></copyright>
-   <fhirVersion value="3.0.1"></fhirVersion>
+   <fhirVersion value="3.0.2"></fhirVersion>
+   <mapping>
+      <identity value="workflow"></identity>
+      <uri value="http://hl7.org/fhir/workflow"></uri>
+      <name value="Workflow Mapping"></name>
+   </mapping>
+   <mapping>
+      <identity value="v2"></identity>
+      <uri value="http://hl7.org/v2"></uri>
+      <name value="HL7 v2 Mapping"></name>
+   </mapping>
+   <mapping>
+      <identity value="rim"></identity>
+      <uri value="http://hl7.org/v3"></uri>
+      <name value="RIM Mapping"></name>
+   </mapping>
+   <mapping>
+      <identity value="openehr"></identity>
+      <uri value="http://openehr.org"></uri>
+      <name value="Open EHR Archetype Mapping"></name>
+   </mapping>
+   <mapping>
+      <identity value="w5"></identity>
+      <uri value="http://hl7.org/fhir/w5"></uri>
+      <name value="W5 Mapping"></name>
+   </mapping>
    <kind value="resource"></kind>
    <abstract value="false"></abstract>
    <type value="RiskAssessment"></type>
    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/RiskAssessment"></baseDefinition>
    <derivation value="constraint"></derivation>
+   <snapshot>
+      <element id="RiskAssessment">
+         <path value="RiskAssessment"></path>
+         <short value="Potential outcomes for a subject with likelihood"></short>
+         <definition value="An assessment of the likely outcome(s) for a patient or other subject as well as the likelihood of each outcome."></definition>
+         <alias value="Prognosis"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="RiskAssessment"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <constraint>
+            <key value="dom-2"></key>
+            <severity value="error"></severity>
+            <human value="If the resource is contained in another resource, it SHALL NOT contain nested Resources"></human>
+            <expression value="contained.contained.empty()"></expression>
+            <xpath value="not(parent::f:contained and f:contained)"></xpath>
+            <source value="DomainResource"></source>
+         </constraint>
+         <constraint>
+            <key value="dom-1"></key>
+            <severity value="error"></severity>
+            <human value="If the resource is contained in another resource, it SHALL NOT contain any narrative"></human>
+            <expression value="contained.text.empty()"></expression>
+            <xpath value="not(parent::f:contained and f:text)"></xpath>
+            <source value="DomainResource"></source>
+         </constraint>
+         <constraint>
+            <key value="dom-4"></key>
+            <severity value="error"></severity>
+            <human value="If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated"></human>
+            <expression value="contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()"></expression>
+            <xpath value="not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))"></xpath>
+            <source value="DomainResource"></source>
+         </constraint>
+         <constraint>
+            <key value="dom-3"></key>
+            <severity value="error"></severity>
+            <human value="If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource"></human>
+            <expression value="contained.where(('#'+id in %resource.descendants().reference).not()).empty()"></expression>
+            <xpath value="not(exists(for $id in f:contained/*/@id return $id[not(ancestor::f:contained/parent::*/descendant::f:reference/@value=concat('#', $id))]))"></xpath>
+            <source value="DomainResource"></source>
+         </constraint>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="Entity. Role, or Act"></map>
+         </mapping>
+         <mapping>
+            <identity value="workflow"></identity>
+            <map value="Event"></map>
+         </mapping>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="N/A"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="Observation[classCode=OBS, moodCode=EVN, code=&quot;Risk Assessment&quot;]"></map>
+         </mapping>
+         <mapping>
+            <identity value="openehr"></identity>
+            <map value="OpenEHR-EHR-EVALUATION.risk.v1"></map>
+         </mapping>
+         <mapping>
+            <identity value="w5"></identity>
+            <map value="clinical.general"></map>
+         </mapping>
+      </element>
+      <element id="RiskAssessment.id">
+         <path value="RiskAssessment.id"></path>
+         <short value="Logical id of this artifact"></short>
+         <definition value="The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes."></definition>
+         <comment value="The only time that a resource does not have an id is when it is being submitted to the server using a create operation."></comment>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Resource.id"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="id"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+      </element>
+      <element id="RiskAssessment.meta">
+         <path value="RiskAssessment.meta"></path>
+         <short value="Metadata about the resource"></short>
+         <definition value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Resource.meta"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Meta"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+      </element>
+      <element id="RiskAssessment.implicitRules">
+         <path value="RiskAssessment.implicitRules"></path>
+         <short value="A set of rules under which this content was created"></short>
+         <definition value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content."></definition>
+         <comment value="Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. 
+
+This element is labelled as a modifier because the implicit rules may provide additional knowledge about the resource that modifies it's meaning or interpretation."></comment>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Resource.implicitRules"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="uri"></code>
+         </type>
+         <isModifier value="true"></isModifier>
+         <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"></isModifierReason>
+         <isSummary value="true"></isSummary>
+      </element>
+      <element id="RiskAssessment.language">
+         <path value="RiskAssessment.language"></path>
+         <short value="Language of the resource content"></short>
+         <definition value="The base language in which the resource is written."></definition>
+         <comment value="Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource  Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute)."></comment>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Resource.language"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="code"></code>
+         </type>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
+               <valueCanonical value="http://hl7.org/fhir/ValueSet/all-languages"></valueCanonical>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="Language"></valueString>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+               <valueBoolean value="true"></valueBoolean>
+            </extension>
+            <strength value="extensible"></strength>
+            <description value="A human language."></description>
+            <valueSet value="http://hl7.org/fhir/ValueSet/languages"></valueSet>
+         </binding>
+      </element>
+      <element id="RiskAssessment.text">
+         <path value="RiskAssessment.text"></path>
+         <short value="Text summary of the resource, for human interpretation"></short>
+         <definition value="A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety."></definition>
+         <comment value="Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative. In some cases, a resource may only have text with little or no additional discrete data (as long as all minOccurs=1 elements are satisfied).  This may be necessary for data from legacy systems where information is captured as a &quot;text blob&quot; or where text is additionally entered raw or narrated and encoded in formation is added later."></comment>
+         <alias value="narrative"></alias>
+         <alias value="html"></alias>
+         <alias value="xhtml"></alias>
+         <alias value="display"></alias>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="DomainResource.text"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Narrative"></code>
+         </type>
+         <condition value="dom-1"></condition>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="Act.text?"></map>
+         </mapping>
+      </element>
+      <element id="RiskAssessment.contained">
+         <path value="RiskAssessment.contained"></path>
+         <short value="Contained, inline Resources"></short>
+         <definition value="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope."></definition>
+         <comment value="This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again."></comment>
+         <alias value="inline resources"></alias>
+         <alias value="anonymous resources"></alias>
+         <alias value="contained resources"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="DomainResource.contained"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Resource"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="N/A"></map>
+         </mapping>
+      </element>
+      <element id="RiskAssessment.extension">
+         <path value="RiskAssessment.extension"></path>
+         <short value="Additional Content defined by implementations"></short>
+         <definition value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."></definition>
+         <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+         <alias value="extensions"></alias>
+         <alias value="user content"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="DomainResource.extension"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Extension"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="N/A"></map>
+         </mapping>
+      </element>
+      <element id="RiskAssessment.modifierExtension">
+         <path value="RiskAssessment.modifierExtension"></path>
+         <short value="Extensions that cannot be ignored"></short>
+         <definition value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."></definition>
+         <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+         <alias value="extensions"></alias>
+         <alias value="user content"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="DomainResource.modifierExtension"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Extension"></code>
+         </type>
+         <isModifier value="true"></isModifier>
+         <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"></isModifierReason>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="N/A"></map>
+         </mapping>
+      </element>
+      <element id="RiskAssessment.identifier">
+         <path value="RiskAssessment.identifier"></path>
+         <short value="Unique identifier for the assessment"></short>
+         <definition value="Business identifier assigned to the risk assessment."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="RiskAssessment.identifier"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Identifier"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="workflow"></identity>
+            <map value="Event.identifier"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".id"></map>
+         </mapping>
+         <mapping>
+            <identity value="openehr"></identity>
+            <map value="Workflow Identifier"></map>
+         </mapping>
+         <mapping>
+            <identity value="w5"></identity>
+            <map value="id"></map>
+         </mapping>
+      </element>
+      <element id="RiskAssessment.identifier.id">
+         <path value="RiskAssessment.identifier.id"></path>
+         <representation value="xmlAttr"></representation>
+         <short value="xml:id (or equivalent in JSON)"></short>
+         <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Element.id"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="n/a"></map>
+         </mapping>
+      </element>
+      <element id="RiskAssessment.identifier.extension">
+         <path value="RiskAssessment.identifier.extension"></path>
+         <slicing>
+            <discriminator>
+               <type value="value"></type>
+               <path value="url"></path>
+            </discriminator>
+            <description value="Extensions are always sliced by (at least) url"></description>
+            <rules value="open"></rules>
+         </slicing>
+         <short value="Additional Content defined by implementations"></short>
+         <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."></definition>
+         <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+         <alias value="extensions"></alias>
+         <alias value="user content"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="Element.extension"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Extension"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="n/a"></map>
+         </mapping>
+      </element>
+      <element id="RiskAssessment.identifier.use">
+         <path value="RiskAssessment.identifier.use"></path>
+         <short value="usual | official | temp | secondary (If known)"></short>
+         <definition value="The purpose of this identifier."></definition>
+         <comment value="This is labeled as &quot;Is Modifier&quot; because applications should not mistake a temporary id for a permanent one. Applications can assume that an identifier is permanent unless it explicitly says that it is temporary."></comment>
+         <requirements value="Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers."></requirements>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Identifier.use"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="code"></code>
+         </type>
+         <isModifier value="true"></isModifier>
+         <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"></isModifierReason>
+         <isSummary value="true"></isSummary>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="IdentifierUse"></valueString>
+            </extension>
+            <strength value="required"></strength>
+            <description value="Identifies the purpose for this identifier, if known ."></description>
+            <valueSet value="http://hl7.org/fhir/ValueSet/identifier-use"></valueSet>
+         </binding>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="N/A"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="Role.code or implied by context"></map>
+         </mapping>
+      </element>
+      <element id="RiskAssessment.identifier.type">
+         <path value="RiskAssessment.identifier.type"></path>
+         <short value="Description of identifier"></short>
+         <definition value="A coded type for the identifier that can be used to determine which identifier to use for a specific purpose."></definition>
+         <comment value="This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage. 
+
+Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type."></comment>
+         <requirements value="Allows users to make use of identifiers when the identifier system is not known."></requirements>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Identifier.type"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="CodeableConcept"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="IdentifierType"></valueString>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+               <valueBoolean value="true"></valueBoolean>
+            </extension>
+            <strength value="extensible"></strength>
+            <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose."></description>
+            <valueSet value="http://hl7.org/fhir/ValueSet/identifier-type"></valueSet>
+         </binding>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="CX.5"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="Role.code or implied by context"></map>
+         </mapping>
+      </element>
+      <element id="RiskAssessment.identifier.system">
+         <path value="RiskAssessment.identifier.system"></path>
+         <short value="The namespace for the identifier value"></short>
+         <definition value="Establishes the namespace for the value - that is, a URL that describes a set values that are unique."></definition>
+         <requirements value="There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers."></requirements>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Identifier.system"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="uri"></code>
+         </type>
+         <example>
+            <label value="General"></label>
+            <valueUri value="http://www.acme.com/identifiers/patient"></valueUri>
+         </example>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="CX.4 / EI-2-4"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="II.root or Role.id.root"></map>
+         </mapping>
+         <mapping>
+            <identity value="servd"></identity>
+            <map value="./IdentifierType"></map>
+         </mapping>
+      </element>
+      <element id="RiskAssessment.identifier.value">
+         <path value="RiskAssessment.identifier.value"></path>
+         <short value="The value that is unique"></short>
+         <definition value="The portion of the identifier typically relevant to the user and which is unique within the context of the system."></definition>
+         <comment value="If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](http://hl7.org/fhir/STU3/extension-rendered-value.html)."></comment>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Identifier.value"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <example>
+            <label value="General"></label>
+            <valueString value="123456"></valueString>
+         </example>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="CX.1 / EI.1"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="II.extension or II.root if system indicates OID or GUID (Or Role.id.extension or root)"></map>
+         </mapping>
+         <mapping>
+            <identity value="servd"></identity>
+            <map value="./Value"></map>
+         </mapping>
+      </element>
+      <element id="RiskAssessment.identifier.period">
+         <path value="RiskAssessment.identifier.period"></path>
+         <short value="Time period when id is/was valid for use"></short>
+         <definition value="Time period during which identifier is/was valid for use."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Identifier.period"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Period"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="CX.7 + CX.8"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="Role.effectiveTime or implied by context"></map>
+         </mapping>
+         <mapping>
+            <identity value="servd"></identity>
+            <map value="./StartDate and ./EndDate"></map>
+         </mapping>
+      </element>
+      <element id="RiskAssessment.identifier.assigner">
+         <path value="RiskAssessment.identifier.assigner"></path>
+         <short value="Organization that issued id (may be just text)"></short>
+         <definition value="Organization that issued/manages the identifier."></definition>
+         <comment value="The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization."></comment>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Identifier.assigner"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="v2"></identity>
+            <map value="CX.4 / (CX.4,CX.9,CX.10)"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper"></map>
+         </mapping>
+         <mapping>
+            <identity value="servd"></identity>
+            <map value="./IdentifierIssuingAuthority"></map>
+         </mapping>
+      </element>
+      <element id="RiskAssessment.basedOn">
+         <path value="RiskAssessment.basedOn"></path>
+         <short value="Request fulfilled by this assessment"></short>
+         <definition value="A reference to the request that is fulfilled by this risk assessment."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="RiskAssessment.basedOn"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"></targetProfile>
+         </type>
+         <mapping>
+            <identity value="workflow"></identity>
+            <map value="Event.basedOn"></map>
+         </mapping>
+      </element>
+      <element id="RiskAssessment.parent">
+         <path value="RiskAssessment.parent"></path>
+         <short value="Part of this occurrence"></short>
+         <definition value="A reference to a resource that this risk assessment is part of, such as a Procedure."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="RiskAssessment.parent"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"></targetProfile>
+         </type>
+         <mapping>
+            <identity value="workflow"></identity>
+            <map value="Event.partOf"></map>
+         </mapping>
+      </element>
+      <element id="RiskAssessment.status">
+         <path value="RiskAssessment.status"></path>
+         <short value="registered | preliminary | final | amended +"></short>
+         <definition value="The status of the RiskAssessment, using the same statuses as an Observation."></definition>
+         <min value="1"></min>
+         <max value="1"></max>
+         <base>
+            <path value="RiskAssessment.status"></path>
+            <min value="1"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="code"></code>
+         </type>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="RiskAssessmentStatus"></valueString>
+            </extension>
+            <strength value="required"></strength>
+            <description value="The status of the risk assessment; e.g. preliminary, final, amended, etc."></description>
+            <valueSet value="http://hl7.org/fhir/ValueSet/observation-status"></valueSet>
+         </binding>
+         <mapping>
+            <identity value="workflow"></identity>
+            <map value="Event.status"></map>
+         </mapping>
+         <mapping>
+            <identity value="w5"></identity>
+            <map value="status"></map>
+         </mapping>
+      </element>
+      <element id="RiskAssessment.method">
+         <path value="RiskAssessment.method"></path>
+         <short value="Evaluation mechanism"></short>
+         <definition value="The algorithm, process or mechanism used to evaluate the risk."></definition>
+         <requirements value="The method can influence the results of the assessment."></requirements>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="RiskAssessment.method"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="CodeableConcept"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="RiskAssessmentMethod"></valueString>
+            </extension>
+            <strength value="example"></strength>
+            <description value="The mechanism or algorithm used to make the assessment; e.g. TIMI, PRISM, Cardiff Type 2 diabetes, etc."></description>
+         </binding>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".methodCode"></map>
+         </mapping>
+         <mapping>
+            <identity value="w5"></identity>
+            <map value="class"></map>
+         </mapping>
+      </element>
+      <element id="RiskAssessment.code">
+         <path value="RiskAssessment.code"></path>
+         <short value="Type of assessment"></short>
+         <definition value="The type of the risk assessment performed."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="RiskAssessment.code"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="CodeableConcept"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="workflow"></identity>
+            <map value="Event.code"></map>
+         </mapping>
+         <mapping>
+            <identity value="w5"></identity>
+            <map value="what"></map>
+         </mapping>
+      </element>
+      <element id="RiskAssessment.subject">
+         <path value="RiskAssessment.subject"></path>
+         <short value="Who/what does assessment apply to?"></short>
+         <definition value="The patient or group the risk assessment applies to."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="RiskAssessment.subject"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="workflow"></identity>
+            <map value="Event.subject"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".participation[typeCode=SBJ].role"></map>
+         </mapping>
+         <mapping>
+            <identity value="openehr"></identity>
+            <map value="Subject of Care"></map>
+         </mapping>
+         <mapping>
+            <identity value="w5"></identity>
+            <map value="who.focus"></map>
+         </mapping>
+      </element>
+      <element id="RiskAssessment.context">
+         <path value="RiskAssessment.context"></path>
+         <short value="Where was assessment performed?"></short>
+         <definition value="The encounter where the assessment was performed."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="RiskAssessment.context"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-EpisodeOfCare-1"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Encounter-1"></targetProfile>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="workflow"></identity>
+            <map value="Event.context"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".inboundRelationship[typeCode=COMP].source[classCode=ENC, moodCode=EVN]"></map>
+         </mapping>
+         <mapping>
+            <identity value="w5"></identity>
+            <map value="context"></map>
+         </mapping>
+      </element>
+      <element id="RiskAssessment.occurrence[x]">
+         <path value="RiskAssessment.occurrence[x]"></path>
+         <short value="When was assessment made?"></short>
+         <definition value="The date (and possibly time) the risk assessment was performed."></definition>
+         <requirements value="The assessment results lose validity the more time elapses from when they are first made."></requirements>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="RiskAssessment.occurrence[x]"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="dateTime"></code>
+         </type>
+         <type>
+            <code value="Period"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="workflow"></identity>
+            <map value="Event.occurrence"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".effectiveTime"></map>
+         </mapping>
+         <mapping>
+            <identity value="w5"></identity>
+            <map value="when.done"></map>
+         </mapping>
+      </element>
+      <element id="RiskAssessment.condition">
+         <path value="RiskAssessment.condition"></path>
+         <short value="Condition assessed"></short>
+         <definition value="For assessments or prognosis specific to a particular condition, indicates the condition being assessed."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="RiskAssessment.condition"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Condition-1"></targetProfile>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".outboundRelationship[typeCode=SUBJ].target[classCode=OBS, moodCode=EVN]"></map>
+         </mapping>
+      </element>
+      <element id="RiskAssessment.performer">
+         <path value="RiskAssessment.performer"></path>
+         <short value="Who did assessment?"></short>
+         <definition value="The provider or software application that performed the assessment."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="RiskAssessment.performer"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="workflow"></identity>
+            <map value="Event.performer.actor"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".participation[typeCode=PFM].role[classCode=ASSIGNED]"></map>
+         </mapping>
+         <mapping>
+            <identity value="openehr"></identity>
+            <map value="Information Provider"></map>
+         </mapping>
+         <mapping>
+            <identity value="w5"></identity>
+            <map value="who.actor"></map>
+         </mapping>
+      </element>
+      <element id="RiskAssessment.reason[x]">
+         <path value="RiskAssessment.reason[x]"></path>
+         <short value="Why the assessment was necessary?"></short>
+         <definition value="The reason the risk assessment was performed."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="RiskAssessment.reason[x]"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="CodeableConcept"></code>
+         </type>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"></targetProfile>
+         </type>
+         <mapping>
+            <identity value="workflow"></identity>
+            <map value="Event.reason"></map>
+         </mapping>
+         <mapping>
+            <identity value="w5"></identity>
+            <map value="why"></map>
+         </mapping>
+      </element>
+      <element id="RiskAssessment.basis">
+         <path value="RiskAssessment.basis"></path>
+         <short value="Information used in assessment"></short>
+         <definition value="Indicates the source data considered as part of the assessment (FamilyHistory, Observations, Procedures, Conditions, etc.)."></definition>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="RiskAssessment.basis"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"></targetProfile>
+         </type>
+         <mapping>
+            <identity value="workflow"></identity>
+            <map value="Event.reasonReference"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".outboundRelationship[typeCode=DRIV].target"></map>
+         </mapping>
+         <mapping>
+            <identity value="openehr"></identity>
+            <map value="Risk Factor; Link to Evidence"></map>
+         </mapping>
+      </element>
+      <element id="RiskAssessment.prediction">
+         <path value="RiskAssessment.prediction"></path>
+         <short value="Outcome predicted"></short>
+         <definition value="Describes the expected outcome for the subject."></definition>
+         <comment value="Multiple repetitions can be used to identify the same type of outcome in different timeframes as well as different types of outcomes."></comment>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="RiskAssessment.prediction"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="BackboneElement"></code>
+         </type>
+         <constraint>
+            <key value="ele-1"></key>
+            <severity value="error"></severity>
+            <human value="All FHIR elements must have a @value or children"></human>
+            <expression value="hasValue() | (children().count() &gt; id.count())"></expression>
+            <xpath value="@value|f:*|h:div"></xpath>
+            <source value="Element"></source>
+         </constraint>
+         <constraint>
+            <key value="ras-2"></key>
+            <severity value="error"></severity>
+            <human value="Must be &lt;= 100"></human>
+            <expression value="probability is decimal implies probability.as(decimal) &lt;= 100"></expression>
+            <xpath value="not(f:probabilityDecimal) or f:probabilityDecimal/@value &lt;= 100"></xpath>
+         </constraint>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".outboundRelationship[typeCode=VALUE].target[classCod=OBS, moodCode=RISK]"></map>
+         </mapping>
+      </element>
+      <element id="RiskAssessment.prediction.id">
+         <path value="RiskAssessment.prediction.id"></path>
+         <representation value="xmlAttr"></representation>
+         <short value="xml:id (or equivalent in JSON)"></short>
+         <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Element.id"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="n/a"></map>
+         </mapping>
+      </element>
+      <element id="RiskAssessment.prediction.extension">
+         <path value="RiskAssessment.prediction.extension"></path>
+         <short value="Additional Content defined by implementations"></short>
+         <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."></definition>
+         <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+         <alias value="extensions"></alias>
+         <alias value="user content"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="Element.extension"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Extension"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="n/a"></map>
+         </mapping>
+      </element>
+      <element id="RiskAssessment.prediction.modifierExtension">
+         <path value="RiskAssessment.prediction.modifierExtension"></path>
+         <short value="Extensions that cannot be ignored"></short>
+         <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."></definition>
+         <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+         <alias value="extensions"></alias>
+         <alias value="user content"></alias>
+         <alias value="modifiers"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="BackboneElement.modifierExtension"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Extension"></code>
+         </type>
+         <isModifier value="true"></isModifier>
+         <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"></isModifierReason>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="N/A"></map>
+         </mapping>
+      </element>
+      <element id="RiskAssessment.prediction.outcome">
+         <path value="RiskAssessment.prediction.outcome"></path>
+         <short value="Possible outcome for the subject"></short>
+         <definition value="One of the potential outcomes for the patient (e.g. remission, death,  a particular condition)."></definition>
+         <min value="1"></min>
+         <max value="1"></max>
+         <base>
+            <path value="RiskAssessment.prediction.outcome"></path>
+            <min value="1"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="CodeableConcept"></code>
+         </type>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="RiskAssessmentOutcome"></valueString>
+            </extension>
+            <strength value="example"></strength>
+            <description value="The condition or other outcome; e.g. death, remission, amputation, infection, etc."></description>
+         </binding>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".value"></map>
+         </mapping>
+         <mapping>
+            <identity value="openehr"></identity>
+            <map value="Risk"></map>
+         </mapping>
+      </element>
+      <element id="RiskAssessment.prediction.probability[x]">
+         <path value="RiskAssessment.prediction.probability[x]"></path>
+         <short value="Likelihood of specified outcome"></short>
+         <definition value="How likely is the outcome (in the specified timeframe)."></definition>
+         <comment value="If range is used, it represents the lower and upper bounds of certainty; e.g. 40-60%  Decimal values are expressed as percentages as well (max = 100)."></comment>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="RiskAssessment.prediction.probability[x]"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="decimal"></code>
+         </type>
+         <type>
+            <code value="Range"></code>
+         </type>
+         <constraint>
+            <key value="ras-1"></key>
+            <severity value="error"></severity>
+            <human value="low and high must be percentages, if present"></human>
+            <expression value="(low.empty() or ((low.code = '%') and (low.system = %ucum))) and (high.empty() or ((high.code = '%') and (high.system = %ucum)))"></expression>
+            <xpath value="(not(f:low) or f:low[f:code/@value='%' and f:system/@value='http://unitsofmeasure.org']) and (not(f:high) or f:high[f:code/@value='%' and f:system/@value='http://unitsofmeasure.org'])"></xpath>
+         </constraint>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=&quot;probability&quot;].value"></map>
+         </mapping>
+         <mapping>
+            <identity value="openehr"></identity>
+            <map value="Category"></map>
+         </mapping>
+      </element>
+      <element id="RiskAssessment.prediction.qualitativeRisk">
+         <path value="RiskAssessment.prediction.qualitativeRisk"></path>
+         <short value="Likelihood of specified outcome as a qualitative value"></short>
+         <definition value="How likely is the outcome (in the specified timeframe), expressed as a qualitative value (e.g. low, medium, high)."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="RiskAssessment.prediction.qualitativeRisk"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="CodeableConcept"></code>
+         </type>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="RiskAssessmentProbability"></valueString>
+            </extension>
+            <strength value="example"></strength>
+            <description value="The likelihood of the occurrence of a specified outcome"></description>
+            <valueSet value="http://hl7.org/fhir/ValueSet/risk-probability"></valueSet>
+         </binding>
+      </element>
+      <element id="RiskAssessment.prediction.relativeRisk">
+         <path value="RiskAssessment.prediction.relativeRisk"></path>
+         <short value="Relative likelihood"></short>
+         <definition value="Indicates the risk for this particular subject (with their specific characteristics) divided by the risk of the population in general.  (Numbers greater than 1 = higher risk than the population, numbers less than 1 = lower risk.)."></definition>
+         <requirements value="Absolute risk is less meaningful than relative risk."></requirements>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="RiskAssessment.prediction.relativeRisk"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="decimal"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=&quot;relative risk&quot;].value"></map>
+         </mapping>
+      </element>
+      <element id="RiskAssessment.prediction.when[x]">
+         <path value="RiskAssessment.prediction.when[x]"></path>
+         <short value="Timeframe or age range"></short>
+         <definition value="Indicates the period of time or age range of the subject to which the specified probability applies."></definition>
+         <comment value="If not specified, the risk applies &quot;over the subject's lifespan&quot;."></comment>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="RiskAssessment.prediction.when[x]"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Period"></code>
+         </type>
+         <type>
+            <code value="Range"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".effectiveTime or .inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=&quot;age&quot;].value"></map>
+         </mapping>
+      </element>
+      <element id="RiskAssessment.prediction.rationale">
+         <path value="RiskAssessment.prediction.rationale"></path>
+         <short value="Explanation of prediction"></short>
+         <definition value="Additional information explaining the basis for the prediction."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="RiskAssessment.prediction.rationale"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".reasonCode.text"></map>
+         </mapping>
+         <mapping>
+            <identity value="openehr"></identity>
+            <map value="Rationale"></map>
+         </mapping>
+      </element>
+      <element id="RiskAssessment.mitigation">
+         <path value="RiskAssessment.mitigation"></path>
+         <short value="How to reduce risk"></short>
+         <definition value="A description of the steps that might be taken to reduce the identified risk(s)."></definition>
+         <requirements value="One of the main reasons for assessing risks is to identify whether interventional steps are needed to reduce risk."></requirements>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="RiskAssessment.mitigation"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".outboundRelationship[typeCode=MTGT].target[classCode=ACT, moodCode=EVN].text"></map>
+         </mapping>
+      </element>
+      <element id="RiskAssessment.comment">
+         <path value="RiskAssessment.comment"></path>
+         <short value="Comments on the risk assessment"></short>
+         <definition value="Additional comments about the risk assessment."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="RiskAssessment.comment"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <mapping>
+            <identity value="workflow"></identity>
+            <map value="Event.note"></map>
+         </mapping>
+      </element>
+   </snapshot>
    <differential>
       <element id="RiskAssessment.identifier.assigner">
          <path value="RiskAssessment.identifier.assigner"></path>
          <type>
             <code value="Reference"></code>
-            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Organization-1"></targetProfile>
          </type>
       </element>
       <element id="RiskAssessment.subject">
@@ -36,28 +1389,22 @@
          <type>
             <code value="Reference"></code>
             <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"></targetProfile>
-         </type>
-         <type>
-            <code value="Reference"></code>
-            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Patient-1"></targetProfile>
          </type>
       </element>
       <element id="RiskAssessment.context">
          <path value="RiskAssessment.context"></path>
          <type>
             <code value="Reference"></code>
-            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-EpisodeOfCare-1"></targetProfile>
-         </type>
-         <type>
-            <code value="Reference"></code>
-            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-EpisodeOfCare-1"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Encounter-1"></targetProfile>
          </type>
       </element>
       <element id="RiskAssessment.condition">
          <path value="RiskAssessment.condition"></path>
          <type>
             <code value="Reference"></code>
-            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Condition-1"></targetProfile>
          </type>
       </element>
       <element id="RiskAssessment.performer">
@@ -65,10 +1412,7 @@
          <type>
             <code value="Reference"></code>
             <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"></targetProfile>
-         </type>
-         <type>
-            <code value="Reference"></code>
-            <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
+            <targetProfile value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-Practitioner-1"></targetProfile>
          </type>
       </element>
    </differential>

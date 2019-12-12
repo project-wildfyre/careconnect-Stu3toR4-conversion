@@ -1,16 +1,48 @@
 <ValueSet xmlns="http://hl7.org/fhir">
    <id value="CareConnect-ConditionRelationship-1"></id>
-   <url value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-ConditionRelationship-1"></url>
-   <version value="1.2.0"></version>
+   <text>
+      <status value="generated"></status>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h2>Care Connect Condition Relationship</h2>
+         <div>
+            <p>A ValueSet that identifies the kind of relationship that exists with a target condition or problem..</p> 
+         </div>
+         <p>
+            <b>Copyright Statement:</b> Copyright © 2019 HL7 UK
+         </p>
+         <p>This value set includes codes from the following code systems:</p>
+         <ul>
+            <li>Include all codes defined in 
+               <a href="CareConnect-ConditionRelationship-1.html">
+                  <code>https://hl7.org.uk/fhir/CodeSystem/CareConnect-ConditionRelationship-1</code>
+               </a>
+            </li>
+         </ul>
+      </div>
+   </text>
+   <url value="https://hl7.org.uk/fhir/ValueSet/CareConnect-ConditionRelationship-1"></url>
+   <version value="3.0.0"></version>
    <name value="Care Connect Condition Relationship"></name>
    <status value="draft"></status>
-   <date value="2019-09-04T14:30:00+00:00"></date>
-   <publisher value="HL7 UK"></publisher>
+   <date value="2019-09-04T15:30:00+01:00"></date>
+   <publisher value="INTEROpen"></publisher>
+   <contact>
+      <telecom>
+         <system value="other"></system>
+         <value value="https://interopen.ryver.com/"></value>
+      </telecom>
+   </contact>
    <description value="A ValueSet that identifies the kind of relationship that exists with a target condition or problem.."></description>
+   <jurisdiction>
+      <coding>
+         <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"></system>
+         <code value="826"></code>
+      </coding>
+   </jurisdiction>
    <copyright value="Copyright © 2019 HL7 UK"></copyright>
    <compose>
       <include>
-         <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionRelationship-1"></system>
+         <system value="https://hl7.org.uk/fhir/CodeSystem/CareConnect-ConditionRelationship-1"></system>
       </include>
    </compose>
 </ValueSet>

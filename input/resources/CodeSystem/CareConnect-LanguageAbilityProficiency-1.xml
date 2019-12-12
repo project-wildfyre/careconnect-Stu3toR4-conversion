@@ -1,12 +1,78 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
    <id value="CareConnect-LanguageAbilityProficiency-1"></id>
-   <url value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-LanguageAbilityProficiency-1"></url>
-   <version value="1.1.0"></version>
+   <text>
+      <status value="generated"></status>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h2>Care Connect Language Ability Proficiency</h2>
+         <div>
+            <p>A CodeSystem to identify the level of proficiency in communicating a language.</p> 
+         </div>
+         <p>
+            <b>Copyright Statement:</b> Copyright © 2016 HL7 UK
+         </p>
+         <p>This code system https://hl7.org.uk/fhir/CodeSystem/CareConnect-LanguageAbilityProficiency-1 defines the following codes:</p>
+         <table class="codes">
+            <tr>
+               <td style="white-space:nowrap">
+                  <b>Code</b>
+               </td>
+               <td>
+                  <b>Display</b>
+               </td>
+               <td>
+                  <b>Definition</b>
+               </td>
+            </tr>
+            <tr>
+               <td style="white-space:nowrap">E
+                  <a name="CareConnect-LanguageAbilityProficiency-1-E"> </a>
+               </td>
+               <td>Excellent</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td style="white-space:nowrap">F
+                  <a name="CareConnect-LanguageAbilityProficiency-1-F"> </a>
+               </td>
+               <td>Fair</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td style="white-space:nowrap">G
+                  <a name="CareConnect-LanguageAbilityProficiency-1-G"> </a>
+               </td>
+               <td>Good</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td style="white-space:nowrap">P
+                  <a name="CareConnect-LanguageAbilityProficiency-1-P"> </a>
+               </td>
+               <td>Poor</td>
+               <td></td>
+            </tr>
+         </table>
+      </div>
+   </text>
+   <url value="https://hl7.org.uk/fhir/CodeSystem/CareConnect-LanguageAbilityProficiency-1"></url>
+   <version value="3.0.0"></version>
    <name value="Care Connect Language Ability Proficiency"></name>
    <status value="draft"></status>
    <date value="2018-11-01T00:00:00+00:00"></date>
-   <publisher value="HL7 UK"></publisher>
+   <publisher value="INTEROpen"></publisher>
+   <contact>
+      <telecom>
+         <system value="other"></system>
+         <value value="https://interopen.ryver.com/"></value>
+      </telecom>
+   </contact>
    <description value="A CodeSystem to identify the level of proficiency in communicating a language."></description>
+   <jurisdiction>
+      <coding>
+         <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"></system>
+         <code value="826"></code>
+      </coding>
+   </jurisdiction>
    <copyright value="Copyright © 2016 HL7 UK"></copyright>
    <caseSensitive value="true"></caseSensitive>
    <content value="complete"></content>

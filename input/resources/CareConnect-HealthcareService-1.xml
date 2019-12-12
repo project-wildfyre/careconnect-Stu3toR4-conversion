@@ -1,33 +1,1180 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="CareConnect-HealthcareService-1"></id>
-    <url value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-HealthcareService-1"></url>
-    <version value="1.0.0"></version>
-    <name value="CareConnect-HealthcareService-1"></name>
-    <status value="draft"></status>
-    <date value="2018-09-27T15:19:04.378+01:00"></date>
-    <publisher value="NHS Digital"></publisher>
-    <contact>
-        <name value="Interoperability Team"></name>
-        <telecom>
-            <system value="email"></system>
-            <value value="interoperabilityteam@nhs.net"></value>
-            <use value="work"></use>
-        </telecom>
-    </contact>
-    <description value="CareConnect HealthCareService Profile"></description>
-    <purpose value="NOT CURATED BY INTEROPen see: http://www.interopen.org/careconnect-curation-methodology/"></purpose>
-    <copyright value="Copyright © 2018 NHS Digital"></copyright>
-    <fhirVersion value="3.0.1"></fhirVersion>
-    <kind value="resource"></kind>
-    <abstract value="false"></abstract>
-    <type value="HealthcareService"></type>
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/HealthcareService"></baseDefinition>
-    <derivation value="constraint"></derivation>
-    <differential>
-        <element id="HealthcareService.identifier">
+   <id value="CareConnect-HealthcareService-1"></id>
+   <text>
+      <status value="generated"></status>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;">
+            <tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;">
+               <th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/formats.html#table" title="The logical name of the element">Name</a>
+               </th>
+               <th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/formats.html#table" title="Information about the use of the element">Flags</a>
+               </th>
+               <th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a>
+               </th>
+               <th style="width: 100px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/formats.html#table" title="Reference to the type of the element">Type</a>
+               </th>
+               <th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a href="http://hl7.org/fhir/STU3/formats.html#table" title="Additional information about the element">Description &amp; Constraints</a>
+                  <span style="float: right">
+                     <a href="http://hl7.org/fhir/STU3/formats.html#table" title="Legend for this format">
+                        <img src="http://hl7.org/fhir/STU3/help16.png" alt="doco" style="background-color: inherit"></img>
+                     </a>
+                  </span>
+               </th>
+            </tr>
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;">
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#HealthcareService" title="null">HealthcareService</a>
+                  <a name="HealthcareService"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7;">
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy">
+                  <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"></img>
+                  <img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"></img> 
+                  <a href="{{[id]}}-definitions.html#HealthcareService.identifier" title="null">identifier</a>
+                  <a name="HealthcareService.identifier"> </a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                  <a style="opacity: 0.4" href="http://hl7.org/fhir/STU3/datatypes.html#Identifier">Identifier</a>
+               </td>
+               <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+            </tr> 
+            <tr>
+               <td colspan="5" class="hierarchy">
+                  <br></br>
+                  <a href="http://hl7.org/fhir/STU3/formats.html#table" title="Legend for this format">
+                     <img src="http://hl7.org/fhir/STU3/help16.png" alt="doco" style="background-color: inherit"></img> Documentation for this format
+                  </a>
+               </td>
+            </tr>
+         </table>
+      </div>
+   </text>
+   <url value="https://hl7.org.uk/fhir/StructureDefinition/CareConnect-HealthcareService-1"></url>
+   <version value="3.0.0"></version>
+   <name value="CareConnect-HealthcareService-1"></name>
+   <status value="draft"></status>
+   <date value="2018-09-27T15:19:04+01:00"></date>
+   <publisher value="INTEROpen"></publisher>
+   <contact>
+      <telecom>
+         <system value="other"></system>
+         <value value="https://interopen.ryver.com/"></value>
+      </telecom>
+   </contact>
+   <description value="CareConnect HealthCareService Profile"></description>
+   <jurisdiction>
+      <coding>
+         <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"></system>
+         <code value="826"></code>
+      </coding>
+   </jurisdiction>
+   <purpose value="NOT CURATED BY INTEROPen see: http://www.interopen.org/careconnect-curation-methodology/"></purpose>
+   <copyright value="Copyright © 2018 NHS Digital"></copyright>
+   <fhirVersion value="3.0.2"></fhirVersion>
+   <mapping>
+      <identity value="rim"></identity>
+      <uri value="http://hl7.org/v3"></uri>
+      <name value="RIM Mapping"></name>
+   </mapping>
+   <mapping>
+      <identity value="w5"></identity>
+      <uri value="http://hl7.org/fhir/w5"></uri>
+      <name value="W5 Mapping"></name>
+   </mapping>
+   <kind value="resource"></kind>
+   <abstract value="false"></abstract>
+   <type value="HealthcareService"></type>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/HealthcareService"></baseDefinition>
+   <derivation value="constraint"></derivation>
+   <snapshot>
+      <element id="HealthcareService">
+         <path value="HealthcareService"></path>
+         <short value="The details of a healthcare service available at a location"></short>
+         <definition value="The details of a healthcare service available at a location."></definition>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="HealthcareService"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <constraint>
+            <key value="dom-2"></key>
+            <severity value="error"></severity>
+            <human value="If the resource is contained in another resource, it SHALL NOT contain nested Resources"></human>
+            <expression value="contained.contained.empty()"></expression>
+            <xpath value="not(parent::f:contained and f:contained)"></xpath>
+            <source value="DomainResource"></source>
+         </constraint>
+         <constraint>
+            <key value="dom-1"></key>
+            <severity value="error"></severity>
+            <human value="If the resource is contained in another resource, it SHALL NOT contain any narrative"></human>
+            <expression value="contained.text.empty()"></expression>
+            <xpath value="not(parent::f:contained and f:text)"></xpath>
+            <source value="DomainResource"></source>
+         </constraint>
+         <constraint>
+            <key value="dom-4"></key>
+            <severity value="error"></severity>
+            <human value="If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated"></human>
+            <expression value="contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()"></expression>
+            <xpath value="not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))"></xpath>
+            <source value="DomainResource"></source>
+         </constraint>
+         <constraint>
+            <key value="dom-3"></key>
+            <severity value="error"></severity>
+            <human value="If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource"></human>
+            <expression value="contained.where(('#'+id in %resource.descendants().reference).not()).empty()"></expression>
+            <xpath value="not(exists(for $id in f:contained/*/@id return $id[not(ancestor::f:contained/parent::*/descendant::f:reference/@value=concat('#', $id))]))"></xpath>
+            <source value="DomainResource"></source>
+         </constraint>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="Entity. Role, or Act"></map>
+         </mapping>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="act[classCode=ACT][moodCode=DEF]"></map>
+         </mapping>
+         <mapping>
+            <identity value="w5"></identity>
+            <map value="administrative.group"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.id">
+         <path value="HealthcareService.id"></path>
+         <short value="Logical id of this artifact"></short>
+         <definition value="The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes."></definition>
+         <comment value="The only time that a resource does not have an id is when it is being submitted to the server using a create operation."></comment>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Resource.id"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="id"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+      </element>
+      <element id="HealthcareService.meta">
+         <path value="HealthcareService.meta"></path>
+         <short value="Metadata about the resource"></short>
+         <definition value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Resource.meta"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Meta"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+      </element>
+      <element id="HealthcareService.implicitRules">
+         <path value="HealthcareService.implicitRules"></path>
+         <short value="A set of rules under which this content was created"></short>
+         <definition value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content."></definition>
+         <comment value="Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. 
+
+This element is labelled as a modifier because the implicit rules may provide additional knowledge about the resource that modifies it's meaning or interpretation."></comment>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Resource.implicitRules"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="uri"></code>
+         </type>
+         <isModifier value="true"></isModifier>
+         <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"></isModifierReason>
+         <isSummary value="true"></isSummary>
+      </element>
+      <element id="HealthcareService.language">
+         <path value="HealthcareService.language"></path>
+         <short value="Language of the resource content"></short>
+         <definition value="The base language in which the resource is written."></definition>
+         <comment value="Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource  Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute)."></comment>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Resource.language"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="code"></code>
+         </type>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
+               <valueCanonical value="http://hl7.org/fhir/ValueSet/all-languages"></valueCanonical>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="Language"></valueString>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+               <valueBoolean value="true"></valueBoolean>
+            </extension>
+            <strength value="extensible"></strength>
+            <description value="A human language."></description>
+            <valueSet value="http://hl7.org/fhir/ValueSet/languages"></valueSet>
+         </binding>
+      </element>
+      <element id="HealthcareService.text">
+         <path value="HealthcareService.text"></path>
+         <short value="Text summary of the resource, for human interpretation"></short>
+         <definition value="A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety."></definition>
+         <comment value="Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative. In some cases, a resource may only have text with little or no additional discrete data (as long as all minOccurs=1 elements are satisfied).  This may be necessary for data from legacy systems where information is captured as a &quot;text blob&quot; or where text is additionally entered raw or narrated and encoded in formation is added later."></comment>
+         <alias value="narrative"></alias>
+         <alias value="html"></alias>
+         <alias value="xhtml"></alias>
+         <alias value="display"></alias>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="DomainResource.text"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Narrative"></code>
+         </type>
+         <condition value="dom-1"></condition>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="Act.text?"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.contained">
+         <path value="HealthcareService.contained"></path>
+         <short value="Contained, inline Resources"></short>
+         <definition value="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope."></definition>
+         <comment value="This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again."></comment>
+         <alias value="inline resources"></alias>
+         <alias value="anonymous resources"></alias>
+         <alias value="contained resources"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="DomainResource.contained"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Resource"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="N/A"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.extension">
+         <path value="HealthcareService.extension"></path>
+         <short value="Additional Content defined by implementations"></short>
+         <definition value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."></definition>
+         <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+         <alias value="extensions"></alias>
+         <alias value="user content"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="DomainResource.extension"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Extension"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="N/A"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.modifierExtension">
+         <path value="HealthcareService.modifierExtension"></path>
+         <short value="Extensions that cannot be ignored"></short>
+         <definition value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."></definition>
+         <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+         <alias value="extensions"></alias>
+         <alias value="user content"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="DomainResource.modifierExtension"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Extension"></code>
+         </type>
+         <isModifier value="true"></isModifier>
+         <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"></isModifierReason>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="N/A"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.identifier">
+         <path value="HealthcareService.identifier"></path>
+         <short value="External identifiers for this item"></short>
+         <definition value="External identifiers for this item."></definition>
+         <min value="1"></min>
+         <max value="1"></max>
+         <base>
             <path value="HealthcareService.identifier"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Identifier"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".id"></map>
+         </mapping>
+         <mapping>
+            <identity value="w5"></identity>
+            <map value="id"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.active">
+         <path value="HealthcareService.active"></path>
+         <short value="Whether this healthcareservice is in active use"></short>
+         <definition value="Whether this healthcareservice record is in active use."></definition>
+         <comment value="This element is labeled as a modifier because it may be used to mark that the resource was created in error."></comment>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="HealthcareService.active"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="boolean"></code>
+         </type>
+         <defaultValueBoolean value="true"></defaultValueBoolean>
+         <isModifier value="true"></isModifier>
+         <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"></isModifierReason>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".statusCode"></map>
+         </mapping>
+         <mapping>
+            <identity value="w5"></identity>
+            <map value="status"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.providedBy">
+         <path value="HealthcareService.providedBy"></path>
+         <short value="Organization that provides this service"></short>
+         <definition value="The organization that provides this healthcare service."></definition>
+         <comment value="This property is recommended to be the same as the Location's managingOrganization, and if not provided should be interpreted as such. If the Location does not have a managing Organization, then this property should be populated."></comment>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="HealthcareService.providedBy"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"></targetProfile>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".scopingRole.Organization"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.category">
+         <path value="HealthcareService.category"></path>
+         <short value="Broad category of service being performed or delivered"></short>
+         <definition value="Identifies the broad category of service being performed or delivered."></definition>
+         <comment value="Selecting a Service Category then determines the list of relevant service types that can be selected in the primary service type."></comment>
+         <alias value="service category"></alias>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="HealthcareService.category"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="CodeableConcept"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="service-category"></valueString>
+            </extension>
+            <strength value="example"></strength>
+            <description value="A category of the service(s) that could be provided."></description>
+            <valueSet value="http://hl7.org/fhir/ValueSet/service-category"></valueSet>
+         </binding>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".code"></map>
+         </mapping>
+         <mapping>
+            <identity value="w5"></identity>
+            <map value="class"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.type">
+         <path value="HealthcareService.type"></path>
+         <short value="Type of service that may be delivered or performed"></short>
+         <definition value="The specific type of service that may be delivered or performed."></definition>
+         <alias value="service type"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="HealthcareService.type"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="CodeableConcept"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="service-type"></valueString>
+            </extension>
+            <strength value="example"></strength>
+            <description value="Additional details about where the content was created (e.g. clinical specialty)."></description>
+            <valueSet value="http://hl7.org/fhir/ValueSet/service-type"></valueSet>
+         </binding>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".actrelationship[typeCode=COMP.act[classCode=ACT][moodCode=DEF].code"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.specialty">
+         <path value="HealthcareService.specialty"></path>
+         <short value="Specialties handled by the HealthcareService"></short>
+         <definition value="Collection of specialties handled by the service site. This is more of a medical term."></definition>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="HealthcareService.specialty"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="CodeableConcept"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="service-specialty"></valueString>
+            </extension>
+            <strength value="preferred"></strength>
+            <description value="A specialty that a healthcare service may provide."></description>
+            <valueSet value="http://hl7.org/fhir/ValueSet/c80-practice-codes"></valueSet>
+         </binding>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".actrelationship[typeCode=COMP.act[classCode=ACT][moodCode=DEF].code"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.location">
+         <path value="HealthcareService.location"></path>
+         <short value="Location(s) where service may be provided"></short>
+         <definition value="The location(s) where this healthcare service may be provided."></definition>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="HealthcareService.location"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location"></targetProfile>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".location.role[classCode=SDLOC]"></map>
+         </mapping>
+         <mapping>
+            <identity value="w5"></identity>
+            <map value="where"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.name">
+         <path value="HealthcareService.name"></path>
+         <short value="Description of service as presented to a consumer while searching"></short>
+         <definition value="Further description of the service as it would be presented to a consumer while searching."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="HealthcareService.name"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".name"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.comment">
+         <path value="HealthcareService.comment"></path>
+         <short value="Additional description and/or any specific issues not covered elsewhere"></short>
+         <definition value="Any additional description of the service and/or any specific issues not covered by the other attributes, which can be displayed as further detail under the serviceName."></definition>
+         <comment value="Would expect that a user would not see this information on a search results, and it would only be available when viewing the complete details of the service."></comment>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="HealthcareService.comment"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".location.role[classCode=SDLOC].desc"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.extraDetails">
+         <path value="HealthcareService.extraDetails"></path>
+         <short value="Extra details about the service that can't be placed in the other fields"></short>
+         <definition value="Extra details about the service that can't be placed in the other fields."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="HealthcareService.extraDetails"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".actrelationship[typeCode=COMP.act[classCode=ACT][moodCode=DEF].text"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.photo">
+         <path value="HealthcareService.photo"></path>
+         <short value="Facilitates quick identification of the service"></short>
+         <definition value="If there is a photo/symbol associated with this HealthcareService, it may be included here to facilitate quick identification of the service in a list."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="HealthcareService.photo"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Attachment"></code>
+         </type>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".actrelationship[typeCode=SBJ].observation.value"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.telecom">
+         <path value="HealthcareService.telecom"></path>
+         <short value="Contacts related to the healthcare service"></short>
+         <definition value="List of contacts related to this specific healthcare service."></definition>
+         <comment value="If this is empty, then refer to the location's contacts."></comment>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="HealthcareService.telecom"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="ContactPoint"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".telecom"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.coverageArea">
+         <path value="HealthcareService.coverageArea"></path>
+         <short value="Location(s) service is inteded for/available to"></short>
+         <definition value="The location(s) that this service is available to (not where the service is provided)."></definition>
+         <comment value="The locations referenced by the coverage area can include both specific locations, including areas, and also conceptual domains too (mode = kind), such as a physical area (tri-state area) and some other attribute (covered by Example Care Organization). These types of Locations are often not managed by any specific organization. This could also include generic locations such as &quot;in-home&quot;."></comment>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="HealthcareService.coverageArea"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location"></targetProfile>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".location.role[classCode=SDLOC].subjectOf.A_SpatialCoordinate"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.serviceProvisionCode">
+         <path value="HealthcareService.serviceProvisionCode"></path>
+         <short value="Conditions under which service is available/offered"></short>
+         <definition value="The code(s) that detail the conditions under which the healthcare service is available/offered."></definition>
+         <comment value="The provision means being commissioned by, contractually obliged or financially sourced. Types of costings that may apply to this healthcare service, such if the service may be available for free, some discounts available, or fees apply."></comment>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="HealthcareService.serviceProvisionCode"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="CodeableConcept"></code>
+         </type>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="ServiceProvisionConditions"></valueString>
+            </extension>
+            <strength value="example"></strength>
+            <description value="The code(s) that detail the conditions under which the healthcare service is available/offered."></description>
+            <valueSet value="http://hl7.org/fhir/ValueSet/service-provision-conditions"></valueSet>
+         </binding>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".actrelationship[typeCode=PRCN].observation[moodCode=EVN.CRT]"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.eligibility">
+         <path value="HealthcareService.eligibility"></path>
+         <short value="Specific eligibility requirements required to use the service"></short>
+         <definition value="Does this service have specific eligibility requirements that need to be met in order to use the service?"></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="HealthcareService.eligibility"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="CodeableConcept"></code>
+         </type>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="ServiceEligibility"></valueString>
+            </extension>
+            <strength value="example"></strength>
+            <description value="Coded values underwhich a specific service is made available."></description>
+         </binding>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".actrelationship[typeCode=PRCN].observation[moodCode=EVN.CRT]"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.eligibilityNote">
+         <path value="HealthcareService.eligibilityNote"></path>
+         <short value="Describes the eligibility conditions for the service"></short>
+         <definition value="Describes the eligibility conditions for the service."></definition>
+         <comment value="The description of service eligibility should, in general, not exceed one or two paragraphs. It should be sufficient for a prospective consumer to determine if they are likely to be eligible or not. Where eligibility requirements and conditions are complex, it may simply be noted that an eligibility assessment is required. Where eligibility is determined by an outside source, such as an Act of Parliament, this should be noted, preferably with a reference to a commonly available copy of the source document such as a web page."></comment>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="HealthcareService.eligibilityNote"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".actrelationship[typeCode=PRCN].observation[moodCode=EVN.CRT].text"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.programName">
+         <path value="HealthcareService.programName"></path>
+         <short value="Program Names that categorize the service"></short>
+         <definition value="Program Names that can be used to categorize the service."></definition>
+         <comment value="Programs are often defined externally to an Organization, commonly by governments; e.g. Home and Community Care Programs, Homeless Program, …."></comment>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="HealthcareService.programName"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".actrelationship[typeCode=PERT].observation"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.characteristic">
+         <path value="HealthcareService.characteristic"></path>
+         <short value="Collection of characteristics (attributes)"></short>
+         <definition value="Collection of characteristics (attributes)."></definition>
+         <comment value="These could be such things as is wheelchair accessible."></comment>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="HealthcareService.characteristic"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="CodeableConcept"></code>
+         </type>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="ServiceCharacteristic"></valueString>
+            </extension>
+            <strength value="example"></strength>
+            <description value="A custom attribute that could be provided at a service (e.g. Wheelchair accessibiliy)."></description>
+         </binding>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".actrelationship[typeCode=PERT].observation"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.referralMethod">
+         <path value="HealthcareService.referralMethod"></path>
+         <short value="Ways that the service accepts referrals"></short>
+         <definition value="Ways that the service accepts referrals, if this is not provided then it is implied that no referral is required."></definition>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="HealthcareService.referralMethod"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="CodeableConcept"></code>
+         </type>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="ReferralMethod"></valueString>
+            </extension>
+            <strength value="example"></strength>
+            <description value="The methods of referral can be used when referring to a specific HealthCareService resource."></description>
+            <valueSet value="http://hl7.org/fhir/ValueSet/service-referral-method"></valueSet>
+         </binding>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".actrelationship[typeCode=PERT].observation"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.appointmentRequired">
+         <path value="HealthcareService.appointmentRequired"></path>
+         <short value="If an appointment is required for access to this service"></short>
+         <definition value="Indicates whether or not a prospective consumer will require an appointment for a particular service at a site to be provided by the Organization. Indicates if an appointment is required for access to this service."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="HealthcareService.appointmentRequired"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="boolean"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".actrelationship[typeCode=PERT].observation"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.availableTime">
+         <path value="HealthcareService.availableTime"></path>
+         <short value="Times the Service Site is available"></short>
+         <definition value="A collection of times that the Service Site is available."></definition>
+         <comment value="More detailed availability information may be provided in associated Schedule/Slot resources."></comment>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="HealthcareService.availableTime"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="BackboneElement"></code>
+         </type>
+         <constraint>
+            <key value="ele-1"></key>
+            <severity value="error"></severity>
+            <human value="All FHIR elements must have a @value or children"></human>
+            <expression value="hasValue() | (children().count() &gt; id.count())"></expression>
+            <xpath value="@value|f:*|h:div"></xpath>
+            <source value="Element"></source>
+         </constraint>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".effectiveTime"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.availableTime.id">
+         <path value="HealthcareService.availableTime.id"></path>
+         <representation value="xmlAttr"></representation>
+         <short value="xml:id (or equivalent in JSON)"></short>
+         <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Element.id"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="n/a"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.availableTime.extension">
+         <path value="HealthcareService.availableTime.extension"></path>
+         <short value="Additional Content defined by implementations"></short>
+         <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."></definition>
+         <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+         <alias value="extensions"></alias>
+         <alias value="user content"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="Element.extension"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Extension"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="n/a"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.availableTime.modifierExtension">
+         <path value="HealthcareService.availableTime.modifierExtension"></path>
+         <short value="Extensions that cannot be ignored"></short>
+         <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."></definition>
+         <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+         <alias value="extensions"></alias>
+         <alias value="user content"></alias>
+         <alias value="modifiers"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="BackboneElement.modifierExtension"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Extension"></code>
+         </type>
+         <isModifier value="true"></isModifier>
+         <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"></isModifierReason>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="N/A"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.availableTime.daysOfWeek">
+         <path value="HealthcareService.availableTime.daysOfWeek"></path>
+         <short value="mon | tue | wed | thu | fri | sat | sun"></short>
+         <definition value="Indicates which days of the week are available between the start and end Times."></definition>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="HealthcareService.availableTime.daysOfWeek"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="code"></code>
+         </type>
+         <binding>
+            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+               <valueString value="DaysOfWeek"></valueString>
+            </extension>
+            <strength value="required"></strength>
+            <description value="The days of the week."></description>
+            <valueSet value="http://hl7.org/fhir/ValueSet/days-of-week"></valueSet>
+         </binding>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".effectiveTime"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.availableTime.allDay">
+         <path value="HealthcareService.availableTime.allDay"></path>
+         <short value="Always available? e.g. 24 hour service"></short>
+         <definition value="Is this always available? (hence times are irrelevant) e.g. 24 hour service."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="HealthcareService.availableTime.allDay"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="boolean"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".effectiveTime"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.availableTime.availableStartTime">
+         <path value="HealthcareService.availableTime.availableStartTime"></path>
+         <short value="Opening time of day (ignored if allDay = true)"></short>
+         <definition value="The opening time of day. Note: If the AllDay flag is set, then this time is ignored."></definition>
+         <comment value="The timezone is expected to be for where this HealthcareService is provided at."></comment>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="HealthcareService.availableTime.availableStartTime"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="time"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".effectiveTime"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.availableTime.availableEndTime">
+         <path value="HealthcareService.availableTime.availableEndTime"></path>
+         <short value="Closing time of day (ignored if allDay = true)"></short>
+         <definition value="The closing time of day. Note: If the AllDay flag is set, then this time is ignored."></definition>
+         <comment value="The timezone is expected to be for where this HealthcareService is provided at."></comment>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="HealthcareService.availableTime.availableEndTime"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="time"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".effectiveTime"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.notAvailable">
+         <path value="HealthcareService.notAvailable"></path>
+         <short value="Not available during this time due to provided reason"></short>
+         <definition value="The HealthcareService is not available during this period of time due to the provided reason."></definition>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="HealthcareService.notAvailable"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="BackboneElement"></code>
+         </type>
+         <constraint>
+            <key value="ele-1"></key>
+            <severity value="error"></severity>
+            <human value="All FHIR elements must have a @value or children"></human>
+            <expression value="hasValue() | (children().count() &gt; id.count())"></expression>
+            <xpath value="@value|f:*|h:div"></xpath>
+            <source value="Element"></source>
+         </constraint>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".effectiveTime"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.notAvailable.id">
+         <path value="HealthcareService.notAvailable.id"></path>
+         <representation value="xmlAttr"></representation>
+         <short value="xml:id (or equivalent in JSON)"></short>
+         <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="Element.id"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="n/a"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.notAvailable.extension">
+         <path value="HealthcareService.notAvailable.extension"></path>
+         <short value="Additional Content defined by implementations"></short>
+         <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."></definition>
+         <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+         <alias value="extensions"></alias>
+         <alias value="user content"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="Element.extension"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Extension"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="n/a"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.notAvailable.modifierExtension">
+         <path value="HealthcareService.notAvailable.modifierExtension"></path>
+         <short value="Extensions that cannot be ignored"></short>
+         <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."></definition>
+         <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."></comment>
+         <alias value="extensions"></alias>
+         <alias value="user content"></alias>
+         <alias value="modifiers"></alias>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="BackboneElement.modifierExtension"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Extension"></code>
+         </type>
+         <isModifier value="true"></isModifier>
+         <isModifierReason value="No Modifier Reason provideed in previous versions of FHIR"></isModifierReason>
+         <isSummary value="true"></isSummary>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="N/A"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.notAvailable.description">
+         <path value="HealthcareService.notAvailable.description"></path>
+         <short value="Reason presented to the user explaining why time not available"></short>
+         <definition value="The reason that can be presented to the user as to why this time is not available."></definition>
+         <min value="1"></min>
+         <max value="1"></max>
+         <base>
+            <path value="HealthcareService.notAvailable.description"></path>
             <min value="1"></min>
             <max value="1"></max>
-        </element>
-    </differential>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="n/a"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.notAvailable.during">
+         <path value="HealthcareService.notAvailable.during"></path>
+         <short value="Service not availablefrom this date"></short>
+         <definition value="Service is not available (seasonally or for a public holiday) from this date."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="HealthcareService.notAvailable.during"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="Period"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".effectiveTime"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.availabilityExceptions">
+         <path value="HealthcareService.availabilityExceptions"></path>
+         <short value="Description of availability exceptions"></short>
+         <definition value="A description of site availability exceptions, e.g. public holiday availability. Succinctly describing all possible exceptions to normal site availability as details in the available Times and not available Times."></definition>
+         <min value="0"></min>
+         <max value="1"></max>
+         <base>
+            <path value="HealthcareService.availabilityExceptions"></path>
+            <min value="0"></min>
+            <max value="1"></max>
+         </base>
+         <type>
+            <code value="string"></code>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value=".effectiveTime"></map>
+         </mapping>
+      </element>
+      <element id="HealthcareService.endpoint">
+         <path value="HealthcareService.endpoint"></path>
+         <short value="Technical endpoints providing access to services operated for the location"></short>
+         <definition value="Technical endpoints providing access to services operated for the specific healthcare services defined at this resource."></definition>
+         <requirements value="Organizations may have different systems covering different services at the different locations and need to be able to define the technical connection details for how to connect to them, and for what purpose."></requirements>
+         <min value="0"></min>
+         <max value="*"></max>
+         <base>
+            <path value="HealthcareService.endpoint"></path>
+            <min value="0"></min>
+            <max value="*"></max>
+         </base>
+         <type>
+            <code value="Reference"></code>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Endpoint"></targetProfile>
+         </type>
+         <mapping>
+            <identity value="rim"></identity>
+            <map value="n/a"></map>
+         </mapping>
+      </element>
+   </snapshot>
+   <differential>
+      <element id="HealthcareService.identifier">
+         <path value="HealthcareService.identifier"></path>
+         <min value="1"></min>
+         <max value="1"></max>
+      </element>
+   </differential>
 </StructureDefinition>

@@ -3,7 +3,12 @@
 import ca.uhn.fhir.context.FhirContext;
 import ca.uhn.fhir.rest.api.EncodingEnum;
 import ca.uhn.fhir.rest.client.api.IGenericClient;
+import org.hl7.fhir.convertors.VersionConvertor_30_40;
 import org.hl7.fhir.dstu3.model.*;
+import org.hl7.fhir.instance.model.api.IBaseResource;
+import org.hl7.fhir.utilities.cache.NpmPackage;
+import org.hl7.fhir.utilities.cache.PackageCacheManager;
+import org.hl7.fhir.utilities.cache.ToolsVersion;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,23 +17,64 @@ import java.util.*;
 public class ProcessReferenceServer {
 
     private String serverUrl;
-   // private String group;
 
-    private Map<String, Resource> resources =  new HashMap<>();
+    private Map<String, IBaseResource> resources =  new HashMap<>();
 
     private IGenericClient client;
 
-    FhirContext ctxFHIR = FhirContext.forDstu3();
+
+    VersionConvertor_30_40 convertor = new VersionConvertor_30_40();
+
+
+    FhirContext ctx = FhirContext.forDstu3();
 
     private static Logger log = LoggerFactory
             .getLogger(ProcessReferenceServer.class);
 
-    public ProcessReferenceServer(String _serverUrl) {
-        this.serverUrl = _serverUrl;
-       // this.group = _group;
-        this.client = ctxFHIR.newRestfulGenericClient(serverUrl);
-        this.client.setEncoding(EncodingEnum.JSON);
-    }
+
+
+    public ProcessReferenceServer(String packageId, String version) {
+        try {
+             PackageCacheManager pcm = new PackageCacheManager(true, ToolsVersion.TOOLS_VERSION);
+
+            log.info("Loading Ig Package for API Conformance {} {}",packageId,version);
+            NpmPackage npm = pcm.loadPackage(packageId,version);
+
+            for (String uri : npm.listResources("StructureDefinition","ValueSet","CodeSystem","ConceptMap","NamingSystem", "CapabilityStatement")) {
+
+
+                IBaseResource resource = ctx.newJsonParser().parseResource(npm.load("package", uri));
+
+                String convertedResource = ctx.newJsonParser().encodeResourceToString(resource);
+                convertedResource = convertedResource.replace("https://fhir.hl7.org.uk/STU3","https://hl7.org.uk/fhir");
+
+                IBaseResource resourceR4 = convertsToR4(ctx.newJsonParser().parseResource(convertedResource));
+                if (resourceR4 instanceof org.hl7.fhir.r4.model.StructureDefinition) {
+                    org.hl7.fhir.r4.model.StructureDefinition dom = (org.hl7.fhir.r4.model.StructureDefinition) resourceR4;
+                    resources.put(dom.getUrl(),dom);
+                }
+                if (resourceR4 instanceof org.hl7.fhir.r4.model.ValueSet) {
+                    org.hl7.fhir.r4.model.ValueSet dom = (org.hl7.fhir.r4.model.ValueSet) resourceR4;
+                    resources.put(dom.getUrl(),dom);
+                }
+                if (resourceR4 instanceof org.hl7.fhir.r4.model.CodeSystem) {
+                    org.hl7.fhir.r4.model.CodeSystem dom = (org.hl7.fhir.r4.model.CodeSystem) resourceR4;
+                    resources.put(dom.getUrl(),dom);
+                }
+                if (resourceR4 instanceof org.hl7.fhir.r4.model.NamingSystem) {
+                    org.hl7.fhir.r4.model.NamingSystem dom = (org.hl7.fhir.r4.model.NamingSystem) resourceR4;
+                    //resources.put(dom.getUrl(),dom);
+                }
+                if (resourceR4 instanceof org.hl7.fhir.r4.model.ConceptMap) {
+                    org.hl7.fhir.r4.model.ConceptMap dom = (org.hl7.fhir.r4.model.ConceptMap) resourceR4;
+                    resources.put(dom.getUrl(),dom);
+                }
+                //CapabilityStatement capabilityStatement = (CapabilityStatement)
+            }
+        } catch (Exception ex) {
+                    log.error(ex.getMessage());
+             }
+         }
 
     public void populateMap() {
         getStructureDefinitions();
@@ -37,11 +83,11 @@ public class ProcessReferenceServer {
         getConceptMaps();
     }
 
-    public Map<String, Resource> getResources() {
+    public Map<String, IBaseResource> getResources() {
         return resources;
     }
 
-    public void setResources(Map<String, Resource> resources) {
+    public void setResources(Map<String, IBaseResource> resources) {
         this.resources = resources;
     }
 
@@ -258,6 +304,14 @@ public class ProcessReferenceServer {
         }
 
         this.resources.put(newUrl,resource);
+    }
+
+    private IBaseResource convertsToR4(IBaseResource resource) {
+        org.hl7.fhir.dstu3.model.Resource resourceR3 = (Resource) resource;
+        org.hl7.fhir.r4.model.Resource resourceR4 = convertor.convertResource(resourceR3,false);
+
+        return resourceR4;
+
     }
 
 }

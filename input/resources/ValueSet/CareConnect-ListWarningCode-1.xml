@@ -1,16 +1,48 @@
 <ValueSet xmlns="http://hl7.org/fhir">
    <id value="CareConnect-ListWarningCode-1"></id>
-   <url value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-ListWarningCode-1"></url>
-   <version value="1.1.0"></version>
+   <text>
+      <status value="generated"></status>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h2>Care Connect List Warning Code</h2>
+         <div>
+            <p>A ValueSet to identify the reason a list may be incomplete.</p> 
+         </div>
+         <p>
+            <b>Copyright Statement:</b> Copyright © 2016 HL7 UK
+         </p>
+         <p>This value set includes codes from the following code systems:</p>
+         <ul>
+            <li>Include all codes defined in 
+               <a href="CareConnect-ListWarningCode-1.html">
+                  <code>https://hl7.org.uk/fhir/CodeSystem/CareConnect-ListWarningCode-1</code>
+               </a>
+            </li>
+         </ul>
+      </div>
+   </text>
+   <url value="https://hl7.org.uk/fhir/ValueSet/CareConnect-ListWarningCode-1"></url>
+   <version value="3.0.0"></version>
    <name value="Care Connect List Warning Code"></name>
    <status value="draft"></status>
    <date value="2018-11-01T00:00:00+00:00"></date>
-   <publisher value="HL7 UK"></publisher>
+   <publisher value="INTEROpen"></publisher>
+   <contact>
+      <telecom>
+         <system value="other"></system>
+         <value value="https://interopen.ryver.com/"></value>
+      </telecom>
+   </contact>
    <description value="A ValueSet to identify the reason a list may be incomplete."></description>
+   <jurisdiction>
+      <coding>
+         <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"></system>
+         <code value="826"></code>
+      </coding>
+   </jurisdiction>
    <copyright value="Copyright © 2016 HL7 UK"></copyright>
    <compose>
       <include>
-         <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ListWarningCode-1"></system>
+         <system value="https://hl7.org.uk/fhir/CodeSystem/CareConnect-ListWarningCode-1"></system>
       </include>
    </compose>
 </ValueSet>

@@ -1,12 +1,99 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
    <id value="CareConnect-PrescribedElsewhere-1"></id>
-   <url value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-PrescribedElsewhere-1"></url>
-   <version value="1.0.0"></version>
+   <text>
+      <status value="generated"></status>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h2>Care Connect Prescribed Elsewhere</h2>
+         <div>
+            <p>A CodeSystem to identify the type of organisation/setting responsible for authorising and issuing medication outside of a GP system.</p> 
+         </div>
+         <p>
+            <b>Copyright Statement:</b> Copyright © 2016 HL7 UK
+         </p>
+         <p>This code system https://hl7.org.uk/fhir/CodeSystem/CareConnect-PrescribedElsewhere-1 defines the following codes:</p>
+         <table class="codes">
+            <tr>
+               <td style="white-space:nowrap">
+                  <b>Code</b>
+               </td>
+               <td>
+                  <b>Display</b>
+               </td>
+               <td>
+                  <b>Definition</b>
+               </td>
+            </tr>
+            <tr>
+               <td style="white-space:nowrap">out-of-hours
+                  <a name="CareConnect-PrescribedElsewhere-1-out-of-hours"> </a>
+               </td>
+               <td>Out of Hours</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td style="white-space:nowrap">hospital
+                  <a name="CareConnect-PrescribedElsewhere-1-hospital"> </a>
+               </td>
+               <td>Hospital</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td style="white-space:nowrap">dental
+                  <a name="CareConnect-PrescribedElsewhere-1-dental"> </a>
+               </td>
+               <td>Dental</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td style="white-space:nowrap">other-organisation
+                  <a name="CareConnect-PrescribedElsewhere-1-other-organisation"> </a>
+               </td>
+               <td>Other Organisation</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td style="white-space:nowrap">hand-written
+                  <a name="CareConnect-PrescribedElsewhere-1-hand-written"> </a>
+               </td>
+               <td>Hand Written</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td style="white-space:nowrap">self-prescribed
+                  <a name="CareConnect-PrescribedElsewhere-1-self-prescribed"> </a>
+               </td>
+               <td>Self Prescribed</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td style="white-space:nowrap">private
+                  <a name="CareConnect-PrescribedElsewhere-1-private"> </a>
+               </td>
+               <td>Private</td>
+               <td></td>
+            </tr>
+         </table>
+      </div>
+   </text>
+   <url value="https://hl7.org.uk/fhir/CodeSystem/CareConnect-PrescribedElsewhere-1"></url>
+   <version value="3.0.0"></version>
    <name value="Care Connect Prescribed Elsewhere"></name>
    <status value="draft"></status>
-   <date value="2018-05-14T00:00:00+00:00"></date>
-   <publisher value="HL7 UK"></publisher>
+   <date value="2018-05-14T01:00:00+01:00"></date>
+   <publisher value="INTEROpen"></publisher>
+   <contact>
+      <telecom>
+         <system value="other"></system>
+         <value value="https://interopen.ryver.com/"></value>
+      </telecom>
+   </contact>
    <description value="A CodeSystem to identify the type of organisation/setting responsible for authorising and issuing medication outside of a GP system."></description>
+   <jurisdiction>
+      <coding>
+         <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"></system>
+         <code value="826"></code>
+      </coding>
+   </jurisdiction>
    <copyright value="Copyright © 2016 HL7 UK"></copyright>
    <caseSensitive value="true"></caseSensitive>
    <content value="complete"></content>

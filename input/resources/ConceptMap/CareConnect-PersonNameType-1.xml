@@ -1,22 +1,93 @@
 <ConceptMap xmlns="http://hl7.org/fhir">
    <id value="CareConnect-PersonNameType-1"></id>
-   <url value="https://fhir.hl7.org.uk/STU3/ConceptMap/CareConnect-PersonNameType-1"></url>
-   <version value="1.1.0"></version>
+   <text>
+      <status value="generated"></status>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h2>Concept Map - Care Connect Person Name Type (https://hl7.org.uk/fhir/ConceptMap/CareConnect-PersonNameType-1)</h2>
+         <p>Mapping from 
+            <a href="valueset-CareConnect-NameUse-1.html">https://hl7.org.uk/fhir/ValueSet/CareConnect-NameUse-1</a> to 
+            <a href="valueset-CareConnect-PDS-PersonNameType-1.html">https://hl7.org.uk/fhir/ValueSet/CareConnect-PDS-PersonNameType-1</a>
+         </p>
+         <p>DRAFT. Published on 2 Nov 2018, 00:00:00 by INTEROpen (). Copyright © 2016 HL7 UK</p>
+         <div>
+            <p>A Concept Map from ValueSet Name Use to PDS Person Name Type to aid interpretation.</p> 
+         </div>
+         <br></br>
+         <table class="grid">
+            <tr>
+               <td>
+                  <b>Source Code</b>
+               </td>
+               <td>
+                  <b>Relationship</b>
+               </td>
+               <td>
+                  <b>Destination Code</b>
+               </td>
+            </tr>
+            <tr>
+               <td>official</td>
+               <td>equivalent</td>
+               <td>L (Usual (current) name)</td>
+            </tr>
+            <tr>
+               <td>nickname</td>
+               <td>equivalent</td>
+               <td>A (Alias name)</td>
+            </tr>
+            <tr>
+               <td>usual</td>
+               <td>equivalent</td>
+               <td>PREFERRED (Preferred name)</td>
+            </tr>
+            <tr>
+               <td>old</td>
+               <td>equivalent</td>
+               <td>PREVIOUS (Other previous name)</td>
+            </tr>
+            <tr>
+               <td>old</td>
+               <td>equivalent</td>
+               <td>PREVIOUS-BACHELOR (Bachelor name)</td>
+            </tr>
+            <tr>
+               <td>old</td>
+               <td>equivalent</td>
+               <td>PREVIOUS-BIRTH (Birth name)</td>
+            </tr>
+            <tr>
+               <td>old</td>
+               <td>equivalent</td>
+               <td>PREVIOUS-MAIDEN (Maiden name)</td>
+            </tr>
+         </table>
+      </div>
+   </text>
+   <url value="https://hl7.org.uk/fhir/ConceptMap/CareConnect-PersonNameType-1"></url>
+   <version value="3.0.0"></version>
    <name value="Concept Map - Care Connect Person Name Type"></name>
    <status value="draft"></status>
    <date value="2018-11-02T00:00:00+00:00"></date>
-   <publisher value="HL7 UK"></publisher>
+   <publisher value="INTEROpen"></publisher>
+   <contact>
+      <telecom>
+         <system value="other"></system>
+         <value value="https://interopen.ryver.com/"></value>
+      </telecom>
+   </contact>
    <description value="A Concept Map from ValueSet Name Use to PDS Person Name Type to aid interpretation."></description>
+   <jurisdiction>
+      <coding>
+         <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"></system>
+         <code value="826"></code>
+      </coding>
+   </jurisdiction>
    <copyright value="Copyright © 2016 HL7 UK"></copyright>
-   <sourceReference>
-      <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-NameUse-1"></reference>
-   </sourceReference>
-   <targetReference>
-      <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-PDS-PersonNameType-1"></reference>
-   </targetReference>
+   <sourceUri value="https://hl7.org.uk/fhir/ValueSet/CareConnect-NameUse-1"></sourceUri>
+   <targetUri value="https://hl7.org.uk/fhir/ValueSet/CareConnect-PDS-PersonNameType-1"></targetUri>
    <group>
       <source value="http://hl7.org/fhir/name-use"></source>
-      <target value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-PDS-PersonNameType-1"></target>
+      <target value="https://hl7.org.uk/fhir/CodeSystem/CareConnect-PDS-PersonNameType-1"></target>
       <element>
          <code value="official"></code>
          <display value="Official"></display>
